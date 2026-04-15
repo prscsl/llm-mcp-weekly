@@ -4,8 +4,8 @@ description: >-
   Claude·MCP·LLM 생태계의 최신 소식을 한국어로 큐레이션합니다.
   Anthropic 공식 발표, MCP 서버 릴리스, HuggingFace, HackerNews 등을
   매일 자동 수집·요약합니다.
-baseurl: ""  # GitHub Pages user site는 비워둠. project site는 "/llm-mcp-weekly"
-url: "https://prscsl.github.io"  # TODO: 실제 도메인으로 교체
+baseurl: "/llm-mcp-weekly"  # 프로젝트 사이트 서브경로
+url: "https://prscsl.github.io"
 twitter_username: ""
 github_username: prscsl
 locale: ko_KR
