@@ -220,6 +220,34 @@
     "3bdf62848054008a": {
       "url": "https://www.relvy.ai",
       "first_seen": "2026-04-15"
+    },
+    "643cad439c8951f7": {
+      "url": "https://github.com/yantrikos/yantrikdb-server",
+      "first_seen": "2026-04-15"
+    },
+    "e2e5378dde946b54": {
+      "url": "https://huggingface.co/blog/waypoint-1-5",
+      "first_seen": "2026-04-15"
+    },
+    "c770eae11ee06da5": {
+      "url": "https://huggingface.co/blog/multimodal-sentence-transformers",
+      "first_seen": "2026-04-15"
+    },
+    "167f9df457b3df71": {
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve",
+      "first_seen": "2026-04-15"
+    },
+    "b92bfd06bd8fd752": {
+      "url": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation",
+      "first_seen": "2026-04-15"
+    },
+    "53cb47b8b6094da9": {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-claude-mythos-isnt-a-sentient-super-hacker-its-a-sales-pitch-claims-of-thousands-of-severe-zero-days-rely-on-just-198-manual-reviews",
+      "first_seen": "2026-04-15"
+    },
+    "3ab0d673e019cb3c": {
+      "url": "https://www.reuters.com/world/us-court-declines-block-pentagons-anthropic-blacklisting-now-2026-04-08/",
+      "first_seen": "2026-04-15"
     }
   }
 }
