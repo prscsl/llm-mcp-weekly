@@ -1,4 +1,113 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "65f504a7c1caecf1": {
+      "url": "https://dwyer.co.za/static/claude-mixes-up-who-said-what-and-thats-not-ok.html",
+      "first_seen": "2026-04-15"
+    },
+    "dbf1010e44874e2e": {
+      "url": "https://code.claude.com/docs/en/routines",
+      "first_seen": "2026-04-15"
+    },
+    "36b5181484e6d046": {
+      "url": "https://braw.dev/blog/2026-04-06-reallocating-100-month-claude-spend/",
+      "first_seen": "2026-04-15"
+    },
+    "91812af7df816e62": {
+      "url": "https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry",
+      "first_seen": "2026-04-15"
+    },
+    "74df87e50a0f5f5c": {
+      "url": "https://github.com/anthropics/claude-code/issues/46829",
+      "first_seen": "2026-04-15"
+    },
+    "cfb6804bc1fbd34f": {
+      "url": "https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/",
+      "first_seen": "2026-04-15"
+    },
+    "229dfef3505c4c12": {
+      "url": "https://github.com/anthropics/claude-code/issues/45756",
+      "first_seen": "2026-04-15"
+    },
+    "700ca58cde63e9d0": {
+      "url": "https://github.com/brightbeanxyz/brightbean-studio",
+      "first_seen": "2026-04-15"
+    },
+    "90670b35b20373f2": {
+      "url": "https://claude.com/blog/claude-managed-agents",
+      "first_seen": "2026-04-15"
+    },
+    "81a8b6dcd164cd79": {
+      "url": "https://cssstudio.ai",
+      "first_seen": "2026-04-15"
+    },
+    "fedb80b49eec8222": {
+      "url": "https://www.ithihasas.in",
+      "first_seen": "2026-04-15"
+    },
+    "937439e8a78bc78f": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
+      "first_seen": "2026-04-15"
+    },
+    "17eb8f45c6dcf96c": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.107",
+      "first_seen": "2026-04-15"
+    },
+    "98ccc75329d4fccd": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.105",
+      "first_seen": "2026-04-15"
+    },
+    "8d7637933f193604": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.104",
+      "first_seen": "2026-04-15"
+    },
+    "e86aa8e93b7ca6c0": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.101",
+      "first_seen": "2026-04-15"
+    },
+    "b0a22ca61000faec": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.100",
+      "first_seen": "2026-04-15"
+    },
+    "15b05b87e6a91156": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
+      "first_seen": "2026-04-15"
+    },
+    "ab3ad2d9e8bb6212": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
+      "first_seen": "2026-04-15"
+    },
+    "dbfb244901a1c45c": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.96",
+      "first_seen": "2026-04-15"
+    },
+    "db3515523227150c": {
+      "url": "https://status.claude.com/incidents/6jd2m42f8mld",
+      "first_seen": "2026-04-15"
+    },
+    "3845e6543ec30d88": {
+      "url": "https://github.com/halfwhey/claudraband",
+      "first_seen": "2026-04-15"
+    },
+    "1d41ccb28f1e5ea3": {
+      "url": "https://github.com/ginlix-ai/langalpha",
+      "first_seen": "2026-04-15"
+    },
+    "8aaa9736433c9d55": {
+      "url": "https://so.long.thanks.fish/can-claude-fly-a-plane/",
+      "first_seen": "2026-04-15"
+    },
+    "7f1a2d17420043cf": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.95.0",
+      "first_seen": "2026-04-15"
+    },
+    "a3d1755bcf5514a0": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.94.1",
+      "first_seen": "2026-04-15"
+    },
+    "0835f26adce289dc": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.94.0",
+      "first_seen": "2026-04-15"
+    }
+  }
 }
