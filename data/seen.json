@@ -108,6 +108,118 @@
     "0835f26adce289dc": {
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.94.0",
       "first_seen": "2026-04-15"
+    },
+    "f88152f779246bd4": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.93.0",
+      "first_seen": "2026-04-15"
+    },
+    "e658c17d3fbd4f89": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.92.0",
+      "first_seen": "2026-04-15"
+    },
+    "471b5fcc78fd4567": {
+      "url": "https://twitter.com/bridgemindai/status/2043321284113670594",
+      "first_seen": "2026-04-15"
+    },
+    "cd4873063e4a465d": {
+      "url": "https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities",
+      "first_seen": "2026-04-15"
+    },
+    "b1d3f494e9910d4f": {
+      "url": "https://www.theregister.com/2026/04/06/anthropic_claude_code_dumber_lazier_amd_ai_director/",
+      "first_seen": "2026-04-15"
+    },
+    "a491b51bd92f0b99": {
+      "url": "https://ndaybench.winfunc.com",
+      "first_seen": "2026-04-15"
+    },
+    "9c406ae157b7a333": {
+      "url": "https://rival.tips/research/model-similarity",
+      "first_seen": "2026-04-15"
+    },
+    "3e68713a59e409ae": {
+      "url": "https://twill.ai",
+      "first_seen": "2026-04-15"
+    },
+    "718d782c81441a45": {
+      "url": "https://eve.new/login",
+      "first_seen": "2026-04-15"
+    },
+    "71c2e6841f1fc820": {
+      "url": "https://github.com/kontext-dev/kontext-cli",
+      "first_seen": "2026-04-15"
+    },
+    "b4559b257dc442bf": {
+      "url": "https://www.theguardian.com/technology/2026/apr/10/us-summoned-bank-bosses-to-discuss-cyber-risks-posed-by-anthropic-latest-ai-model",
+      "first_seen": "2026-04-15"
+    },
+    "8d2d32c4e5ed5be9": {
+      "url": "https://simonwillison.net/2026/Apr/15/juicy-main/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "c4f6461b92dd62b6": {
+      "url": "https://simonwillison.net/2026/Apr/14/replace-token-based-csrf/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "9492782c6947da25": {
+      "url": "https://simonwillison.net/2026/Apr/14/trusted-access-openai/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "5945e6ebcc914718": {
+      "url": "https://simonwillison.net/2026/Apr/14/cybersecurity-proof-of-work/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "3a6a4cad12794385": {
+      "url": "https://simonwillison.net/2026/Apr/13/steve-yegge/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "97161a5e858ab0c8": {
+      "url": "https://simonwillison.net/2026/Apr/13/servo-crate-exploration/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "c9afe85f29f05d19": {
+      "url": "https://simonwillison.net/2026/Apr/13/bryan-cantrill/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "c1790800b77bb6e7": {
+      "url": "https://simonwillison.net/2026/Apr/12/mlx-audio/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "5e042d5bf772e38c": {
+      "url": "https://simonwillison.net/2026/Apr/11/sqlite/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "3752475af9e99bda": {
+      "url": "https://simonwillison.net/2026/Apr/11/sqlite-qrf/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "81205f45cd9d2a84": {
+      "url": "https://simonwillison.net/2026/Apr/10/kakapo/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "4a10802ac87cd911": {
+      "url": "https://simonwillison.net/2026/Apr/10/voice-mode-is-weaker/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "927e37163b3ccb5b": {
+      "url": "https://simonwillison.net/2026/Apr/9/github-repo-size/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "0f127ae4421f6764": {
+      "url": "https://simonwillison.net/2026/Apr/9/asgi-gzip/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "5e9b7b2c0bac8937": {
+      "url": "https://simonwillison.net/2026/Apr/8/muse-spark/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "646b342f150f7637": {
+      "url": "https://simonwillison.net/2026/Apr/8/giles-turnbull/#atom-everything",
+      "first_seen": "2026-04-15"
+    },
+    "3bdf62848054008a": {
+      "url": "https://www.relvy.ai",
+      "first_seen": "2026-04-15"
     }
   }
 }
