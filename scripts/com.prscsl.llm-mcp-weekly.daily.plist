@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  설치:
+    cp scripts/com.prscsl.llm-mcp-weekly.daily.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.prscsl.llm-mcp-weekly.daily.plist
+
+  제거:
+    launchctl unload ~/Library/LaunchAgents/com.prscsl.llm-mcp-weekly.daily.plist
+    rm ~/Library/LaunchAgents/com.prscsl.llm-mcp-weekly.daily.plist
+
+  즉시 실행 (테스트):
+    launchctl start com.prscsl.llm-mcp-weekly.daily
+
+  매일 KST 06:00 = launchd 호스트 시간 기준. 시스템 시간이 KST면 그대로 06:00.
+  Mac이 sleep 중이어도 launchd가 깨워서 실행 (전원 연결 시).
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.prscsl.llm-mcp-weekly.daily</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-c</string>
+    <string>$HOME/Desktop/project/claudecode/llm-mcp-weekly/scripts/run_daily.sh</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>6</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/llm-mcp-weekly.stdout.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/tmp/llm-mcp-weekly.stderr.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/prscsl/Desktop/project/claudecode/llm-mcp-weekly</string>
+</dict>
+</plist>

@@ -1,0 +1,75 @@
+# LLM·MCP 위클리 데이터 소스 정의
+# 각 소스는 type별로 collect.py에서 처리됨
+
+rss:
+  - name: Anthropic News
+    url: https://www.anthropic.com/news/rss.xml
+    weight: 10
+    tags: [claude, anthropic]
+
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    weight: 7
+    tags: [llm, opensource]
+
+  - name: Simon Willison
+    url: https://simonwillison.net/atom/everything/
+    weight: 8
+    tags: [llm, mcp]
+
+  - name: LangChain Blog
+    url: https://blog.langchain.dev/rss/
+    weight: 6
+    tags: [llm, framework]
+
+  - name: Pinecone Learn
+    url: https://www.pinecone.io/learn/rss.xml
+    weight: 5
+    tags: [rag, vector-db]
+
+# GitHub Releases (org/repo)
+github_releases:
+  - repo: modelcontextprotocol/servers
+    weight: 10
+    tags: [mcp]
+
+  - repo: modelcontextprotocol/python-sdk
+    weight: 9
+    tags: [mcp, python]
+
+  - repo: modelcontextprotocol/typescript-sdk
+    weight: 8
+    tags: [mcp, typescript]
+
+  - repo: anthropics/anthropic-sdk-python
+    weight: 9
+    tags: [claude, sdk, python]
+
+  - repo: anthropics/anthropic-cookbook
+    weight: 7
+    tags: [claude, examples]
+
+  - repo: anthropics/claude-code
+    weight: 10
+    tags: [claude-code]
+
+# HackerNews Algolia Search API 키워드
+hackernews_keywords:
+  - keyword: claude
+    min_points: 50
+    weight: 8
+  - keyword: anthropic
+    min_points: 30
+    weight: 7
+  - keyword: "model context protocol"
+    min_points: 20
+    weight: 9
+  - keyword: mcp server
+    min_points: 15
+    weight: 8
+
+# 수집 정책
+policy:
+  max_items_per_run: 30
+  lookback_days: 7
+  language_filter: en  # 영문만 수집해 한국어로 가공

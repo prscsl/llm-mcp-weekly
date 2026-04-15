@@ -1,0 +1,68 @@
+title: 한국어 LLM·MCP 위클리
+email: contact@example.com  # TODO: 실제 이메일로 교체
+description: >-
+  Claude·MCP·LLM 생태계의 최신 소식을 한국어로 큐레이션합니다.
+  Anthropic 공식 발표, MCP 서버 릴리스, HuggingFace, HackerNews 등을
+  매일 자동 수집·요약합니다.
+baseurl: ""  # GitHub Pages user site는 비워둠. project site는 "/llm-mcp-weekly"
+url: "https://prscsl.github.io"  # TODO: 실제 도메인으로 교체
+twitter_username: ""
+github_username: prscsl
+locale: ko_KR
+lang: ko-KR
+timezone: Asia/Seoul
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page:num/"
+
+# SEO
+author:
+  name: 박성수 (prscsl)
+  email: contact@example.com
+
+# Minima theme
+minima:
+  skin: classic
+  social_links:
+    - platform: github
+      user_url: https://github.com/prscsl
+
+# 자동 큐레이션 콘텐츠 표시
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: "LLM·MCP 위클리 봇"
+
+# 빌드 제외
+exclude:
+  - scripts/
+  - data/
+  - .raw/
+  - .summarized/
+  - .cache/
+  - .github/
+  - requirements.txt
+  - README.md
+  - "*.py"
+  - Gemfile.lock
+  - vendor/
+  - .venv/
+
+# AdSense (승인 후 활성화)
+google_adsense:
+  enabled: false
+  publisher_id: ""  # ca-pub-XXXXXXXXXXXXXXXX
+
+# Google Analytics 4 (선택)
+google_analytics: ""  # G-XXXXXXXXXX
