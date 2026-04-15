@@ -22,9 +22,7 @@
 
   <key>ProgramArguments</key>
   <array>
-    <string>/bin/zsh</string>
-    <string>-c</string>
-    <string>$HOME/Desktop/project/claudecode/llm-mcp-weekly/scripts/run_daily.sh</string>
+    <string>/Users/prscsl/llm-mcp-weekly/scripts/run_daily.sh</string>
   </array>
 
   <key>StartCalendarInterval</key>
@@ -45,6 +43,6 @@
   <false/>
 
   <key>WorkingDirectory</key>
-  <string>/Users/prscsl/Desktop/project/claudecode/llm-mcp-weekly</string>
+  <string>/Users/prscsl/llm-mcp-weekly</string>
 </dict>
 </plist>

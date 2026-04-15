@@ -17,6 +17,7 @@ venv/
 .raw/
 .summarized/
 .cache/
+logs/
 
 # 환경 변수
 .env

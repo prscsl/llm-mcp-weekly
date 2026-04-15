@@ -7,7 +7,7 @@
 # 종료 코드: 0 성공, 1 실패
 
 set -u
-PROJECT_DIR="${HOME}/Desktop/project/claudecode/llm-mcp-weekly"
+PROJECT_DIR="${HOME}/llm-mcp-weekly"
 cd "$PROJECT_DIR" || exit 1
 
 DATE=$(date +%Y-%m-%d)
@@ -15,8 +15,10 @@ LOG_DIR="$PROJECT_DIR/logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/${DATE}.log"
 
-# pyenv 등 사용자 PATH 로드 (launchd는 최소 환경으로 시작)
-export PATH="$HOME/.pyenv/shims:$HOME/.pyenv/bin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin"
+# pyenv·nvm 등 사용자 PATH 로드 (launchd는 최소 환경으로 시작).
+# nvm을 맨 앞에 둬야 claude CLI가 시스템 node(구버전)가 아닌 nvm node를 사용함.
+NVM_NODE_BIN=$(ls -d $HOME/.nvm/versions/node/*/bin 2>/dev/null | sort -V | tail -1)
+export PATH="${NVM_NODE_BIN}:$HOME/.pyenv/shims:$HOME/.pyenv/bin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin"
 
 log() {
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG_FILE"

@@ -121,6 +121,74 @@ launchctl unload ~/Library/LaunchAgents/com.prscsl.llm-mcp-weekly.daily.plist
 
 **Mac sleep 대응**: `pmset` 또는 시스템 환경설정 → 에너지 절약자 → "예약된 시간에 켜기"로 매일 05:55 wake 설정 권장.
 
+## Windows 이전 가이드 (개인 노트북)
+
+macOS launchd와 등가인 Windows Task Scheduler 버전이 `scripts/*.ps1`에 포함되어 있습니다.
+
+### 전제
+- Windows 10/11, 개인 소유, 인터넷 연결
+- Claude Max 플랜 로그인 가능 (브라우저 OAuth)
+- **주의**: macOS와 Windows를 동시에 돌리면 git push 충돌 — 반드시 한쪽만 활성화
+
+### 1단계 — 필수 도구 설치 (새 PowerShell 창)
+
+```powershell
+winget install Python.Python.3.10
+winget install OpenJS.NodeJS.LTS
+winget install Git.Git
+# 설치 후 창을 새로 열어 PATH 반영 확인
+python --version; node --version; git --version
+```
+
+### 2단계 — Claude Code 설치 + Max 플랜 로그인
+
+```powershell
+npm install -g @anthropic-ai/claude-code
+claude login          # 브라우저 OAuth로 Max 플랜 인증
+claude --version
+```
+
+### 3단계 — 프로젝트 clone + Python 의존성
+
+```powershell
+cd $env:USERPROFILE
+git clone https://github.com/prscsl/llm-mcp-weekly.git
+cd llm-mcp-weekly
+pip install -r requirements.txt
+```
+
+### 4단계 — 수동 1회 테스트
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\run_daily.ps1
+# 로그: logs\<오늘>.log
+```
+
+### 5단계 — Task Scheduler 등록 (매일 06:00 자동)
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\install_task.ps1
+Start-ScheduledTask -TaskName llm-mcp-weekly-daily    # 즉시 테스트
+```
+
+### 6단계 — 절전/배터리 설정
+
+Task Scheduler 자체에 `-WakeToRun`·`-AllowStartIfOnBatteries`가 포함되어 있지만, 설정 → 시스템 → 전원 및 절전 → **"절전 모드 해제 타이머 허용"을 ON**으로 확인.
+
+### 7단계 — macOS 자동화 정지 (Windows 검증 완료 후)
+
+```bash
+# 맥에서 실행
+launchctl unload ~/Library/LaunchAgents/com.prscsl.llm-mcp-weekly.daily.plist
+sudo pmset repeat cancel
+```
+
+### 제거
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\uninstall_task.ps1
+```
+
 ## 비용 추정
 
 | 모드 | 월 비용 | 비고 |
