@@ -248,6 +248,38 @@
     "3ab0d673e019cb3c": {
       "url": "https://www.reuters.com/world/us-court-declines-block-pentagons-anthropic-blacklisting-now-2026-04-08/",
       "first_seen": "2026-04-15"
+    },
+    "d794c5db2b99e312": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.109",
+      "first_seen": "2026-04-16"
+    },
+    "7c7721fb5b0380bd": {
+      "url": "https://simonwillison.net/2026/Apr/15/john-gruber/#atom-everything",
+      "first_seen": "2026-04-16"
+    },
+    "4952d7c89a406232": {
+      "url": "https://simonwillison.net/2026/Apr/15/gemini-31-flash-tts/#atom-everything",
+      "first_seen": "2026-04-16"
+    },
+    "fdb85b438965a17e": {
+      "url": "https://simonwillison.net/2026/Apr/15/gemini-flash-tts/#atom-everything",
+      "first_seen": "2026-04-16"
+    },
+    "93002af5eda5fab5": {
+      "url": "https://simonwillison.net/2026/Apr/15/kyle-kingsbury/#atom-everything",
+      "first_seen": "2026-04-16"
+    },
+    "4d72dc289367e133": {
+      "url": "https://simonwillison.net/2026/Apr/15/datasette-ports/#atom-everything",
+      "first_seen": "2026-04-16"
+    },
+    "4b7acb24964fa61f": {
+      "url": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
+      "first_seen": "2026-04-16"
+    },
+    "302b3e5e67a8b2a0": {
+      "url": "https://huggingface.co/blog/Hcompany/holotab",
+      "first_seen": "2026-04-16"
     }
   }
 }
