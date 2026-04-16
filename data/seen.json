@@ -280,6 +280,94 @@
     "302b3e5e67a8b2a0": {
       "url": "https://huggingface.co/blog/Hcompany/holotab",
       "first_seen": "2026-04-16"
+    },
+    "b8af8104c423c106": {
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "first_seen": "2026-04-17"
+    },
+    "eec2c57b62e2627e": {
+      "url": "https://claudestatus.com/",
+      "first_seen": "2026-04-17"
+    },
+    "2f9466008c6e13a1": {
+      "url": "https://www.anthropic.com/claude/opus",
+      "first_seen": "2026-04-17"
+    },
+    "4f09b464b3f198d3": {
+      "url": "https://simonwillison.net/2026/Apr/16/qwen-beats-opus/",
+      "first_seen": "2026-04-17"
+    },
+    "649ba10116e4fc2f": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.112",
+      "first_seen": "2026-04-17"
+    },
+    "f01b1d6cc4aa6fbb": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "first_seen": "2026-04-17"
+    },
+    "35cb6539ff2abf6a": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
+      "first_seen": "2026-04-17"
+    },
+    "f6f9f09006430f3c": {
+      "url": "https://anthropic.com/claude-opus-4-7-system-card",
+      "first_seen": "2026-04-17"
+    },
+    "f5e805c8a9b4848d": {
+      "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+      "first_seen": "2026-04-17"
+    },
+    "bbd535ddb7693afe": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.96.0",
+      "first_seen": "2026-04-17"
+    },
+    "f5ddb5c7cc0e3e1f": {
+      "url": "https://techtrenches.dev/p/the-snake-that-ate-itself-what-claude",
+      "first_seen": "2026-04-17"
+    },
+    "1fbd4e25e968ce72": {
+      "url": "https://github.com/AgentSeal/codeburn",
+      "first_seen": "2026-04-17"
+    },
+    "8a25432e7e4acc1d": {
+      "url": "https://efficienist.com/claude-code-may-be-burning-your-limits-with-invisible-tokens-you-cant-see-or-audit/",
+      "first_seen": "2026-04-17"
+    },
+    "10a14c462635f01a": {
+      "url": "https://www.zatanna.ai/kampala",
+      "first_seen": "2026-04-17"
+    },
+    "e68bca815842db18": {
+      "url": "https://simonwillison.net/2026/Apr/16/llm-anthropic/#atom-everything",
+      "first_seen": "2026-04-17"
+    },
+    "6b6d9ea3d2062eed": {
+      "url": "https://simonwillison.net/2026/Apr/16/qwen-beats-opus/#atom-everything",
+      "first_seen": "2026-04-17"
+    },
+    "e08576616f920335": {
+      "url": "https://simonwillison.net/2026/Apr/16/datasette-io-preview/#atom-everything",
+      "first_seen": "2026-04-17"
+    },
+    "a1e8bdd1398719e5": {
+      "url": "https://simonwillison.net/2026/Apr/15/datasette-export-database/#atom-everything",
+      "first_seen": "2026-04-17"
+    },
+    "112c4f7bb7c9fab9": {
+      "url": "https://simonwillison.net/2026/Apr/15/datasette/#atom-everything",
+      "first_seen": "2026-04-17"
+    },
+    "2887ffa77581b84b": {
+      "url": "https://www.technologyreview.com/2026/04/16/1135179/anthropogenic-noise-hurting-animals/",
+      "first_seen": "2026-04-17"
+    },
+    "d730085c407f5394": {
+      "url": "https://huggingface.co/blog/transformers-to-mlx",
+      "first_seen": "2026-04-17"
+    },
+    "fc2ae7c68319ae88": {
+      "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
+      "first_seen": "2026-04-17"
     }
   }
 }
