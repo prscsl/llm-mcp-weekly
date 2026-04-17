@@ -11,6 +11,7 @@ github_username: prscsl
 locale: ko_KR
 lang: ko-KR
 timezone: Asia/Seoul
+future: true  # 06:00~09:00 사이 실행 시 당일 포스트가 누락되는 문제 방지
 
 # Build settings
 theme: minima
