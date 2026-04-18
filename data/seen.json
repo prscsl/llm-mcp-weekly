@@ -368,6 +368,38 @@
     "fc2ae7c68319ae88": {
       "url": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
       "first_seen": "2026-04-17"
+    },
+    "0dba0c3d7be35ac4": {
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "first_seen": "2026-04-18"
+    },
+    "1308ad6243ceae55": {
+      "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
+      "first_seen": "2026-04-18"
+    },
+    "53f6b3efc6e89405": {
+      "url": "https://lucasgerads.com/blog/lecroy-mcp-spice-demo/",
+      "first_seen": "2026-04-18"
+    },
+    "a8d54db70e1098bd": {
+      "url": "https://simonwillison.net/2026/Apr/17/datasette/#atom-everything",
+      "first_seen": "2026-04-18"
+    },
+    "1fe4d7278263f900": {
+      "url": "https://blog.vidocsecurity.com/blog/we-reproduced-anthropics-mythos-findings-with-public-models",
+      "first_seen": "2026-04-18"
+    },
+    "f4d411e7d7b2f91c": {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-ocr-v2",
+      "first_seen": "2026-04-18"
+    },
+    "f5afeabfec92889e": {
+      "url": "https://huggingface.co/blog/ecom-rlve",
+      "first_seen": "2026-04-18"
+    },
+    "77cde7f3a412ccf8": {
+      "url": "https://www.reuters.com/technology/white-house-give-us-agencies-anthropic-mythos-access-bloomberg-news-reports-2026-04-16/",
+      "first_seen": "2026-04-18"
     }
   }
 }
