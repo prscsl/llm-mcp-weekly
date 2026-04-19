@@ -400,6 +400,58 @@
     "77cde7f3a412ccf8": {
       "url": "https://www.reuters.com/technology/white-house-give-us-agencies-anthropic-mythos-access-bloomberg-news-reports-2026-04-16/",
       "first_seen": "2026-04-18"
+    },
+    "dc287d4bc4fa5e63": {
+      "url": "https://samhenri.gold/blog/20260418-claude-design/",
+      "first_seen": "2026-04-20"
+    },
+    "af313d625d47cf19": {
+      "url": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/",
+      "first_seen": "2026-04-20"
+    },
+    "a365f4927aa1846b": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.114",
+      "first_seen": "2026-04-20"
+    },
+    "ed034f4457c03aab": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.113",
+      "first_seen": "2026-04-20"
+    },
+    "55e625e03c8e56a9": {
+      "url": "https://simonwillison.net/2026/Apr/19/headless-everything/#atom-everything",
+      "first_seen": "2026-04-20"
+    },
+    "e72047652dc3db52": {
+      "url": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/#atom-everything",
+      "first_seen": "2026-04-20"
+    },
+    "67c4827c500f98ac": {
+      "url": "https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything",
+      "first_seen": "2026-04-20"
+    },
+    "1202813195ca0b8a": {
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/adding-a-new-content-type/#atom-everything",
+      "first_seen": "2026-04-20"
+    },
+    "6058b0ccb1b4a18e": {
+      "url": "https://simonwillison.net/2026/Apr/17/pycon-us-2026/#atom-everything",
+      "first_seen": "2026-04-20"
+    },
+    "252649955cf04124": {
+      "url": "https://bannedbyanthropic.com/",
+      "first_seen": "2026-04-20"
+    },
+    "cf76a7d0d436392d": {
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ubers-anthropic-ai-push-hits-223109852.html",
+      "first_seen": "2026-04-20"
+    },
+    "e567d669ea0155f3": {
+      "url": "https://entropicthoughts.com/si-units-for-request-rate",
+      "first_seen": "2026-04-20"
+    },
+    "e98b0c766d864a0a": {
+      "url": "https://www.rtrvr.ai/blog/ai-subroutines-zero-token-deterministic-automation",
+      "first_seen": "2026-04-20"
     }
   }
 }
