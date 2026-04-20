@@ -452,6 +452,30 @@
     "e98b0c766d864a0a": {
       "url": "https://www.rtrvr.ai/blog/ai-subroutines-zero-token-deterministic-automation",
       "first_seen": "2026-04-20"
+    },
+    "a2c45ad9360a2536": {
+      "url": "https://simonwillison.net/2026/Apr/20/claude-token-counts/",
+      "first_seen": "2026-04-21"
+    },
+    "d1369c993a56b507": {
+      "url": "https://surfacedby.com/blog/nginx-logs-ai-traffic-vs-referral-traffic",
+      "first_seen": "2026-04-21"
+    },
+    "7ef7c2af20e561ba": {
+      "url": "https://www.vincentgregoire.com/faceoff/",
+      "first_seen": "2026-04-21"
+    },
+    "a586b1d89ef288a4": {
+      "url": "https://martinalderson.com/posts/figmas-woes-compound-with-claude-design/",
+      "first_seen": "2026-04-21"
+    },
+    "7ef1bf382162c638": {
+      "url": "https://simonwillison.net/2026/Apr/20/datasette-sql/#atom-everything",
+      "first_seen": "2026-04-21"
+    },
+    "29947831513c4be4": {
+      "url": "https://simonwillison.net/2026/Apr/20/claude-token-counts/#atom-everything",
+      "first_seen": "2026-04-21"
     }
   }
 }
