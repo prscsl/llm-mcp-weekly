@@ -476,6 +476,62 @@
     "29947831513c4be4": {
       "url": "https://simonwillison.net/2026/Apr/20/claude-token-counts/#atom-everything",
       "first_seen": "2026-04-21"
+    },
+    "b3d0897aba68e123": {
+      "url": "https://docs.openclaw.ai/providers/anthropic",
+      "first_seen": "2026-04-22"
+    },
+    "8ebb2f8739a4d479": {
+      "url": "https://www.axios.com/2026/04/19/nsa-anthropic-mythos-pentagon",
+      "first_seen": "2026-04-22"
+    },
+    "b5e9cc2fb13bcb1a": {
+      "url": "https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/",
+      "first_seen": "2026-04-22"
+    },
+    "c354167bb1fd8c1e": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.116",
+      "first_seen": "2026-04-22"
+    },
+    "78dbb0ce9b2e11f8": {
+      "url": "https://github.com/GRVYDEV/marky",
+      "first_seen": "2026-04-22"
+    },
+    "a6406f23e97ef8f7": {
+      "url": "https://www.thatprivacyguy.com/blog/anthropic-spyware/",
+      "first_seen": "2026-04-22"
+    },
+    "0eb6915a9b51cda3": {
+      "url": "https://github.com/ENTERPILOT/GOModel/",
+      "first_seen": "2026-04-22"
+    },
+    "b2c9fcda761f8674": {
+      "url": "https://simonwillison.net/2026/Apr/21/gpt-image-2/#atom-everything",
+      "first_seen": "2026-04-22"
+    },
+    "0dbe547da66b266b": {
+      "url": "https://simonwillison.net/2026/Apr/21/andreas-pahlsson-notini/#atom-everything",
+      "first_seen": "2026-04-22"
+    },
+    "7f2d1188d88d7ed6": {
+      "url": "https://simonwillison.net/2026/Apr/21/scosman/#atom-everything",
+      "first_seen": "2026-04-22"
+    },
+    "edc9d8575ea7a699": {
+      "url": "https://simonwillison.net/2026/Apr/20/llm-openrouter/#atom-everything",
+      "first_seen": "2026-04-22"
+    },
+    "aef8afa7768165e1": {
+      "url": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
+      "first_seen": "2026-04-22"
+    },
+    "767083dc76ef5a32": {
+      "url": "https://huggingface.co/blog/nvidia/build-korean-agents-with-nemotron-personas",
+      "first_seen": "2026-04-22"
+    },
+    "373897d12f779670": {
+      "url": "https://huggingface.co/blog/cybersecurity-openness",
+      "first_seen": "2026-04-22"
     }
   }
 }
