@@ -18,8 +18,8 @@ social:
   links:
     - https://github.com/prscsl
 
-og_image: /llm-mcp-weekly/assets/images/og-default.png
-logo: /llm-mcp-weekly/assets/images/logo.png
+og_image: /assets/images/og-default.png
+logo: /assets/images/logo.png
 timezone: Asia/Seoul
 future: true  # 06:00~09:00 사이 실행 시 당일 포스트가 누락되는 문제 방지
 
@@ -59,8 +59,8 @@ defaults:
       related: true
       show_date: true
       image:
-        path: /llm-mcp-weekly/assets/images/og-default.png
-        thumbnail: /llm-mcp-weekly/assets/images/og-default.png
+        path: /assets/images/og-default.png
+        thumbnail: /assets/images/og-default.png
   - scope:
       path: ""
       type: pages
