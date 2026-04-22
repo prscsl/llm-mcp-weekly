@@ -24,7 +24,7 @@ timezone: Asia/Seoul
 future: true  # 06:00~09:00 사이 실행 시 당일 포스트가 누락되는 문제 방지
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "default"
 
 plugins:
