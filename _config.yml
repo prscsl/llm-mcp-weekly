@@ -1,49 +1,72 @@
-title: 한국어 LLM·MCP 위클리
-email: contact@example.com  # TODO: 실제 이메일로 교체
-description: >-
-  Claude·MCP·LLM 생태계의 최신 소식을 한국어로 큐레이션합니다.
-  Anthropic 공식 발표, MCP 서버 릴리스, HuggingFace, HackerNews 등을
-  매일 자동 수집·요약합니다.
+title: "LLM·MCP 위클리"
+tagline: "한국 엔지니어를 위한 AI 생태계 정보지"
+email: ""
+description: "Claude·MCP·LLM 생태계 영문 소식을 매일 한국어로 요약합니다. 백엔드·데이터 엔지니어를 위한 실무 중심 기술 뉴스."
 baseurl: "/llm-mcp-weekly"  # 프로젝트 사이트 서브경로
 url: "https://prscsl.github.io"
-twitter_username: ""
 github_username: prscsl
 locale: ko_KR
 lang: ko-KR
+
+# Twitter / Open Graph
+twitter:
+  username: ""
+  card: summary_large_image
+
+social:
+  name: "LLM·MCP 위클리"
+  links:
+    - https://github.com/prscsl
+
+og_image: /llm-mcp-weekly/assets/images/og-default.png
+logo: /llm-mcp-weekly/assets/images/logo.png
 timezone: Asia/Seoul
 future: true  # 06:00~09:00 사이 실행 시 당일 포스트가 누락되는 문제 방지
 
 # Build settings
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default"
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-include-cache
 
 paginate: 10
 paginate_path: "/page:num/"
 
-# SEO
+# Author
 author:
-  name: 박성수 (prscsl)
-  email: contact@example.com
+  name: "prscsl"
+  bio: "데이터 파이프라인 엔지니어. Claude Code·MCP 실무 사용자."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/prscsl"
 
-# Minima theme
-minima:
-  skin: classic
-  social_links:
-    - platform: github
-      user_url: https://github.com/prscsl
-
-# 자동 큐레이션 콘텐츠 표시
+# 포스트/페이지 기본값
 defaults:
   - scope:
       path: ""
       type: posts
     values:
-      layout: post
-      author: "LLM·MCP 위클리 봇"
+      layout: single
+      author_profile: true
+      read_time: true
+      share: false
+      related: true
+      show_date: true
+      image:
+        path: /llm-mcp-weekly/assets/images/og-default.png
+        thumbnail: /llm-mcp-weekly/assets/images/og-default.png
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
 
 # 빌드 제외
 exclude:
@@ -59,6 +82,18 @@ exclude:
   - Gemfile.lock
   - vendor/
   - .venv/
+
+# jekyll-feed 최적화
+feed:
+  title: "LLM·MCP 위클리"
+  subtitle: "Claude·MCP·LLM 생태계 한국어 요약 뉴스"
+  path: feed.xml
+  posts_limit: 20
+
+# 검색 콘솔 인증 (발급 후 주석 해제)
+# google_site_verification: ""   # Google Search Console
+# naver_site_verification: ""    # 네이버 서치어드바이저
+# bing_site_verification: ""     # Bing Webmaster Tools
 
 # AdSense (승인 후 활성화)
 google_adsense:

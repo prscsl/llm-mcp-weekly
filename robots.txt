@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://prscsl.github.io/llm-mcp-weekly/sitemap.xml

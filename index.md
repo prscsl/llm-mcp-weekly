@@ -1,25 +1,38 @@
 ---
 layout: home
-title: 한국어 LLM·MCP 위클리
+title: LLM·MCP 위클리
 ---
 
-> Claude·MCP·LLM 생태계의 최신 소식을 매일 한국어로 큐레이션합니다.
+## LLM·MCP 생태계 소식을 한국어로
 
-## 무엇을 다루나요?
+Claude·MCP·LLM 관련 영문 뉴스를 매일 자동 수집하고, Claude로 요약해 발행합니다.
+백엔드/데이터 엔지니어 시각으로 선별한 내용만 다룹니다.
 
-- **Anthropic 공식 발표** — Claude 모델 업데이트, API 신기능, 정책 변경
-- **MCP 생태계** — Model Context Protocol 서버·SDK 릴리스, 신규 통합
-- **LLM 업계 동향** — HuggingFace, OpenAI, Google 등 주요 발표
-- **개발자 커뮤니티** — HackerNews에서 화제가 된 LLM 관련 토론
+---
 
-## 어떻게 만들어지나요?
+### 이런 분에게 유용합니다
 
-매일 아침 6시(KST)에 자동 실행되는 파이프라인:
+- Claude Code나 MCP 서버를 실무에 쓰고 있거나 검토 중인 엔지니어
+- LLM 관련 영문 소식을 일일이 읽기 어렵지만 흐름은 파악하고 싶은 분
+- AI 도구를 데이터 파이프라인·자동화 업무에 통합하려는 백엔드/데이터 개발자
 
-1. **수집** — 약 5개 RSS, 6개 GitHub 저장소, HackerNews API에서 신규 항목 수집
-2. **요약** — Claude Haiku 4.5가 한국어로 가공 (원문 인용 없이 자체 해설)
-3. **발행** — 카테고리별로 분류해 Jekyll로 자동 발행
+---
 
-원문 저작권은 모두 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다.
+### 다루는 주제
 
-## 최근 포스트
+| 카테고리 | 내용 |
+|---------|------|
+| **MCP** | Model Context Protocol 스펙 변경, 새 MCP 서버, 실무 활용 사례 |
+| **Claude** | Anthropic 릴리스 노트, Claude API 업데이트, Claude Code 기능 |
+| **LLM 생태계** | 주요 모델 출시, 벤치마크, 오픈소스 프레임워크 |
+| **도구·인프라** | LLM 관련 개발 도구, 배포 패턴, 비용 최적화 |
+
+---
+
+### 발행 방식
+
+GitHub Actions → 영문 소스 수집 → Claude 한국어 요약 → Jekyll 자동 빌드 → GitHub Pages 배포
+
+AI가 요약을 생성합니다. 원문 출처는 각 포스트에 표기됩니다.
+
+---
