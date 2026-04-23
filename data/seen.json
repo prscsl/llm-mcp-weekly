@@ -584,6 +584,50 @@
     "036a76cbfdc2cef6": {
       "url": "https://arstechnica.com/ai/2026/04/mozilla-anthropics-mythos-found-271-zero-day-vulnerabilities-in-firefox-150/",
       "first_seen": "2026-04-23"
+    },
+    "85b0ca3c45b5c993": {
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "first_seen": "2026-04-24"
+    },
+    "7c6c91b6b11ca52d": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
+      "first_seen": "2026-04-24"
+    },
+    "54cd8015acf0329e": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.97.0",
+      "first_seen": "2026-04-24"
+    },
+    "9b2b9ca7a553ae3c": {
+      "url": "https://letsdatascience.com/news/claude-desktop-installs-preauthorized-browser-extension-mani-4064fb1a",
+      "first_seen": "2026-04-24"
+    },
+    "39ce0644fc7b2363": {
+      "url": "https://github.com/besimple-oss/broccoli",
+      "first_seen": "2026-04-24"
+    },
+    "2a3fcda1c336c5a6": {
+      "url": "https://charlielabs.ai/",
+      "first_seen": "2026-04-24"
+    },
+    "6db84ae4c270dda6": {
+      "url": "https://simonwillison.net/2026/Apr/23/gpt-5-5/#atom-everything",
+      "first_seen": "2026-04-24"
+    },
+    "1336fec95b3824cd": {
+      "url": "https://simonwillison.net/2026/Apr/23/maggie-appleton/#atom-everything",
+      "first_seen": "2026-04-24"
+    },
+    "7985ad34610713a8": {
+      "url": "https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/",
+      "first_seen": "2026-04-24"
+    },
+    "a88c850c32fe2d02": {
+      "url": "https://www.fastmail.com/blog/an-mcp-server-for-fastmail/",
+      "first_seen": "2026-04-24"
+    },
+    "b930aecbc6cbd322": {
+      "url": "https://www.theregister.com/2026/04/22/anthropic_mythos_hype_nothingburger/",
+      "first_seen": "2026-04-24"
     }
   }
 }
