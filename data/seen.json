@@ -532,6 +532,58 @@
     "373897d12f779670": {
       "url": "https://huggingface.co/blog/cybersecurity-openness",
       "first_seen": "2026-04-22"
+    },
+    "6b9b406af152b506": {
+      "url": "https://bsky.app/profile/edzitron.com/post/3mjzxwfx3qs2a",
+      "first_seen": "2026-04-23"
+    },
+    "45ec04b04df13c6e": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.117",
+      "first_seen": "2026-04-23"
+    },
+    "55b43a105bb8a6c2": {
+      "url": "https://www.wheresyoured.at/news-anthropic-removes-pro-cc/",
+      "first_seen": "2026-04-23"
+    },
+    "1d459c02c65df5ab": {
+      "url": "https://github.com/dchu917/ctx",
+      "first_seen": "2026-04-23"
+    },
+    "c37f793c559c2ed9": {
+      "url": "https://simonwillison.net/2026/Apr/22/qwen36-27b/#atom-everything",
+      "first_seen": "2026-04-23"
+    },
+    "3dbe344b5984c97c": {
+      "url": "https://simonwillison.net/2026/Apr/22/bobby-holley/#atom-everything",
+      "first_seen": "2026-04-23"
+    },
+    "2c96923e2106d91b": {
+      "url": "https://simonwillison.net/2026/Apr/22/changes-to-github-copilot/#atom-everything",
+      "first_seen": "2026-04-23"
+    },
+    "1d8a38f4e5131609": {
+      "url": "https://simonwillison.net/2026/Apr/22/claude-code-confusion/#atom-everything",
+      "first_seen": "2026-04-23"
+    },
+    "b4c8d15aa93e5589": {
+      "url": "https://www.bloomberg.com/news/articles/2026-04-21/anthropic-s-mythos-model-is-being-accessed-by-unauthorized-users",
+      "first_seen": "2026-04-23"
+    },
+    "3c9724ec31a52a51": {
+      "url": "https://www.anthropocenemagazine.org/2025/04/new-study-compares-growing-corn-for-energy-to-solar-production-its-no-contest/",
+      "first_seen": "2026-04-23"
+    },
+    "15ad61048ebe01b8": {
+      "url": "https://huggingface.co/blog/nvidia/gemma4",
+      "first_seen": "2026-04-23"
+    },
+    "b33526a6479e200a": {
+      "url": "https://www.wired.com/story/mozilla-used-anthropics-mythos-to-find-271-bugs-in-firefox/",
+      "first_seen": "2026-04-23"
+    },
+    "036a76cbfdc2cef6": {
+      "url": "https://arstechnica.com/ai/2026/04/mozilla-anthropics-mythos-found-271-zero-day-vulnerabilities-in-firefox-150/",
+      "first_seen": "2026-04-23"
     }
   }
 }
