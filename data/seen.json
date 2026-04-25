@@ -628,6 +628,74 @@
     "b930aecbc6cbd322": {
       "url": "https://www.theregister.com/2026/04/22/anthropic_mythos_hype_nothingburger/",
       "first_seen": "2026-04-24"
+    },
+    "87ee8b56db584fc5": {
+      "url": "https://nickyreinert.de/en/2026/2026-04-24-claude-critics/",
+      "first_seen": "2026-04-25"
+    },
+    "62f95ffa0970da79": {
+      "url": "https://ynarwal.github.io/how-llms-work/",
+      "first_seen": "2026-04-25"
+    },
+    "182b91b96079cd0c": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
+      "first_seen": "2026-04-25"
+    },
+    "6deb1447d1e24109": {
+      "url": "https://github.com/Infisical/agent-vault",
+      "first_seen": "2026-04-25"
+    },
+    "6a72bf5f4e5ac6d8": {
+      "url": "https://github.com/browser-use/browser-harness",
+      "first_seen": "2026-04-25"
+    },
+    "11dc9254567e300b": {
+      "url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+      "first_seen": "2026-04-25"
+    },
+    "173507185225dea0": {
+      "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4/#atom-everything",
+      "first_seen": "2026-04-25"
+    },
+    "900e4e02634ba81b": {
+      "url": "https://simonwillison.net/2026/Apr/24/milliseconds/#atom-everything",
+      "first_seen": "2026-04-25"
+    },
+    "c8852cc459c62d39": {
+      "url": "https://simonwillison.net/2026/Apr/24/weekly/#atom-everything",
+      "first_seen": "2026-04-25"
+    },
+    "a9010abe1031b287": {
+      "url": "https://simonwillison.net/2026/Apr/24/honker/#atom-everything",
+      "first_seen": "2026-04-25"
+    },
+    "3ca7b61b9b38d4ff": {
+      "url": "https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything",
+      "first_seen": "2026-04-25"
+    },
+    "83322eb5a0267198": {
+      "url": "https://simonwillison.net/2026/Apr/24/serving-the-for-you-feed/#atom-everything",
+      "first_seen": "2026-04-25"
+    },
+    "54fc3df44693f387": {
+      "url": "https://simonwillison.net/2026/Apr/23/liteparse-for-the-web/#atom-everything",
+      "first_seen": "2026-04-25"
+    },
+    "05e2420165d7e645": {
+      "url": "https://simonwillison.net/2026/Apr/23/llm-openai-via-codex/#atom-everything",
+      "first_seen": "2026-04-25"
+    },
+    "3d462a37e82b391b": {
+      "url": "https://huggingface.co/blog/deepseekv4",
+      "first_seen": "2026-04-25"
+    },
+    "5f287163e8b72e08": {
+      "url": "https://huggingface.co/blog/transformersjs-chrome-extension",
+      "first_seen": "2026-04-25"
+    },
+    "91b0cb2bd1713c9c": {
+      "url": "https://www.wsj.com/finance/investing/google-expands-anthropic-investment-with-40-billion-commitment-99b4de74",
+      "first_seen": "2026-04-25"
     }
   }
 }
