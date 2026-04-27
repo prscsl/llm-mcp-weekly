@@ -27,6 +27,26 @@ rss:
     weight: 5
     tags: [rag, vector-db]
 
+  - name: Latent Space
+    url: https://www.latent.space/feed
+    weight: 8
+    tags: [llm, mcp, agents]
+
+  - name: Sebastian Raschka
+    url: https://magazine.sebastianraschka.com/feed
+    weight: 7
+    tags: [llm, ml-engineering]
+
+  - name: Lilian Weng
+    url: https://lilianweng.github.io/index.xml
+    weight: 8
+    tags: [llm, agents, research]
+
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss.xml
+    weight: 6
+    tags: [openai, llm]
+
 # GitHub Releases (org/repo)
 github_releases:
   - repo: modelcontextprotocol/servers
@@ -53,6 +73,26 @@ github_releases:
     weight: 10
     tags: [claude-code]
 
+  - repo: block/goose
+    weight: 8
+    tags: [mcp, agent]
+
+  - repo: cline/cline
+    weight: 8
+    tags: [mcp, agent, ide]
+
+  - repo: All-Hands-AI/OpenHands
+    weight: 7
+    tags: [agent, coding]
+
+  - repo: continuedev/continue
+    weight: 7
+    tags: [mcp, agent, ide]
+
+  - repo: langchain-ai/langgraph
+    weight: 6
+    tags: [agent, framework]
+
 # HackerNews Algolia Search API 키워드
 hackernews_keywords:
   - keyword: claude
@@ -67,6 +107,15 @@ hackernews_keywords:
   - keyword: mcp server
     min_points: 15
     weight: 8
+  - keyword: agentic
+    min_points: 50
+    weight: 7
+  - keyword: coding agent
+    min_points: 30
+    weight: 8
+  - keyword: local llm
+    min_points: 100
+    weight: 5
 
 # 수집 정책
 policy:
