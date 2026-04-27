@@ -740,6 +740,122 @@
     "dbab8fd935f60b4e": {
       "url": "https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/#atom-everything",
       "first_seen": "2026-04-26"
+    },
+    "c89c05f892ea8aae": {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/",
+      "first_seen": "2026-04-27"
+    },
+    "f7a5838d6f1d5b80": {
+      "url": "https://www.bleepingcomputer.com/news/security/french-govt-agency-confirms-breach-as-hacker-offers-to-sell-data/",
+      "first_seen": "2026-04-27"
+    },
+    "231b0726c0b9d8b5": {
+      "url": "https://twitter.com/lifeof_jer/status/2048103471019434248",
+      "first_seen": "2026-04-27"
+    },
+    "6f788839d9695550": {
+      "url": "https://zed.dev/blog/parallel-agents",
+      "first_seen": "2026-04-27"
+    },
+    "6cc3406a57783b2d": {
+      "url": "https://github.com/AndrewVos/endless-toil",
+      "first_seen": "2026-04-27"
+    },
+    "3503e292df6fd00d": {
+      "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "first_seen": "2026-04-27"
+    },
+    "84017841f55a3a68": {
+      "url": "https://nial.se/blog/less-human-ai-agents-please/",
+      "first_seen": "2026-04-27"
+    },
+    "ffae7e7bd7089ecb": {
+      "url": "https://zknill.io/posts/all-your-agents-are-going-async/",
+      "first_seen": "2026-04-27"
+    },
+    "6528d4591fb8d173": {
+      "url": "https://www.brex.com/crabtrap",
+      "first_seen": "2026-04-27"
+    },
+    "a3769789d9ed452f": {
+      "url": "https://github.com/superhq-ai/superhq",
+      "first_seen": "2026-04-27"
+    },
+    "b64cc601752041c3": {
+      "url": "https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and",
+      "first_seen": "2026-04-27"
+    },
+    "02f30bda6a56c9a3": {
+      "url": "https://www.latent.space/p/ainews-gpt-55-and-openai-codex-superapp",
+      "first_seen": "2026-04-27"
+    },
+    "a28033b82077f4f8": {
+      "url": "https://www.latent.space/p/unsupervised-learning-2026",
+      "first_seen": "2026-04-27"
+    },
+    "afb716a2daffcda4": {
+      "url": "https://www.latent.space/p/ainews-tasteful-tokenmaxxing",
+      "first_seen": "2026-04-27"
+    },
+    "0135fe82d9bd61d6": {
+      "url": "https://www.latent.space/p/shopify",
+      "first_seen": "2026-04-27"
+    },
+    "3b331ba5626cce52": {
+      "url": "https://www.latent.space/p/ainews-openai-launches-gpt-image",
+      "first_seen": "2026-04-27"
+    },
+    "95a943a002619f61": {
+      "url": "https://www.latent.space/p/ainews-moonshot-kimi-k26-the-worlds",
+      "first_seen": "2026-04-27"
+    },
+    "f8363d42b74365e2": {
+      "url": "https://www.latent.space/p/noetik",
+      "first_seen": "2026-04-27"
+    },
+    "edbd889a7844068f": {
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.32.0",
+      "first_seen": "2026-04-27"
+    },
+    "4849f2f15a1b7ce9": {
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.31.1",
+      "first_seen": "2026-04-27"
+    },
+    "f9c0fd7dd1553fcc": {
+      "url": "https://github.com/cline/cline/releases/tag/v3.81.0",
+      "first_seen": "2026-04-27"
+    },
+    "9ef9ed0d2cab0d11": {
+      "url": "https://github.com/cline/cline/releases/tag/v3.80.0",
+      "first_seen": "2026-04-27"
+    },
+    "d73463983a33b275": {
+      "url": "https://github.com/sachitrafa/YourMemory",
+      "first_seen": "2026-04-27"
+    },
+    "1c072425a29bb408": {
+      "url": "https://arpitbhayani.me/blogs/defensive-databases/",
+      "first_seen": "2026-04-27"
+    },
+    "60dd76f8a4c91ff7": {
+      "url": "https://www.mnot.net/blog/2026/04/24/agents_as_collective_bargains",
+      "first_seen": "2026-04-27"
+    },
+    "f898de43c4d65c0f": {
+      "url": "https://microsoft.github.io/teams-sdk/blog/bring-your-agent-to-teams/",
+      "first_seen": "2026-04-27"
+    },
+    "50c4c145b08b4388": {
+      "url": "https://www.theguardian.com/us-news/2026/apr/22/us-libraries-banned-books",
+      "first_seen": "2026-04-27"
+    },
+    "4477c0d1a028ca5c": {
+      "url": "https://zindex.ai/",
+      "first_seen": "2026-04-27"
+    },
+    "c5d3fe2948643ba0": {
+      "url": "https://github.com/google-labs-code/design.md",
+      "first_seen": "2026-04-27"
     }
   }
 }
