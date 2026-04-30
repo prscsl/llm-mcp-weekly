@@ -856,6 +856,126 @@
     "c5d3fe2948643ba0": {
       "url": "https://github.com/google-labs-code/design.md",
       "first_seen": "2026-04-27"
+    },
+    "ff52c1488d8ab631": {
+      "url": "https://github.com/dirac-run/dirac",
+      "first_seen": "2026-04-28"
+    },
+    "5dbc5d097d96573a": {
+      "url": "https://github.com/evanklem/evanflow",
+      "first_seen": "2026-04-28"
+    },
+    "a4e35c226123689d": {
+      "url": "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/#atom-everything",
+      "first_seen": "2026-04-28"
+    },
+    "6dab30f065ef7986": {
+      "url": "https://simonwillison.net/2026/Apr/27/speech-translation-in-google-meet-is-now-rolling-out-to-mobile-d/#atom-everything",
+      "first_seen": "2026-04-28"
+    },
+    "423bd9b51ad4a151": {
+      "url": "https://github.com/serverless-dna/tendril",
+      "first_seen": "2026-04-28"
+    },
+    "a97b57794a66ff80": {
+      "url": "https://huggingface.co/blog/openai-privacy-filter-web-apps",
+      "first_seen": "2026-04-28"
+    },
+    "414538245782acfe": {
+      "url": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "first_seen": "2026-04-28"
+    },
+    "f9ff221789e0942d": {
+      "url": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "first_seen": "2026-04-28"
+    },
+    "d385c9eee6daddf4": {
+      "url": "https://openai.com/index/choco",
+      "first_seen": "2026-04-28"
+    },
+    "1113ba57f4bdb988": {
+      "url": "https://openai.com/index/our-principles",
+      "first_seen": "2026-04-28"
+    },
+    "a07eb39dec044669": {
+      "url": "https://openai.com/index/gpt-5-5-system-card",
+      "first_seen": "2026-04-28"
+    },
+    "dfe7e0c6ff398140": {
+      "url": "https://openai.com/index/introducing-gpt-5-5",
+      "first_seen": "2026-04-28"
+    },
+    "72f200cf8d8a54af": {
+      "url": "https://openai.com/academy/codex-settings",
+      "first_seen": "2026-04-28"
+    },
+    "0bd514e3244e4be3": {
+      "url": "https://openai.com/academy/codex-how-to-start",
+      "first_seen": "2026-04-28"
+    },
+    "34f009d107cc6ed8": {
+      "url": "https://openai.com/academy/what-is-codex",
+      "first_seen": "2026-04-28"
+    },
+    "9fab69c8c968c73d": {
+      "url": "https://openai.com/academy/codex-automations",
+      "first_seen": "2026-04-28"
+    },
+    "533227aa43914c8e": {
+      "url": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "first_seen": "2026-04-28"
+    },
+    "277cf65bf8c8d0a7": {
+      "url": "https://openai.com/academy/codex-plugins-and-skills",
+      "first_seen": "2026-04-28"
+    },
+    "40d5894d1daf7129": {
+      "url": "https://openai.com/academy/working-with-codex",
+      "first_seen": "2026-04-28"
+    },
+    "d2f04a645a936fa0": {
+      "url": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+      "first_seen": "2026-04-28"
+    },
+    "8cad933a121d8b62": {
+      "url": "https://openai.com/index/making-chatgpt-better-for-clinicians",
+      "first_seen": "2026-04-28"
+    },
+    "469345dd38743a92": {
+      "url": "https://openai.com/academy/workspace-agents",
+      "first_seen": "2026-04-28"
+    },
+    "c71ef79e3212dc88": {
+      "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+      "first_seen": "2026-04-28"
+    },
+    "8f555fe918e1ef56": {
+      "url": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "first_seen": "2026-04-28"
+    },
+    "3efc4342b784ee3a": {
+      "url": "https://openai.com/index/introducing-openai-privacy-filter",
+      "first_seen": "2026-04-28"
+    },
+    "0f697d747d9cd288": {
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-0",
+      "first_seen": "2026-04-28"
+    },
+    "1b257354b88be076": {
+      "url": "https://openai.com/index/scaling-codex-to-enterprises-worldwide",
+      "first_seen": "2026-04-28"
+    },
+    "3ac70e06bf8b0bd0": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.1.10",
+      "first_seen": "2026-04-28"
+    },
+    "b55436f1ac141e17": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.0.12",
+      "first_seen": "2026-04-28"
+    },
+    "bc92111d5f6fbd33": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.0.3",
+      "first_seen": "2026-04-28"
     }
   }
 }
