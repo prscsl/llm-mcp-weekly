@@ -976,6 +976,94 @@
     "bc92111d5f6fbd33": {
       "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.0.3",
       "first_seen": "2026-04-28"
+    },
+    "1b973d78e28a721c": {
+      "url": "https://twitter.com/theo/status/2049645973350363168",
+      "first_seen": "2026-05-01"
+    },
+    "28dac64122484c41": {
+      "url": "https://legallayer.substack.com/p/who-owns-the-claude-code-wrote",
+      "first_seen": "2026-05-01"
+    },
+    "eb80d04116a67ae2": {
+      "url": "https://status.claude.com/incidents/9l93x2ht4s5w",
+      "first_seen": "2026-05-01"
+    },
+    "6ec919580dd84b34": {
+      "url": "https://github.com/anthropics/claude-code/issues/49363",
+      "first_seen": "2026-05-01"
+    },
+    "90d9fdf63df21f07": {
+      "url": "https://github.com/anthropics/claude-code/issues/53262",
+      "first_seen": "2026-05-01"
+    },
+    "55ff6ff1b7c6fb94": {
+      "url": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/",
+      "first_seen": "2026-05-01"
+    },
+    "a79c011f68d9eb10": {
+      "url": "https://www.blender.org/press/anthropic-joins-the-blender-development-fund-as-corporate-patron/",
+      "first_seen": "2026-05-01"
+    },
+    "feacb1c4ff8cc40f": {
+      "url": "https://github.com/trycua/cua",
+      "first_seen": "2026-05-01"
+    },
+    "7dce15731b62c624": {
+      "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+      "first_seen": "2026-05-01"
+    },
+    "0d09ca4576a9d874": {
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-ever-gene-therapy-treatment-genetic-hearing-loss-under-national-priority-voucher",
+      "first_seen": "2026-05-01"
+    },
+    "8330c219eab8f928": {
+      "url": "https://www.anthropic.com/news/claude-for-creative-work",
+      "first_seen": "2026-05-01"
+    },
+    "75b0e300948ac503": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.123",
+      "first_seen": "2026-05-01"
+    },
+    "d5c9c666d4d48983": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.122",
+      "first_seen": "2026-05-01"
+    },
+    "ab2cb8f2132c9acf": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
+      "first_seen": "2026-05-01"
+    },
+    "2b85b703771a92b3": {
+      "url": "https://status.claude.com/incidents/2gf1jpyty350",
+      "first_seen": "2026-05-01"
+    },
+    "a3427553d414208a": {
+      "url": "https://www.maxtaylor.me/articles/i-benchmarked-caveman-against-two-words",
+      "first_seen": "2026-05-01"
+    },
+    "2eca096d8960d627": {
+      "url": "https://support.claude.com/en/articles/11940350-claude-code-model-configuration",
+      "first_seen": "2026-05-01"
+    },
+    "d77a9ef96aa9eb24": {
+      "url": "https://interfaze.ai/blog/introducing-structured-output-benchmark",
+      "first_seen": "2026-05-01"
+    },
+    "f06c19844dde4e6d": {
+      "url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
+      "first_seen": "2026-05-01"
+    },
+    "1574db0710059cc8": {
+      "url": "https://www.augmentcode.com/blog/how-to-write-good-agents-dot-md-files",
+      "first_seen": "2026-05-01"
+    },
+    "2520b13befb652b9": {
+      "url": "https://github.com/hpennington/agentswift",
+      "first_seen": "2026-05-01"
+    },
+    "3327b8f64af7dad2": {
+      "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything",
+      "first_seen": "2026-05-01"
     }
   }
 }
