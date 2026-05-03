@@ -72,6 +72,7 @@ defaults:
 exclude:
   - scripts/
   - data/
+  - docs/
   - .raw/
   - .summarized/
   - .cache/
