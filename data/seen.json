@@ -1172,6 +1172,122 @@
     "16b9b64d93d535a9": {
       "url": "https://simonwillison.net/2026/Apr/29/llm-3/#atom-everything",
       "first_seen": "2026-05-04"
+    },
+    "13622ee3999dc701": {
+      "url": "https://larsfaye.com/articles/agentic-coding-is-a-trap",
+      "first_seen": "2026-05-05"
+    },
+    "0a2389a7127a8116": {
+      "url": "https://github.com/bschoepke/ableton-live-mcp",
+      "first_seen": "2026-05-05"
+    },
+    "99fcb1d4b9113fd8": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.98.0",
+      "first_seen": "2026-05-05"
+    },
+    "87e9c376478d7d6b": {
+      "url": "https://www.space.com/entertainment/space-games/kitten-space-agency-is-the-spiritual-successor-to-kerbal-space-program-and-they-have-an-ex-spacex-engineer-on-the-team-interview",
+      "first_seen": "2026-05-05"
+    },
+    "398b9f083cf0bcd3": {
+      "url": "https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything",
+      "first_seen": "2026-05-05"
+    },
+    "ac0eb875a27d5deb": {
+      "url": "https://simonwillison.net/2026/May/4/redis-array/#atom-everything",
+      "first_seen": "2026-05-05"
+    },
+    "9285d6a73cec4149": {
+      "url": "https://simonwillison.net/2026/Apr/29/llm/#atom-everything",
+      "first_seen": "2026-05-05"
+    },
+    "e1e105aa0ed92c24": {
+      "url": "https://simonwillison.net/2026/Apr/29/llm-2/#atom-everything",
+      "first_seen": "2026-05-05"
+    },
+    "b200fc08cb865f20": {
+      "url": "https://simonwillison.net/2026/Apr/28/openai-codex/#atom-everything",
+      "first_seen": "2026-05-05"
+    },
+    "bc974bbb4f1a1973": {
+      "url": "https://simonwillison.net/2026/Apr/28/matthew-yglesias/#atom-everything",
+      "first_seen": "2026-05-05"
+    },
+    "afbaac3fcc8a2327": {
+      "url": "https://simonwillison.net/2026/Apr/28/pip-261/#atom-everything",
+      "first_seen": "2026-05-05"
+    },
+    "a79eeb4c6ea1c7f8": {
+      "url": "https://simonwillison.net/2026/Apr/28/talkie/#atom-everything",
+      "first_seen": "2026-05-05"
+    },
+    "f4439c23d866ca2b": {
+      "url": "https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch",
+      "first_seen": "2026-05-05"
+    },
+    "02b49d0cfa67c74a": {
+      "url": "https://www.latent.space/p/ainews-agents-for-everything-else",
+      "first_seen": "2026-05-05"
+    },
+    "381f203051596d3a": {
+      "url": "https://www.latent.space/p/ainews-the-inference-inflection",
+      "first_seen": "2026-05-05"
+    },
+    "6ecb048a5f87258b": {
+      "url": "https://www.latent.space/p/ainews-not-much-happened-today",
+      "first_seen": "2026-05-05"
+    },
+    "df213f7580ce3019": {
+      "url": "https://www.latent.space/p/ainews-imagegen-is-on-the-path-to",
+      "first_seen": "2026-05-05"
+    },
+    "b32c19cc4071bffb": {
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.33.1",
+      "first_seen": "2026-05-05"
+    },
+    "d4c632c98cc2a32f": {
+      "url": "https://github.com/cline/cline/releases/tag/v3.82.0",
+      "first_seen": "2026-05-05"
+    },
+    "028b7dea31f3415f": {
+      "url": "https://snewpapers.com/",
+      "first_seen": "2026-05-05"
+    },
+    "2154c9cbce5ae629": {
+      "url": "https://lovable.dev/blog/hunting-networking-bugs-in-kubernetes",
+      "first_seen": "2026-05-05"
+    },
+    "3abb033c7a0c8cc0": {
+      "url": "https://github.com/kanwas-ai/kanwas",
+      "first_seen": "2026-05-05"
+    },
+    "a2b6ad1b32ced51f": {
+      "url": "https://www.theregister.com/2026/05/02/local_ai_coding_agents/",
+      "first_seen": "2026-05-05"
+    },
+    "565ca109c9e02f51": {
+      "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+      "first_seen": "2026-05-05"
+    },
+    "3fdfbee0f4329f1f": {
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "first_seen": "2026-05-05"
+    },
+    "82356b62524ebed4": {
+      "url": "https://huggingface.co/blog/inference-providers-deepinfra",
+      "first_seen": "2026-05-05"
+    },
+    "39c0a1c4f9c26195": {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "first_seen": "2026-05-05"
+    },
+    "3981195c8e69d6a0": {
+      "url": "https://github.com/OpenHands/OpenHands/releases/tag/1.7.0",
+      "first_seen": "2026-05-05"
+    },
+    "a490488ead80444a": {
+      "url": "https://code.claude.com/docs/en/champion-kit",
+      "first_seen": "2026-05-05"
     }
   }
 }
