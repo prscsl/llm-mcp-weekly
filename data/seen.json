@@ -1288,6 +1288,118 @@
     "a490488ead80444a": {
       "url": "https://code.claude.com/docs/en/champion-kit",
       "first_seen": "2026-05-05"
+    },
+    "9fb6d64d7116a613": {
+      "url": "https://addyosmani.com/blog/agent-skills/",
+      "first_seen": "2026-05-06"
+    },
+    "c773bd02338fb83d": {
+      "url": "https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html",
+      "first_seen": "2026-05-06"
+    },
+    "17b283933fa5a94b": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.128",
+      "first_seen": "2026-05-06"
+    },
+    "8147e5470addb193": {
+      "url": "https://www.anthropic.com/news/finance-agents",
+      "first_seen": "2026-05-06"
+    },
+    "e3e4d861b71b9ceb": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.99.0",
+      "first_seen": "2026-05-06"
+    },
+    "ce0f5b68018fe8d7": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.98.1",
+      "first_seen": "2026-05-06"
+    },
+    "31d1fa1a3d40d339": {
+      "url": "https://arxiv.org/abs/2604.26752",
+      "first_seen": "2026-05-06"
+    },
+    "e3667d49dc363deb": {
+      "url": "https://simonwillison.net/2026/May/5/our-ai-started-a-cafe-in-stockholm/#atom-everything",
+      "first_seen": "2026-05-06"
+    },
+    "6786076f2f232d68": {
+      "url": "https://simonwillison.net/2026/May/5/datasette-llm/#atom-everything",
+      "first_seen": "2026-05-06"
+    },
+    "cc242aee1b48b5c1": {
+      "url": "https://simonwillison.net/2026/May/5/llm-echo/#atom-everything",
+      "first_seen": "2026-05-06"
+    },
+    "e246958d7aa5b07c": {
+      "url": "https://simonwillison.net/2026/May/5/john-gruber/#atom-everything",
+      "first_seen": "2026-05-06"
+    },
+    "9e2378534e2ce27c": {
+      "url": "https://simonwillison.net/2026/May/4/granite-41-3b-svg-pelican-gallery/#atom-everything",
+      "first_seen": "2026-05-06"
+    },
+    "bf7b7e0f90f7ff6d": {
+      "url": "https://simonwillison.net/2026/May/4/andy-masley/#atom-everything",
+      "first_seen": "2026-05-06"
+    },
+    "b28a49081af9a8c0": {
+      "url": "https://simonwillison.net/2026/May/4/april-newsletter/#atom-everything",
+      "first_seen": "2026-05-06"
+    },
+    "383ae57e1162c2b8": {
+      "url": "https://www.latent.space/p/lupsasca",
+      "first_seen": "2026-05-06"
+    },
+    "6f8c09997ee6da2b": {
+      "url": "https://www.latent.space/p/ainews-the-other-vs-the-utility",
+      "first_seen": "2026-05-06"
+    },
+    "3bbc92d9c76ebc83": {
+      "url": "https://openai.com/index/gpt-5-5-instant-system-card",
+      "first_seen": "2026-05-06"
+    },
+    "01a8b52eee8198f5": {
+      "url": "https://openai.com/index/gpt-5-5-instant",
+      "first_seen": "2026-05-06"
+    },
+    "08792e01b9a92ec8": {
+      "url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads",
+      "first_seen": "2026-05-06"
+    },
+    "2b843178b595da18": {
+      "url": "https://openai.com/index/openai-pwc-finance-collaboration",
+      "first_seen": "2026-05-06"
+    },
+    "5c3d93bd7160f244": {
+      "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+      "first_seen": "2026-05-06"
+    },
+    "b0caa1ec27246092": {
+      "url": "https://openai.com/index/advanced-account-security",
+      "first_seen": "2026-05-06"
+    },
+    "8b7276cd935e3184": {
+      "url": "https://openai.com/index/where-the-goblins-came-from",
+      "first_seen": "2026-05-06"
+    },
+    "6b8c46a3e355b778": {
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "first_seen": "2026-05-06"
+    },
+    "180302e63d71fe71": {
+      "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "first_seen": "2026-05-06"
+    },
+    "a24fd3a383ac1799": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.3.14",
+      "first_seen": "2026-05-06"
+    },
+    "64a0b13dcae0a20c": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.0a1",
+      "first_seen": "2026-05-06"
+    },
+    "a530f695dc81ba8a": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a7",
+      "first_seen": "2026-05-06"
     }
   }
 }
