@@ -1,5 +1,29 @@
+# 상단 네비게이션
 main:
   - title: "홈"
     url: /llm-mcp-weekly/
+  - title: "태그"
+    url: /llm-mcp-weekly/tags/
+  - title: "발행 기록"
+    url: /llm-mcp-weekly/year-archive/
   - title: "About"
     url: /llm-mcp-weekly/about/
+
+# 사이드바 — 콘텐츠 둘러보기 목차
+docs:
+  - title: "둘러보기"
+    children:
+      - title: "🏠 홈"
+        url: /llm-mcp-weekly/
+      - title: "🔖 태그 모아보기"
+        url: /llm-mcp-weekly/tags/
+      - title: "📅 발행 기록"
+        url: /llm-mcp-weekly/year-archive/
+      - title: "🗂 카테고리"
+        url: /llm-mcp-weekly/categories/
+  - title: "사이트"
+    children:
+      - title: "ℹ️ 사이트 소개"
+        url: /llm-mcp-weekly/about/
+      - title: "📰 RSS 구독"
+        url: /llm-mcp-weekly/feed.xml

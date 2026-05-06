@@ -37,14 +37,18 @@ plugins:
 paginate: 10
 paginate_path: "/page:num/"
 
-# Author
-author:
-  name: "prscsl"
-  bio: "데이터 파이프라인 엔지니어. Claude Code·MCP 실무 사용자."
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/prscsl"
+# 검색 (lunr 정적 인덱스 — 무료, 페이지 내 검색)
+search: true
+search_full_content: true
+search_provider: lunr
+
+# 카테고리·태그 아카이브 (Liquid 기반 — github-pages 호환)
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 # 포스트/페이지 기본값
 defaults:
@@ -53,7 +57,9 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
+      sidebar:
+        nav: "docs"
       read_time: true
       share: false
       related: true
@@ -67,6 +73,12 @@ defaults:
     values:
       layout: single
       author_profile: false
+      sidebar:
+        nav: "docs"
+
+# Jekyll 빌드 포함
+include:
+  - _pages
 
 # 빌드 제외
 exclude:
