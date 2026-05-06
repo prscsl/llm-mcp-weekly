@@ -12,6 +12,7 @@ tags: [agi, ai-에이전트, ai안전, ai윤리, ai코딩, ai코딩도구, ai코
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (5)
+{: .cat-section .cat-release}
 
 #### OpenAI Symphony: 이슈 트래커를 AI 에이전트 시스템으로 바꾸는 오픈소스 오케스트레이션 스펙
 
@@ -44,6 +45,7 @@ LangGraph의 체크포인트 라이브러리 4.0.3이 릴리스되었다. 핵심
 [원문 보기 →](https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.0.3) (GitHub: langchain-ai/langgraph)
 
 ### 튜토리얼 / 가이드 (7)
+{: .cat-section .cat-tutorial}
 
 #### OpenAI Codex 시작 가이드: 프로젝트 설정부터 첫 태스크까지
 
@@ -88,6 +90,7 @@ OpenAI가 Responses API에 WebSocket 연결과 커넥션 범위 캐싱을 도입
 [원문 보기 →](https://openai.com/index/speeding-up-agentic-workflows-with-websockets) (OpenAI Blog)
 
 ### 업계 뉴스 (4)
+{: .cat-section .cat-news}
 
 #### Google Meet 실시간 음성 번역, 모바일로 확대
 
@@ -114,15 +117,10 @@ OpenAI가 Codex Labs를 새롭게 출범하고 Accenture, PwC, Infosys 등 글�
 [원문 보기 →](https://openai.com/index/scaling-codex-to-enterprises-worldwide) (OpenAI Blog)
 
 ### 의견 / 분석 (1)
+{: .cat-section .cat-opinion}
 
 #### OpenAI, AGI 개발 5대 원칙 공개
 
 OpenAI CEO 샘 알트먼이 조직의 AGI 개발을 이끄는 다섯 가지 핵심 원칙을 공식 발표했다. 이 원칙들은 AGI가 전 인류에게 혜택을 줄 수 있도록 하겠다는 미션 아래, 안전성·투명성·책임감 등 OpenAI의 방향성을 구체화한 내용이다. 한국 개발자 입장에서는 OpenAI API 정책이나 모델 출시 기조에 이 원칙이 어떻게 반영될지 주시할 필요가 있다.
 
 [원문 보기 →](https://openai.com/index/our-principles) (OpenAI Blog)
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

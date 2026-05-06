@@ -12,6 +12,7 @@ tags: [ai규제, ai보안, ai에이전트, anthropic, claude, hugging face, llm-
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (2)
+{: .cat-section .cat-release}
 
 #### Waypoint-1.5: 일반 GPU에서 실시간 인터랙티브 3D 월드 생성
 
@@ -26,6 +27,7 @@ Sentence Transformers v5.4가 멀티모달 임베딩과 리랭커를 공식 지�
 [원문 보기 →](https://huggingface.co/blog/multimodal-sentence-transformers) (Hugging Face Blog)
 
 ### 도구 / 라이브러리 (1)
+{: .cat-section .cat-tool}
 
 #### 망각·통합·모순 감지 기능을 갖춘 LLM 메모리 DB MCP 서버
 
@@ -36,6 +38,7 @@ LLM 에이전트의 장기 기억을 관리하기 위해 설계된 메모리 데
 [원문 보기 →](https://github.com/yantrikos/yantrikdb-server) (HN (mcp server))
 
 ### 업계 뉴스 (2)
+{: .cat-section .cat-news}
 
 #### Safetensors, PyTorch Foundation 합류로 커뮤니티 표준 포맷 본격화
 
@@ -52,6 +55,7 @@ Hugging Face가 개발한 안전한 모델 가중치 저장 포맷 Safetensors�
 [원문 보기 →](https://www.reuters.com/world/us-court-declines-block-pentagons-anthropic-blacklisting-now-2026-04-08/) (HN (anthropic))
 
 ### 연구 / 논문 (1)
+{: .cat-section .cat-research}
 
 #### ALTK-Evolve: AI 에이전트에 장기 기억을 부여하는 IBM의 온더잡 학습 프레임워크
 
@@ -60,6 +64,7 @@ IBM Research가 AI 에이전트의 '영원한 인턴' 문제를 해결하기 위
 [원문 보기 →](https://huggingface.co/blog/ibm-research/altk-evolve) (Hugging Face Blog)
 
 ### 의견 / 분석 (1)
+{: .cat-section .cat-opinion}
 
 #### Anthropic의 Claude 보안 취약점 발견 주장, 과장 논란
 
@@ -68,9 +73,3 @@ Anthropic이 Claude가 수천 건의 심각한 제로데이 취약점을 발견�
 > HN 44점 · [토론 보기](https://news.ycombinator.com/item?id=47718155)
 
 [원문 보기 →](https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-claude-mythos-isnt-a-sentient-super-hacker-its-a-sales-pitch-claims-of-thousands-of-severe-zero-days-rely-on-just-198-manual-reviews) (HN (anthropic))
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

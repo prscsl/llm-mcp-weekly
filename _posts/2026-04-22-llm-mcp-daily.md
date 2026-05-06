@@ -12,6 +12,7 @@ tags: [ai gateway, ai거버넌스, ai보안, ai설계, ai에이전트, ai윤리,
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (3)
+{: .cat-section .cat-release}
 
 #### Claude Code v2.1.116: 세션 재개 속도 67% 향상 및 보안 패치
 
@@ -32,6 +33,7 @@ Simon Willison의 llm-openrouter 플러그인 0.6 버전이 출시되어 `llm op
 [원문 보기 →](https://simonwillison.net/2026/Apr/20/llm-openrouter/#atom-everything) (Simon Willison)
 
 ### 도구 / 라이브러리 (1)
+{: .cat-section .cat-tool}
 
 #### Go로 구현한 오픈소스 AI 게이트웨이 GoModel 공개
 
@@ -42,6 +44,7 @@ GoModel은 여러 LLM 프로바이더를 단일 엔드포인트로 통합 관리
 [원문 보기 →](https://github.com/ENTERPILOT/GOModel/) (HN (anthropic))
 
 ### 업계 뉴스 (4)
+{: .cat-section .cat-news}
 
 #### NSA, 블랙리스트에도 Anthropic Mythos AI 도입 논란
 
@@ -76,6 +79,7 @@ Anthropic이 아마존으로부터 50억 달러 규모의 추가 투자를 받�
 [원문 보기 →](https://www.thatprivacyguy.com/blog/anthropic-spyware/) (HN (anthropic))
 
 ### 연구 / 논문 (2)
+{: .cat-section .cat-research}
 
 #### 아랍어 LLM 품질 평가 리더보드 QIMMA 공개
 
@@ -90,6 +94,7 @@ NVIDIA가 한국통계청 등 공공 데이터를 확률 그래프 모델(PGM)�
 [원문 보기 →](https://huggingface.co/blog/nvidia/build-korean-agents-with-nemotron-personas) (Hugging Face Blog)
 
 ### 의견 / 분석 (3)
+{: .cat-section .cat-opinion}
 
 #### AI 에이전트가 너무 인간적인 게 문제다
 
@@ -108,9 +113,3 @@ GitHub 프로젝트 'pelicans_riding_bicycles'는 '자전거 탄 펠리컨'이�
 AI 기반 공격 도구가 확산되는 환경에서 폐쇄형 보안 시스템은 오히려 취약점을 내부에 은닉하는 구조적 문제를 안고 있다. Hugging Face는 오픈소스 모델과 투명한 에이전트 스캐폴딩이 방어자에게 공격자와 동등한 수준의 AI 역량을 제공하며, 완전 자율이 아닌 인간 개입이 가능한 반자율형 설계를 권장한다. 한국 보안 개발자 입장에서는 내부 인프라에서 직접 운용 가능한 오픈 LLM 기반 취약점 탐지 파이프라인 구축의 현실적 근거로 활용할 수 있다.
 
 [원문 보기 →](https://huggingface.co/blog/cybersecurity-openness) (Hugging Face Blog)
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

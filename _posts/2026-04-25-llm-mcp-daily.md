@@ -12,6 +12,7 @@ tags: [agent-security, agentic engineering, ai투자, anthropic, at protocol, bl
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (3)
+{: .cat-section .cat-release}
 
 #### Claude Code v2.1.119: 설정 영속화·멀티 Git 플랫폼·훅 개선
 
@@ -32,6 +33,7 @@ Simon Willison이 공개한 llm-openai-via-codex 0.1a0은 OpenAI Codex CLI의 �
 [원문 보기 →](https://simonwillison.net/2026/Apr/23/llm-openai-via-codex/#atom-everything) (Simon Willison)
 
 ### 도구 / 라이브러리 (5)
+{: .cat-section .cat-tool}
 
 #### Agent Vault — AI 에이전트용 오픈소스 자격증명 프록시
 
@@ -68,6 +70,7 @@ LlamaIndex의 오픈소스 PDF 파싱 도구 LiteParse가 브라우저 환경에
 [원문 보기 →](https://simonwillison.net/2026/Apr/23/liteparse-for-the-web/#atom-everything) (Simon Willison)
 
 ### 튜토리얼 / 가이드 (2)
+{: .cat-section .cat-tutorial}
 
 #### LLM 작동 원리를 시각적으로 익히는 인터랙티브 가이드
 
@@ -84,6 +87,7 @@ Hugging Face의 Transformers.js 라이브러리를 활용해 크롬 확장 프�
 [원문 보기 →](https://huggingface.co/blog/transformersjs-chrome-extension) (Hugging Face Blog)
 
 ### 업계 뉴스 (5)
+{: .cat-section .cat-news}
 
 #### Google, Anthropic에 최대 400억 달러 투자 결정
 
@@ -120,6 +124,7 @@ Bluesky의 오픈 피드 프로토콜을 활용해 개인이 운영하는 'For Y
 [원문 보기 →](https://www.wsj.com/finance/investing/google-expands-anthropic-investment-with-40-billion-commitment-99b4de74) (HN (anthropic))
 
 ### 의견 / 분석 (1)
+{: .cat-section .cat-opinion}
 
 #### Claude 구독 해지기: 토큰 제한·품질 저하·지원 부재 비판
 
@@ -128,9 +133,3 @@ Bluesky의 오픈 피드 프로토콜을 활용해 개인이 운영하는 'For Y
 > HN 632점 · [토론 보기](https://news.ycombinator.com/item?id=47892019)
 
 [원문 보기 →](https://nickyreinert.de/en/2026/2026-04-24-claude-critics/) (HN (claude))
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

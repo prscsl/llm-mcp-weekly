@@ -12,6 +12,7 @@ tags: [ai 코딩, ai 코딩 도구, ai보안, ai에이전트, ai코드분석, ai
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (2)
+{: .cat-section .cat-release}
 
 #### Claude Code v2.1.117 주요 변경 사항 정리
 
@@ -26,6 +27,7 @@ Qwen이 27B 파라미터 Dense 모델인 Qwen3.6-27B를 공개했습니다. 기�
 [원문 보기 →](https://simonwillison.net/2026/Apr/22/qwen36-27b/#atom-everything) (Simon Willison)
 
 ### 도구 / 라이브러리 (1)
+{: .cat-section .cat-tool}
 
 #### Claude Code·Codex 세션 간 컨텍스트를 유지하는 ctx 도구 공개
 
@@ -36,6 +38,7 @@ ctx는 AI 코딩 도우미 세션이 종료되어도 작업 컨텍스트를 /res
 [원문 보기 →](https://github.com/dchu917/ctx) (HN (claude))
 
 ### 튜토리얼 / 가이드 (1)
+{: .cat-section .cat-tutorial}
 
 #### Jetson Orin Nano에서 Gemma 4 VLA 에이전트 구동 시연
 
@@ -44,6 +47,7 @@ NVIDIA가 Jetson Orin Nano Super(8GB) 엣지 보드에서 Google의 Gemma 4 기�
 [원문 보기 →](https://huggingface.co/blog/nvidia/gemma4) (Hugging Face Blog)
 
 ### 업계 뉴스 (10)
+{: .cat-section .cat-news}
 
 #### Claude Code, Anthropic Pro 플랜에서 제외될 가능성
 
@@ -120,6 +124,7 @@ Mozilla가 Anthropic의 자동화 도구를 활용해 Firefox 코드베이스에
 [원문 보기 →](https://www.wired.com/story/mozilla-used-anthropics-mythos-to-find-271-bugs-in-firefox/) (HN (anthropic))
 
 ### 연구 / 논문 (2)
+{: .cat-section .cat-research}
 
 #### 옥수수 바이오연료 vs 태양광, 에너지 효율 비교 연구 결과
 
@@ -136,9 +141,3 @@ Anthropic의 AI 시스템 'Mythos'가 Firefox 150 코드베이스를 분석해 2
 > HN 32점 · [토론 보기](https://news.ycombinator.com/item?id=47855384)
 
 [원문 보기 →](https://arstechnica.com/ai/2026/04/mozilla-anthropics-mythos-found-271-zero-day-vulnerabilities-in-firefox-150/) (HN (anthropic))
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

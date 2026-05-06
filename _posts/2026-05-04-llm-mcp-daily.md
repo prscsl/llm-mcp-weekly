@@ -12,6 +12,7 @@ tags: [ai 비용, ai-agent, ai-안전성, ai-에이전트, ai-윤리, ai-의식,
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (3)
+{: .cat-section .cat-release}
 
 #### Claude Code v2.1.126: 게이트웨이 모델 목록, 프로젝트 상태 초기화 등
 
@@ -32,6 +33,7 @@ Simon Willison의 LLM CLI 도구가 0.32a1 알파 버전을 릴리스했다. 이
 [원문 보기 →](https://simonwillison.net/2026/Apr/29/llm-3/#atom-everything) (Simon Willison)
 
 ### 도구 / 라이브러리 (14)
+{: .cat-section .cat-tool}
 
 #### WhatCable: USB-C 케이블 스펙을 메뉴바에서 바로 확인하는 macOS 앱
 
@@ -144,6 +146,7 @@ Simon Willison이 캠핑 중 스마트폰에서 Claude Code만으로 iNaturalist
 [원문 보기 →](https://simonwillison.net/2026/May/1/inat-sightings/#atom-everything) (Simon Willison)
 
 ### 업계 뉴스 (6)
+{: .cat-section .cat-news}
 
 #### Uber, Claude Code 도입 후 2026년 AI 예산 4개월 만에 소진
 
@@ -190,6 +193,7 @@ Zig 프로젝트는 이슈, PR, 버그 트래커 코멘트 등 모든 기여에�
 [원문 보기 →](https://simonwillison.net/2026/Apr/30/zig-anti-ai/#atom-everything) (Simon Willison)
 
 ### 연구 / 논문 (2)
+{: .cat-section .cat-research}
 
 #### Anthropic 연구: Claude의 아첨 행동 분석과 영역별 차이
 
@@ -204,6 +208,7 @@ Anthropic이 Claude의 아첨(sycophancy) 행동을 자동 분류기로 측정�
 [원문 보기 →](https://simonwillison.net/2026/Apr/30/gpt-55-cyber-capabilities/#atom-everything) (Simon Willison)
 
 ### 의견 / 분석 (5)
+{: .cat-section .cat-opinion}
 
 #### AI 에이전트 시대, 30년간 유지한 코딩 몰입 루틴이 깨지다
 
@@ -242,9 +247,3 @@ AI 에이전트 시스템에서 오케스트레이션 로직(하네스)과 실�
 Zig 언어 창시자 Andrew Kelley가 LLM 기반 PR을 식별하고 거부하는 정책의 근거를 설명했다. 인간의 실수와 LLM 환각은 본질적으로 다르며, 에이전틱 코딩에 익숙한 기여자에게는 비흡연자가 흡연자를 알아채듯 특유의 '디지털 냄새'가 난다는 것이다. 한국 오픈소스 기여자라면 프로젝트별 AI 사용 정책을 반드시 확인하고, LLM 출력을 그대로 제출하지 않는 습관이 점점 중요해지고 있다.
 
 [원문 보기 →](https://simonwillison.net/2026/Apr/30/andrew-kelley/#atom-everything) (Simon Willison)
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

@@ -12,6 +12,7 @@ tags: [agent framework, agent-workflow, agentic-coding, ai 투자, ai-agent, ai-
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (10)
+{: .cat-section .cat-release}
 
 #### Claude Code v2.1.128: MCP 서버 관리·플러그인 ZIP 지원 등 개선
 
@@ -74,6 +75,7 @@ LangGraph 1.2.0a7 프리릴리스에서 체크포인트 저장소의 쓰기 이�
 [원문 보기 →](https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a7) (GitHub: langchain-ai/langgraph)
 
 ### 업계 뉴스 (11)
+{: .cat-section .cat-news}
 
 #### Anthropic, 금융·보험 분야 AI 에이전트 활용 가이드 공개
 
@@ -146,6 +148,7 @@ OpenAI가 Stargate 프로젝트를 본격 확장하며 AGI 구현에 필요한 �
 [원문 보기 →](https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age) (OpenAI Blog)
 
 ### 연구 / 논문 (2)
+{: .cat-section .cat-research}
 
 #### GLM-5V-Turbo: 멀티모달 에이전트 전용 기반 모델 연구
 
@@ -162,6 +165,7 @@ OpenAI의 Alex Lupsasca가 GPT-5.x 모델을 활용해 이론물리학과 양자
 [원문 보기 →](https://www.latent.space/p/lupsasca) (Latent Space)
 
 ### 의견 / 분석 (6)
+{: .cat-section .cat-opinion}
 
 #### AI 에이전트 스킬 설계 패턴과 실전 구현 전략
 
@@ -204,9 +208,3 @@ AI 어시스턴트를 단순 유틸리티(Clippy형)로 설계할지, 독립적 
 OpenAI가 AI 기반 사이버 방어를 민주화하고 핵심 인프라를 보호하기 위한 5가지 행동 계획을 제시했다. 이 계획은 AI 도구를 활용한 방어 역량 강화, 위협 탐지 자동화, 그리고 보안 생태계 전반의 협력을 골자로 한다. 국내 기업에서도 AI 보안 도구 도입이 가속화되는 만큼, 방어 측면에서 LLM 활용 전략을 점검해볼 시점이다.
 
 [원문 보기 →](https://openai.com/index/cybersecurity-in-the-intelligence-age) (OpenAI Blog)
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

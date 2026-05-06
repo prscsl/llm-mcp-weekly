@@ -12,6 +12,7 @@ tags: [ai브라우저, ai윤리, ai책임성, claude code, cli 도구, cli도구
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (5)
+{: .cat-section .cat-release}
 
 #### Claude Code v2.1.109: 확장 사고 표시 UX 개선
 
@@ -44,6 +45,7 @@ HCompany가 Hugging Face 블로그를 통해 브라우저용 AI 동반자 'HoloT
 [원문 보기 →](https://huggingface.co/blog/Hcompany/holotab) (Hugging Face Blog)
 
 ### 연구 / 논문 (1)
+{: .cat-section .cat-research}
 
 #### VAKRA 벤치마크로 본 에이전트 추론·도구 사용·실패 패턴 분석
 
@@ -52,15 +54,10 @@ IBM Research가 공개한 VAKRA 벤치마크 분석 글로, LLM 에이전트가 
 [원문 보기 →](https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis) (Hugging Face Blog)
 
 ### 의견 / 분석 (1)
+{: .cat-section .cat-opinion}
 
 #### AI 시스템의 '총알받이' 직무 등장 가능성 — Kyle Kingsbury
 
 Kyle Kingsbury는 ML 시스템이 확산되면서 그 결정에 대한 책임을 대신 짊어지는 '미트 실드(meat shield)' 역할의 직무가 늘어날 것이라고 전망합니다. Meta의 자동 모더레이션 검토자, 법정에 LLM 허위 정보를 제출해 처벌받는 변호사, 데이터 보호 책임자(DPO), 외부 하청업체 등이 그 예시로 제시됩니다. 한국 개발자 관점에서는 AI 도입 시 책임 소재와 검증 프로세스 설계가 단순 기술 문제가 아닌 조직·법무 이슈로 확장된다는 점을 시사합니다.
 
 [원문 보기 →](https://simonwillison.net/2026/Apr/15/kyle-kingsbury/#atom-everything) (Simon Willison)
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

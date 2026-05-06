@@ -12,6 +12,7 @@ tags: [ai, ai 자동화, ai-에이전트, ai투자, anthropic, chatgpt, claude c
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (1)
+{: .cat-section .cat-release}
 
 #### LLM CLI 0.31 릴리스 — GPT-5.5 지원 및 새 옵션 추가
 
@@ -20,6 +21,7 @@ Simon Willison의 LLM CLI 도구가 0.31로 업데이트되며 GPT-5.5 모델을
 [원문 보기 →](https://simonwillison.net/2026/Apr/24/llm/#atom-everything) (Simon Willison)
 
 ### 도구 / 라이브러리 (3)
+{: .cat-section .cat-tool}
 
 #### Wuphf: AI 에이전트가 자동 관리하는 Markdown+Git 기반 LLM 위키
 
@@ -46,6 +48,7 @@ Atomic은 데이터를 로컬에 저장하면서 AI를 활용해 메모와 지�
 [원문 보기 →](https://atomicapp.ai/) (HN (mcp server))
 
 ### 튜토리얼 / 가이드 (2)
+{: .cat-section .cat-tutorial}
 
 #### Claude Code 루틴으로 개인 재무 모니터링 자동화하기
 
@@ -62,6 +65,7 @@ OpenAI가 GPT-5.5 API 출시와 함께 새 모델에 최적화된 프롬프팅 �
 [원문 보기 →](https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything) (Simon Willison)
 
 ### 업계 뉴스 (4)
+{: .cat-section .cat-news}
 
 #### Google, Anthropic에 최대 400억 달러 투자 계획 발표
 
@@ -92,15 +96,10 @@ Bloomberg 보도에 따르면 Google이 Anthropic에 최대 400억 달러(약 55
 [원문 보기 →](https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic) (HN (anthropic))
 
 ### 의견 / 분석 (1)
+{: .cat-section .cat-opinion}
 
 #### AI 자동화에 대한 대중의 반감, '소프트웨어 뇌'의 한계
 
 Nilay Patel은 ChatGPT 사용량은 급증하지만 AI에 대한 대중 인식은 왜 부정적인지 분석한다. 그는 모든 것을 데이터와 자동화로 환원하려는 '소프트웨어 뇌' 사고방식이 인간 경험을 평면화하며, 일반 사용자는 코드 작성 기회를 기회로 인식하지 않는다고 지적한다. 개발자로서 기술 효용에 몰입하기 쉽지만, 실제 사용자가 원하는 가치와 자동화 사이의 간극을 인식하는 것이 제품 설계의 핵심이다.
 
 [원문 보기 →](https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/#atom-everything) (Simon Willison)
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

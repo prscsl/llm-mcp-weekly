@@ -12,6 +12,7 @@ tags: [ai거버넌스, ai에이전트, ai전략, anthropic, api, claude, claude-
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (3)
+{: .cat-section .cat-release}
 
 #### Claude Code v2.1.118: vim 모드·테마·MCP 훅 연동 등 대규모 업데이트
 
@@ -34,6 +35,7 @@ Fastmail이 자사 이메일 서비스와 연동되는 공식 MCP 서버를 공�
 [원문 보기 →](https://www.fastmail.com/blog/an-mcp-server-for-fastmail/) (HN (mcp server))
 
 ### 도구 / 라이브러리 (2)
+{: .cat-section .cat-tool}
 
 #### Broccoli: 클라우드 기반 원샷 코딩 에이전트 오픈소스
 
@@ -52,6 +54,7 @@ Broccoli는 클라우드 환경에서 동작하는 원샷 코딩 에이전트로
 [원문 보기 →](https://charlielabs.ai/) (HN (claude))
 
 ### 업계 뉴스 (4)
+{: .cat-section .cat-news}
 
 #### Anthropic, Claude Code 품질 저하 원인 공식 분석 발표
 
@@ -84,6 +87,7 @@ Anthropic의 Claude 데스크톱 앱이 설치 시 별도 안내 없이 브라�
 [원문 보기 →](https://letsdatascience.com/news/claude-desktop-installs-preauthorized-browser-extension-mani-4064fb1a) (HN (anthropic))
 
 ### 의견 / 분석 (3)
+{: .cat-section .cat-opinion}
 
 #### 공개 학습이 가져다주는 예상치 못한 기회들
 
@@ -106,9 +110,3 @@ Anthropic이 준비 중인 'Mythos' 프로젝트가 초기 기대와 달리 실�
 > HN 37점 · [토론 보기](https://news.ycombinator.com/item?id=47873433)
 
 [원문 보기 →](https://www.theregister.com/2026/04/22/anthropic_mythos_hype_nothingburger/) (HN (anthropic))
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

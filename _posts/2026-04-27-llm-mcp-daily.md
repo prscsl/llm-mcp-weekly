@@ -12,6 +12,7 @@ tags: [agent-security, agentic, agentic-ai, ai agent, ai 인프라, ai-agent, ai
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (8)
+{: .cat-section .cat-release}
 
 #### Zed 에디터, 병렬 AI 에이전트 기능 도입
 
@@ -66,6 +67,7 @@ VS Code AI 코딩 에이전트 Cline이 v3.80.0에서 엔터프라이즈 원격 
 [원문 보기 →](https://github.com/cline/cline/releases/tag/v3.80.0) (GitHub: cline/cline)
 
 ### 도구 / 라이브러리 (7)
+{: .cat-section .cat-tool}
 
 #### Endless Toil: AI 에이전트가 코드를 읽을 때 고통을 들려주는 도구
 
@@ -124,6 +126,7 @@ Google Labs에서 공개한 Design.md는 프로젝트의 시각적 아이덴티�
 [원문 보기 →](https://github.com/google-labs-code/design.md) (HN (coding agent))
 
 ### 튜토리얼 / 가이드 (1)
+{: .cat-section .cat-tutorial}
 
 #### Microsoft Teams SDK로 AI 에이전트 통합하기 — 공식 가이드
 
@@ -134,6 +137,7 @@ Microsoft가 Teams SDK를 활용해 외부 AI 에이전트를 Microsoft Teams에
 [원문 보기 →](https://microsoft.github.io/teams-sdk/blog/bring-your-agent-to-teams/) (HN (agentic))
 
 ### 업계 뉴스 (5)
+{: .cat-section .cat-news}
 
 #### 구글 8세대 TPU 공개: 에이전틱 AI 시대 겨냥한 듀얼 칩 아키텍처
 
@@ -172,6 +176,7 @@ OpenAI가 GPT-Image-2를 출시하며 이미지 생성 역량을 한 단계 끌�
 [원문 보기 →](https://www.latent.space/p/ainews-openai-launches-gpt-image) (Latent Space)
 
 ### 연구 / 논문 (1)
+{: .cat-section .cat-research}
 
 #### 암 임상시험 95% 실패율, Transformer 모델로 해결 시도하는 Noetik
 
@@ -180,6 +185,7 @@ OpenAI가 GPT-Image-2를 출시하며 이미지 생성 역량을 한 단계 끌�
 [원문 보기 →](https://www.latent.space/p/noetik) (Latent Space)
 
 ### 의견 / 분석 (5)
+{: .cat-section .cat-opinion}
 
 #### AI 에이전트, 굳이 사람처럼 행동할 필요 없다
 
@@ -216,9 +222,3 @@ AI 업계가 비교적 조용한 하루를 보낸 가운데, 주요 AI 리더들
 > HN 60점 · [토론 보기](https://news.ycombinator.com/item?id=47902339)
 
 [원문 보기 →](https://www.mnot.net/blog/2026/04/24/agents_as_collective_bargains) (HN (agentic))
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

@@ -12,6 +12,7 @@ tags: [ai디자인툴, anthropic, claude, cli, datasette, figma, google apps scr
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 도구 / 라이브러리 (3)
+{: .cat-section .cat-tool}
 
 #### Claude 토큰 카운터, 모델별 비교 기능 추가
 
@@ -36,6 +37,7 @@ Simon Willison이 Claude 토큰 카운터 도구를 업데이트해 여러 모�
 [원문 보기 →](https://simonwillison.net/2026/Apr/20/claude-token-counts/#atom-everything) (Simon Willison)
 
 ### 튜토리얼 / 가이드 (1)
+{: .cat-section .cat-tutorial}
 
 #### Datasette 데이터를 Google Sheets로 가져오는 세 가지 방법
 
@@ -44,6 +46,7 @@ Datasette 인스턴스의 데이터를 Google Sheets에서 직접 조회하는 �
 [원문 보기 →](https://simonwillison.net/2026/Apr/20/datasette-sql/#atom-everything) (Simon Willison)
 
 ### 업계 뉴스 (1)
+{: .cat-section .cat-news}
 
 #### Anthropic Claude Design 등장으로 Figma의 위기 가중
 
@@ -52,9 +55,3 @@ Anthropic이 Claude 기반 디자인 도구를 선보이면서 Figma가 기존�
 > HN 75점 · [토론 보기](https://news.ycombinator.com/item?id=47832366)
 
 [원문 보기 →](https://martinalderson.com/posts/figmas-woes-compound-with-claude-design/) (HN (claude))
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

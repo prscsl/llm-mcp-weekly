@@ -12,6 +12,7 @@ tags: [ai, ai-에이전트, ai투자, anthropic, api-first, claude, claude code,
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (2)
+{: .cat-section .cat-release}
 
 #### Claude Code v2.1.114: 에이전트 팀 권한 대화상자 크래시 수정
 
@@ -26,6 +27,7 @@ Claude Code가 기존 번들 JavaScript 대신 플랫폼별 네이티브 바이�
 [원문 보기 →](https://github.com/anthropics/claude-code/releases/tag/v2.1.113) (GitHub: anthropics/claude-code)
 
 ### 도구 / 라이브러리 (1)
+{: .cat-section .cat-tool}
 
 #### AI Subroutines: 브라우저 작업을 녹화해 토큰 비용 없이 반복 실행하는 자동화 도구
 
@@ -36,6 +38,7 @@ Claude Code가 기존 번들 JavaScript 대신 플랫폼별 네이티브 바이�
 [원문 보기 →](https://www.rtrvr.ai/blog/ai-subroutines-zero-token-deterministic-automation) (HN (mcp server))
 
 ### 튜토리얼 / 가이드 (1)
+{: .cat-section .cat-tutorial}
 
 #### 짧은 프롬프트 하나로 블로그 뉴스레터 도구에 새 콘텐츠 유형 추가하기
 
@@ -44,6 +47,7 @@ Simon Willison이 자신의 블로그-뉴스레터 변환 도구에 'beats'라�
 [원문 보기 →](https://simonwillison.net/guides/agentic-engineering-patterns/adding-a-new-content-type/#atom-everything) (Simon Willison)
 
 ### 업계 뉴스 (2)
+{: .cat-section .cat-news}
 
 #### PyCon US 2026, AI·보안 전용 트랙 신설 — 5월 Long Beach 개최
 
@@ -60,6 +64,7 @@ Uber가 AI 도입에 약 34억 달러(약 4.7조 원)를 투입했음에도, CTO
 [원문 보기 →](https://finance.yahoo.com/sectors/technology/articles/ubers-anthropic-ai-push-hits-223109852.html) (HN (anthropic))
 
 ### 연구 / 논문 (1)
+{: .cat-section .cat-research}
 
 #### Claude 시스템 프롬프트 변경 이력을 Git 타임라인으로 추적하기
 
@@ -68,6 +73,7 @@ Anthropic이 공개하는 Claude 채팅용 시스템 프롬프트를 모델별·
 [원문 보기 →](https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything) (Simon Willison)
 
 ### 의견 / 분석 (2)
+{: .cat-section .cat-opinion}
 
 #### Headless 서비스 시대: AI 에이전트가 UI 대신 API를 쓰는 미래
 
@@ -82,9 +88,3 @@ API나 서버의 요청 처리량(request rate)을 표현할 때 'requests per s
 > HN 80점 · [토론 보기](https://news.ycombinator.com/item?id=47790337)
 
 [원문 보기 →](https://entropicthoughts.com/si-units-for-request-rate) (HN (anthropic))
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

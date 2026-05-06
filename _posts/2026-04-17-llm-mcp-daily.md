@@ -12,6 +12,7 @@ tags: [ai 에이전트, ai 코딩 도구, anthropic, anthropic sdk, api 비용, 
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (11)
+{: .cat-section .cat-release}
 
 #### Anthropic, Claude Opus 4.7 공개 — 최신 플래그십 모델 업데이트
 
@@ -88,6 +89,7 @@ Datasette 최신 알파 버전에서 두 가지 핵심 변경이 이루어졌다
 [원문 보기 →](https://simonwillison.net/2026/Apr/15/datasette/#atom-everything) (Simon Willison)
 
 ### 도구 / 라이브러리 (4)
+{: .cat-section .cat-tool}
 
 #### CodeBurn: Claude Code 토큰 사용량을 작업별로 분석하는 도구
 
@@ -118,6 +120,7 @@ Hugging Face와 MLX 팀이 Transformers 모델을 Apple MLX 프레임워크용 m
 [원문 보기 →](https://huggingface.co/blog/transformers-to-mlx) (Hugging Face Blog)
 
 ### 튜토리얼 / 가이드 (1)
+{: .cat-section .cat-tutorial}
 
 #### Sentence Transformers로 멀티모달 임베딩·리랭커 학습하기
 
@@ -126,6 +129,7 @@ Sentence Transformers 라이브러리에 텍스트·이미지·오디오·비디
 [원문 보기 →](https://huggingface.co/blog/train-multimodal-sentence-transformers) (Hugging Face Blog)
 
 ### 업계 뉴스 (4)
+{: .cat-section .cat-news}
 
 #### Claude API·Claude Code 대규모 오류 발생, 서비스 장애 현황
 
@@ -160,6 +164,7 @@ Anthropic이 Claude 사용 시 특정 상황에서 본인 인증(identity verifi
 [원문 보기 →](https://www.technologyreview.com/2026/04/16/1135179/anthropogenic-noise-hurting-animals/) (HN (anthropic))
 
 ### 의견 / 분석 (2)
+{: .cat-section .cat-opinion}
 
 #### Claude Code의 보이지 않는 토큰 소모 문제 분석
 
@@ -174,9 +179,3 @@ Claude Code 사용 시 사용자에게 보이지 않는 시스템 프롬프트, 
 Simon Willison이 자신의 비공식 벤치마크인 '자전거 타는 펠리컨 그리기'로 알리바바의 Qwen3.6-35B-A3B와 Anthropic Claude Opus 4.7을 비교했다. Unsloth가 양자화한 20.9GB GGUF 모델을 MacBook Pro M5에서 LM Studio로 구동한 결과, Qwen 모델이 자전거 프레임 형태와 펠리컨 묘사 등에서 더 정확한 SVG를 생성했다. 로컬 실행 가능한 소형 MoE 모델이 최신 클라우드 모델과 코드 생성 품질에서 경쟁할 수 있음을 보여주는 흥미로운 사례다.
 
 [원문 보기 →](https://simonwillison.net/2026/Apr/16/qwen-beats-opus/#atom-everything) (Simon Willison)
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

@@ -12,6 +12,7 @@ tags: [ai-에이전트, ai정책, anthropic, bugfix, claude code, datasette, llm
 Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.
 
 ### 릴리스 소식 (1)
+{: .cat-section .cat-release}
 
 #### Datasette 1.0a28 — 알파27 호환성 버그 긴급 수정
 
@@ -20,6 +21,7 @@ Datasette 1.0a27에서 발생한 execute_write_fn() 콜백 파라미터명 호�
 [원문 보기 →](https://simonwillison.net/2026/Apr/17/datasette/#atom-everything) (Simon Willison)
 
 ### 도구 / 라이브러리 (2)
+{: .cat-section .cat-tool}
 
 #### Claude Code로 SPICE 시뮬레이션부터 오실로스코프 검증까지 자동화
 
@@ -38,6 +40,7 @@ SPICE 회로 시뮬레이션 결과를 실제 오실로스코프(LeCroy)로 측�
 [원문 보기 →](https://lucasgerads.com/blog/lecroy-mcp-spice-demo/) (HN (mcp server))
 
 ### 업계 뉴스 (1)
+{: .cat-section .cat-news}
 
 #### 미 백악관, 연방기관에 Anthropic Mythos 모델 접근권 부여
 
@@ -48,6 +51,7 @@ SPICE 회로 시뮬레이션 결과를 실제 오실로스코프(LeCroy)로 측�
 [원문 보기 →](https://www.reuters.com/technology/white-house-give-us-agencies-anthropic-mythos-access-bloomberg-news-reports-2026-04-16/) (HN (anthropic))
 
 ### 연구 / 논문 (3)
+{: .cat-section .cat-research}
 
 #### Anthropic Mythos 연구를 공개 모델로 재현한 보안 실험 결과
 
@@ -68,9 +72,3 @@ NVIDIA가 합성 데이터 파이프라인으로 학습한 다국어 OCR 모델 
 이커머스 챗봇이 자연스럽게 대화는 하지만 실제 장바구니 담기, 교환·반품 처리 같은 복잡한 작업은 제대로 수행하지 못하는 문제를 해결하기 위해, 8가지 쇼핑 시나리오별 검증 환경과 12축 난이도 커리큘럼을 갖춘 강화학습 프레임워크가 공개되었다. LLM 평가자 없이 코드로 보상을 산출하며, 상품 검색·변형 선택·수량 정확도·환각 여부를 자동 검증한다. 커머스 AI를 개발하는 한국 팀이라면, SFT만으로는 커버하기 어려운 멀티턴 트랜잭션 정확도를 RL로 끌어올리는 구체적 방법론으로 참고할 만하다.
 
 [원문 보기 →](https://huggingface.co/blog/ecom-rlve) (Hugging Face Blog)
-
----
-
-*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. 
-각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. 
-오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*

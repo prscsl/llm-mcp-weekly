@@ -1400,6 +1400,118 @@
     "a530f695dc81ba8a": {
       "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a7",
       "first_seen": "2026-05-06"
+    },
+    "f53c308cf32bbf51": {
+      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "first_seen": "2026-05-07"
+    },
+    "abd69fd3ad92b4e9": {
+      "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "first_seen": "2026-05-07"
+    },
+    "ee8256ae646bab00": {
+      "url": "https://www.thetypicalset.com/blog/thoughts-on-coding-agents",
+      "first_seen": "2026-05-07"
+    },
+    "904bf452d767ff12": {
+      "url": "https://blog.cloudflare.com/agents-stripe-projects/",
+      "first_seen": "2026-05-07"
+    },
+    "f3588de3466656d5": {
+      "url": "https://letsdatascience.com/news/telus-uses-ai-to-alter-call-agent-accents-a3868f63",
+      "first_seen": "2026-05-07"
+    },
+    "ec0f7b1a93559f33": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
+      "first_seen": "2026-05-07"
+    },
+    "ea829df687a833e9": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.131",
+      "first_seen": "2026-05-07"
+    },
+    "42bbe516a0dca0e5": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
+      "first_seen": "2026-05-07"
+    },
+    "527ad81121417bee": {
+      "url": "https://academy.dair.ai/blog/wiki-builder-claude-code-plugin",
+      "first_seen": "2026-05-07"
+    },
+    "a04d5f1e43a12cc7": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.100.0",
+      "first_seen": "2026-05-07"
+    },
+    "740be3689f2599bd": {
+      "url": "https://tilde.run/",
+      "first_seen": "2026-05-07"
+    },
+    "bbb4f250c21dbb1f": {
+      "url": "https://simonwillison.net/2026/May/6/code-w-claude-2026/#atom-everything",
+      "first_seen": "2026-05-07"
+    },
+    "b4a37e868793364a": {
+      "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/#atom-everything",
+      "first_seen": "2026-05-07"
+    },
+    "da773fbd4b4acb1d": {
+      "url": "https://simonwillison.net/2026/May/5/datasette-referrer-policy/#atom-everything",
+      "first_seen": "2026-05-07"
+    },
+    "7ad65b28e2acf9ba": {
+      "url": "https://www.latent.space/p/ainews-silicon-valley-gets-serious",
+      "first_seen": "2026-05-07"
+    },
+    "463b01d5793bbfd3": {
+      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+      "first_seen": "2026-05-07"
+    },
+    "9bcec59458e97e4d": {
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+      "first_seen": "2026-05-07"
+    },
+    "3517c62741332334": {
+      "url": "https://twitter.com/xai/status/2052060350770515978",
+      "first_seen": "2026-05-07"
+    },
+    "0001057cafdd5edc": {
+      "url": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026",
+      "first_seen": "2026-05-07"
+    },
+    "f9a6fe3e0b32193c": {
+      "url": "https://openai.com/index/singular-bank",
+      "first_seen": "2026-05-07"
+    },
+    "57a55fcb205568a6": {
+      "url": "https://openai.com/index/introducing-b2b-signals",
+      "first_seen": "2026-05-07"
+    },
+    "0ef58dbb67f9059c": {
+      "url": "https://openai.com/index/uber",
+      "first_seen": "2026-05-07"
+    },
+    "a2a811b50a4c64f5": {
+      "url": "https://openai.com/index/mrc-supercomputer-networking",
+      "first_seen": "2026-05-07"
+    },
+    "50926d57919ad8e5": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.0a4",
+      "first_seen": "2026-05-07"
+    },
+    "2fbcd6895ab2a70e": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.1.0a4",
+      "first_seen": "2026-05-07"
+    },
+    "7038e5a8f4dd627e": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a5",
+      "first_seen": "2026-05-07"
+    },
+    "dc56382b71a36452": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a4",
+      "first_seen": "2026-05-07"
+    },
+    "ff68c9f6d30afe22": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a3",
+      "first_seen": "2026-05-07"
     }
   }
 }
