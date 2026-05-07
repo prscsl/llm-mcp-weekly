@@ -27,3 +27,11 @@ docs:
         url: /llm-mcp-weekly/about/
       - title: "📰 RSS 구독"
         url: /llm-mcp-weekly/feed.xml
+  - title: "정책"
+    children:
+      - title: "🔒 개인정보 처리 방침"
+        url: /llm-mcp-weekly/privacy/
+      - title: "✏️ 정정 정책"
+        url: /llm-mcp-weekly/corrections/
+      - title: "📢 광고 정책"
+        url: /llm-mcp-weekly/ads-policy/
