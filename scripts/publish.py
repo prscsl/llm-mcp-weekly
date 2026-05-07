@@ -80,19 +80,12 @@ def render_post(date: str, items: list[dict]) -> str:
         if cat not in by_cat:
             continue
         body.append(f"### {CATEGORY_LABELS[cat]} ({len(by_cat[cat])})")
+        body.append("{: .cat-section .cat-" + cat + "}")
         body.append("")
         for item in by_cat[cat]:
             body.append(render_item(item))
 
-    footer = [
-        "---",
-        "",
-        "*본 포스트는 Claude Haiku 4.5로 자동 큐레이션·요약되었습니다. ",
-        "각 항목의 저작권은 원저작자에게 있으며, 본 사이트는 한국어 요약과 원문 링크만 제공합니다. ",
-        "오류·문의는 [이슈](https://github.com/prscsl/llm-mcp-weekly/issues)로 남겨주세요.*",
-        "",
-    ]
-    return "\n".join(front + body + footer)
+    return "\n".join(front + body)
 
 
 def main() -> int:

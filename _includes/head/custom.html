@@ -1,0 +1,34 @@
+<!-- Pretendard 웹폰트 (한글 가독성 우선) -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+  media="print"
+  onload="this.media='all'"
+>
+<noscript>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+  >
+</noscript>
+
+<!-- 다크/라이트 테마: FOUC 방지를 위해 head에서 즉시 적용 (localStorage > 시스템 설정) -->
+<script>
+(function () {
+  try {
+    var key = 'lmw-theme';
+    var saved = localStorage.getItem(key);
+    var prefersDark =
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved === 'dark' || saved === 'light'
+      ? saved
+      : (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) {}
+})();
+</script>
+
+<!-- 테마 토글 버튼 마운트 (defer로 본문 후 실행) -->
+<script defer src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
