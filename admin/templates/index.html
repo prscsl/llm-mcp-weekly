@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>llm-mcp-weekly admin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+  :root {
+    --bg: #f6f7fa;
+    --card: #ffffff;
+    --fg: #1f2533;
+    --fg-muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #4f46e5;
+    --ok: #1e7a3e;
+    --warn: #a55c0e;
+    --error: #b6123a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171f;
+      --card: #1d2129;
+      --fg: #d8dce5;
+      --fg-muted: #8b93a3;
+      --border: #2e323b;
+      --accent: #8aa4ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    word-break: keep-all;
+  }
+  header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 1.1rem 1.6rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  header h1 { margin: 0; font-size: 1.15rem; font-weight: 700; }
+  header .meta { color: var(--fg-muted); font-size: 0.85rem; }
+  header .badge {
+    margin-left: auto;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .badge--ok { background: rgba(30, 122, 62, 0.12); color: var(--ok); }
+  .badge--err { background: rgba(182, 18, 58, 0.12); color: var(--error); }
+  main {
+    max-width: 920px;
+    margin: 1.4rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 1.2rem;
+  }
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2rem 1.4rem;
+  }
+  section.card h2 {
+    margin: 0 0 0.8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .flash {
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .flash--ok    { background: rgba(30, 122, 62, 0.10); color: var(--ok); }
+  .flash--info  { background: rgba(79, 70, 229, 0.10); color: var(--accent); }
+  .flash--error { background: rgba(182, 18, 58, 0.10); color: var(--error); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  th, td { padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--border); text-align: left; }
+  th { color: var(--fg-muted); font-weight: 600; font-size: 0.82rem; }
+  tr:last-child td { border-bottom: none; }
+  form.inline { display: inline; }
+  input[type=text], input[type=time], select {
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--fg);
+    padding: 0.45rem 0.7rem;
+    border-radius: 6px;
+    font: inherit;
+    min-width: 7rem;
+  }
+  button {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--fg);
+    padding: 0.45rem 0.9rem;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button.primary:hover { filter: brightness(1.1); }
+  button.danger { color: var(--error); }
+  button.danger:hover { border-color: var(--error); background: rgba(182, 18, 58, 0.06); }
+  .row { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; }
+  .muted { color: var(--fg-muted); font-size: 0.85rem; }
+  pre {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    max-height: 22rem;
+    overflow: auto;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    margin: 0;
+    font-family: "JetBrains Mono", "D2Coding", SFMono-Regular, Menlo, monospace;
+  }
+  ul.posts { padding-left: 1rem; margin: 0; }
+  ul.posts li { margin: 0.15rem 0; font-size: 0.92rem; }
+  .pid-pill {
+    display: inline-block;
+    margin-right: 0.35rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background: rgba(79, 70, 229, 0.12);
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+  details summary {
+    cursor: pointer;
+    user-select: none;
+    padding: 0.25rem 0;
+    font-size: 0.88rem;
+    color: var(--fg-muted);
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>llm-mcp-weekly · admin</h1>
+  <span class="meta">{{ now }} KST</span>
+  <span class="badge {{ 'badge--ok' if launchd_loaded else 'badge--err' }}">
+    launchd: {{ '로드됨' if launchd_loaded else '미로드' }}
+  </span>
+</header>
+
+<main>
+
+{% if flash %}
+<div class="flash flash--{{ flash_kind }}">{{ flash }}</div>
+{% endif %}
+
+<section class="card">
+  <h2>발행 시간 슬롯 (StartCalendarInterval)</h2>
+  {% if schedule %}
+  <table>
+    <thead><tr><th style="width:30%">시각 (KST)</th><th>비고</th><th style="width:1%"></th></tr></thead>
+    <tbody>
+    {% for slot in schedule %}
+      {% set hhmm = '%02d:%02d'|format(slot.hour, slot.minute) %}
+      <tr>
+        <td><strong>{{ hhmm }}</strong></td>
+        <td class="muted">매일 이 시각에 자동 실행</td>
+        <td>
+          <form class="inline" method="post" action="{{ url_for('schedule_delete') }}"
+                onsubmit="return confirm('{{ hhmm }} 슬롯을 삭제할까요?')">
+            <input type="hidden" name="index" value="{{ loop.index0 }}">
+            <button type="submit" class="danger"
+                    {% if schedule|length <= 1 %}disabled title="마지막 슬롯은 삭제 불가"{% endif %}>
+              삭제
+            </button>
+          </form>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <p class="muted">등록된 시간 슬롯이 없습니다.</p>
+  {% endif %}
+
+  <form method="post" action="{{ url_for('schedule_add') }}" style="margin-top: 0.9rem;">
+    <div class="row">
+      <input type="time" name="time" required value="06:00" step="60">
+      <button type="submit" class="primary">시간 슬롯 추가</button>
+      <span class="muted">변경 시 launchd 자동 재로드</span>
+    </div>
+  </form>
+
+  <details style="margin-top: 0.7rem;">
+    <summary>plist 경로 / 수동 reload</summary>
+    <p class="muted" style="margin: 0.4rem 0 0.6rem;">활성: <code>{{ plist_user }}</code></p>
+    <form method="post" action="{{ url_for('reload_launchd') }}">
+      <button type="submit">launchctl unload + load 다시 실행</button>
+    </form>
+  </details>
+</section>
+
+<section class="card">
+  <h2>수동 실행</h2>
+  {% if running %}
+    <p>현재 실행 중:</p>
+    <p>
+      {% for pid, cmd in running %}
+        <span class="pid-pill">PID {{ pid }}</span><span class="muted">{{ cmd }}</span><br>
+      {% endfor %}
+    </p>
+    <form method="post" action="{{ url_for('kill_now') }}"
+          onsubmit="return confirm('실행 중인 파이프라인을 SIGTERM으로 종료할까요?')">
+      <button type="submit" class="danger">실행 중 process 종료 (SIGTERM)</button>
+    </form>
+  {% else %}
+    <p class="muted">현재 실행 중인 파이프라인이 없습니다.</p>
+    <form method="post" action="{{ url_for('run_now') }}"
+          onsubmit="return confirm('지금 collect → summarize → publish → push 파이프라인을 실행할까요?')">
+      <button type="submit" class="primary">지금 수동 발행 실행</button>
+    </form>
+  {% endif %}
+  {% if manual_log_exists %}
+  <p class="muted" style="margin-top: 0.6rem;">
+    수동 실행 로그: <a href="{{ url_for('manual_log_view') }}">/manual-log</a>
+  </p>
+  {% endif %}
+</section>
+
+<section class="card">
+  <h2>최근 발행 이력</h2>
+  {% if last_run.date %}
+    <p class="muted">최근 로그: <strong>{{ last_run.date }}</strong> — {{ last_run.last_line or '(빈 로그)' }}</p>
+  {% else %}
+    <p class="muted">로그 기록이 없습니다.</p>
+  {% endif %}
+  <ul class="posts">
+    {% for name in recent %}<li>{{ name }}</li>{% endfor %}
+    {% if not recent %}<li class="muted">_posts에 발행물이 없습니다.</li>{% endif %}
+  </ul>
+</section>
+
+<section class="card">
+  <h2>로그 뷰어</h2>
+  <form method="get" action="{{ url_for('index') }}" class="row" style="margin-bottom: 0.6rem;">
+    <label for="log_date" class="muted">날짜:</label>
+    <select id="log_date" name="log_date" onchange="this.form.submit()">
+      {% for d in log_dates %}
+        <option value="{{ d }}" {% if d == selected_log_date %}selected{% endif %}>{{ d }}</option>
+      {% endfor %}
+      {% if not log_dates %}<option disabled>로그 없음</option>{% endif %}
+    </select>
+    <noscript><button type="submit">불러오기</button></noscript>
+  </form>
+  {% if log_body %}
+    <pre>{{ log_body }}</pre>
+  {% else %}
+    <p class="muted">선택한 날짜의 로그가 비어있거나 존재하지 않습니다.</p>
+  {% endif %}
+</section>
+
+</main>
+</body>
+</html>

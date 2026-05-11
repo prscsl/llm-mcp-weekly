@@ -85,6 +85,7 @@ exclude:
   - scripts/
   - data/
   - docs/
+  - admin/
   - .raw/
   - .summarized/
   - .cache/

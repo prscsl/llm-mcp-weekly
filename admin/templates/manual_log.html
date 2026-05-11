@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>수동 실행 로그 — llm-mcp-weekly admin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+  :root {
+    --bg: #f6f7fa;
+    --card: #ffffff;
+    --fg: #1f2533;
+    --fg-muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #4f46e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171f;
+      --card: #1d2129;
+      --fg: #d8dce5;
+      --fg-muted: #8b93a3;
+      --border: #2e323b;
+      --accent: #8aa4ff;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    line-height: 1.55;
+  }
+  header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 1.6rem;
+  }
+  header a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  main { padding: 1.2rem 1.6rem; }
+  pre {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    font-family: "JetBrains Mono", "D2Coding", SFMono-Regular, Menlo, monospace;
+    overflow: auto;
+    max-height: 80vh;
+    margin: 0;
+  }
+  .muted { color: var(--fg-muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <a href="{{ url_for('index') }}">← 대시보드로 돌아가기</a>
+</header>
+<main>
+  <p class="muted">파일: <code>{{ path }}</code> (마지막 ~20KB)</p>
+  <pre>{{ body }}</pre>
+</main>
+</body>
+</html>

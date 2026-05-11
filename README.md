@@ -121,6 +121,30 @@ launchctl unload ~/Library/LaunchAgents/com.prscsl.llm-mcp-weekly.daily.plist
 
 **Mac sleep 대응**: `pmset` 또는 시스템 환경설정 → 에너지 절약자 → "예약된 시간에 켜기"로 매일 05:55 wake 설정 권장.
 
+## 관리자 페이지 (admin)
+
+launchd 시간 슬롯·수동 발행·로그를 브라우저에서 조작하는 로컬 전용 관리 UI.
+
+```bash
+# 의존성 (최초 1회)
+/Users/prscsl/.pyenv/versions/3.10.12/bin/pip install -r requirements.txt
+
+# 실행
+/Users/prscsl/.pyenv/versions/3.10.12/bin/python3 admin/server.py
+# → http://127.0.0.1:7800
+```
+
+기능:
+- **시간 슬롯 관리** — `StartCalendarInterval` 추가/삭제. 변경 시 `launchctl unload/load` 자동.
+- **수동 실행** — `run_daily.sh`를 background로 트리거. 실행 중인 process 종료(SIGTERM)도 지원.
+- **로그 뷰어** — `logs/YYYY-MM-DD.log` 일자 선택 표시.
+- **상태 대시보드** — launchd 등록 여부, 최근 발행 이력, 현재 실행 중 PID.
+
+보안:
+- 바인딩은 `127.0.0.1`(localhost)만. 외부 IP 접근은 403.
+- 인증 없음 — Mac에 로그인한 사용자만 접근 가능한 모델.
+- `admin/` 디렉토리는 Jekyll 빌드에서 제외(`_config.yml`의 `exclude`).
+
 ## Windows 이전 가이드 (개인 노트북)
 
 macOS launchd와 등가인 Windows Task Scheduler 버전이 `scripts/*.ps1`에 포함되어 있습니다.

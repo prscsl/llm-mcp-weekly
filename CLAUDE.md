@@ -22,6 +22,9 @@ llm-mcp-weekly/
 │   ├── publish.py          ← 마크다운 포스트 생성 → _posts/
 │   ├── run_daily.sh        ← launchd가 호출하는 진입점 (zsh)
 │   └── com.prscsl.llm-mcp-weekly.daily.plist  ← LaunchAgent plist 원본
+├── admin/                  ← 로컬 관리 UI (Flask, 127.0.0.1:7800)
+│   ├── server.py           ← plist read/write + launchctl + 수동 trigger
+│   └── templates/          ← index.html, manual_log.html
 ├── data/
 │   ├── sources.yml         ← 수집 소스 정의 (RSS / GitHub / HN)
 │   └── seen.json           ← 중복 방지용 수집 이력
@@ -95,9 +98,18 @@ cat /tmp/llm-mcp-weekly.stderr.log
 - `github_releases`: repo(org/repo), weight, tags
 - `hn`: query(검색어), weight, tags
 
+## 관리자 페이지 (admin/)
+
+- 실행: `/Users/prscsl/.pyenv/versions/3.10.12/bin/python3 admin/server.py` → http://127.0.0.1:7800
+- 기능: 시간 슬롯 추가/삭제(plist 자동 갱신 + launchctl reload), 수동 발행, process 종료, 로그 뷰어
+- `admin/`은 `_config.yml`의 `exclude`에 추가되어 Jekyll 빌드 산출물에 포함되지 않음
+- plist 두 사본(`~/Library/LaunchAgents/...` 활성 + `scripts/...` 저장소)을 동시 갱신
+- 외부 IP 접근은 403 — 로컬 사용자 전용
+
 ## 알려진 주의사항
 
 - `_config.yml`의 `logo:`, `og_image:` 값에 `/llm-mcp-weekly/` 접두어 붙이지 말 것 → 이중 경로 404
 - `_layouts/post.html`에서 `{{ content }}` 삭제 시 모든 포스트 본문 사라짐
-- LaunchAgent는 로그인 세션(Aqua)에서만 동작 — Mac이 06:00 이전에 로그인 상태여야 실행됨
+- LaunchAgent는 로그인 세션(Aqua)에서만 동작 — Mac이 정시 이전에 로그인 상태여야 실행됨
 - launchd는 놓친 일정을 소급 실행하지 않음 → 수동: `launchctl start com.prscsl.llm-mcp-weekly.daily`
+- collect.py가 외부 host 무응답에 hang하면 launchd 슬롯을 점유해 다음 트리거가 막힘 — admin에서 process 종료 후 재시도
