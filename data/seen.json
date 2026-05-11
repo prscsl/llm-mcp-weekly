@@ -1616,6 +1616,66 @@
     "73318f2b589098cd": {
       "url": "https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr",
       "first_seen": "2026-05-11"
+    },
+    "1cad32c447f9131e": {
+      "url": "https://ahk.cardor.dev",
+      "first_seen": "2026-05-11"
+    },
+    "ad87ab2f75834cf1": {
+      "url": "https://github.com/darkrishabh/agent-skills-eval",
+      "first_seen": "2026-05-11"
+    },
+    "f61b5bf954252c84": {
+      "url": "https://github.com/ReviewStage/stage-cli",
+      "first_seen": "2026-05-11"
+    },
+    "7c90eb1585b830e0": {
+      "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck",
+      "first_seen": "2026-05-11"
+    },
+    "2eaaedaf0247c01d": {
+      "url": "https://huggingface.co/blog/allenai/emo",
+      "first_seen": "2026-05-11"
+    },
+    "66be1220771465af": {
+      "url": "https://openai.com/index/running-codex-safely",
+      "first_seen": "2026-05-11"
+    },
+    "a505eac8f113b659": {
+      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+      "first_seen": "2026-05-11"
+    },
+    "fa002821b90d7a82": {
+      "url": "https://openai.com/index/parloa",
+      "first_seen": "2026-05-11"
+    },
+    "24a3c172de484200": {
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+      "first_seen": "2026-05-11"
+    },
+    "b19ec562c455e753": {
+      "url": "https://openai.com/index/testing-ads-in-chatgpt",
+      "first_seen": "2026-05-11"
+    },
+    "a6fcbba288389a6b": {
+      "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt",
+      "first_seen": "2026-05-11"
+    },
+    "a04d57070e9b202e": {
+      "url": "https://openai.com/index/simplex",
+      "first_seen": "2026-05-11"
+    },
+    "ca7758ca2a2c3977": {
+      "url": "https://openai.com/index/how-chatgpt-protects-privacy",
+      "first_seen": "2026-05-11"
+    },
+    "2de76809a5988efa": {
+      "url": "https://openai.com/index/advancing-youth-safety-in-emea",
+      "first_seen": "2026-05-11"
+    },
+    "24a87e7ddbb4a108": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.25",
+      "first_seen": "2026-05-11"
     }
   }
 }
