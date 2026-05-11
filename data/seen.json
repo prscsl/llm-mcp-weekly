@@ -1676,6 +1676,46 @@
     "24a87e7ddbb4a108": {
       "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.25",
       "first_seen": "2026-05-11"
+    },
+    "0d2f371076435ee5": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "first_seen": "2026-05-12"
+    },
+    "dc58823d23671020": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.101.0",
+      "first_seen": "2026-05-12"
+    },
+    "1a4ad3d48a105311": {
+      "url": "https://simonwillison.net/2026/May/11/james-shore/#atom-everything",
+      "first_seen": "2026-05-12"
+    },
+    "86964fb98bdd7e8e": {
+      "url": "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything",
+      "first_seen": "2026-05-12"
+    },
+    "3ee4cc623426e867": {
+      "url": "https://simonwillison.net/2026/May/11/llm-shebang/#atom-everything",
+      "first_seen": "2026-05-12"
+    },
+    "b6be045d33aaf60f": {
+      "url": "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/#atom-everything",
+      "first_seen": "2026-05-12"
+    },
+    "05d042dc5905ba44": {
+      "url": "https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything",
+      "first_seen": "2026-05-12"
+    },
+    "2a6999bc8c1adf45": {
+      "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+      "first_seen": "2026-05-12"
+    },
+    "5d49356f591b1f7d": {
+      "url": "https://openai.com/index/openai-campus-network-student-club-interest-form",
+      "first_seen": "2026-05-12"
+    },
+    "e7455462824dd896": {
+      "url": "https://openai.com/index/openai-launches-the-deployment-company",
+      "first_seen": "2026-05-12"
     }
   }
 }
