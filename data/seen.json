@@ -1736,6 +1736,22 @@
     "6262633bf7280870": {
       "url": "https://openai.com/signals/research/2026q1-update",
       "first_seen": "2026-05-12"
+    },
+    "a83e722fff00beb7": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.140",
+      "first_seen": "2026-05-13"
+    },
+    "466f592dc33567ef": {
+      "url": "https://simonwillison.net/2026/May/11/gitlab-act-2/#atom-everything",
+      "first_seen": "2026-05-13"
+    },
+    "bd6dda1ea4d397ad": {
+      "url": "https://www.latent.space/p/ainews-thinking-machines-native-interaction",
+      "first_seen": "2026-05-13"
+    },
+    "fd797e93058cd1d0": {
+      "url": "https://openai.com/index/what-parameter-golf-taught-us",
+      "first_seen": "2026-05-13"
     }
   }
 }
