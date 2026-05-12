@@ -1716,6 +1716,26 @@
     "e7455462824dd896": {
       "url": "https://openai.com/index/openai-launches-the-deployment-company",
       "first_seen": "2026-05-12"
+    },
+    "6eacea02cb2f941e": {
+      "url": "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs",
+      "first_seen": "2026-05-12"
+    },
+    "e5215545f66631cd": {
+      "url": "https://dunkels.com/adam/claude-user-space-ip-stack-ping/",
+      "first_seen": "2026-05-12"
+    },
+    "825611d4debfdb70": {
+      "url": "https://github.com/adamjgmiller/adamsreview",
+      "first_seen": "2026-05-12"
+    },
+    "7c1a813822f725a1": {
+      "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+      "first_seen": "2026-05-12"
+    },
+    "6262633bf7280870": {
+      "url": "https://openai.com/signals/research/2026q1-update",
+      "first_seen": "2026-05-12"
     }
   }
 }
