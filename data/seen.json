@@ -1752,6 +1752,86 @@
     "fd797e93058cd1d0": {
       "url": "https://openai.com/index/what-parameter-golf-taught-us",
       "first_seen": "2026-05-13"
+    },
+    "c712a1ba5a3b4bca": {
+      "url": "https://claude.com/blog/claude-platform-on-aws",
+      "first_seen": "2026-05-13"
+    },
+    "e1739cedc6f9ead7": {
+      "url": "https://github.com/cactus-compute/needle",
+      "first_seen": "2026-05-13"
+    },
+    "94c156c88bd48431": {
+      "url": "https://github.com/statewright/statewright",
+      "first_seen": "2026-05-13"
+    },
+    "3c606a7a5f7556f9": {
+      "url": "https://github.com/ab-613/opengravity",
+      "first_seen": "2026-05-13"
+    },
+    "16379c9544b3fcad": {
+      "url": "https://simonwillison.net/2026/May/12/datasette/#atom-everything",
+      "first_seen": "2026-05-13"
+    },
+    "c856942fae27efe7": {
+      "url": "https://simonwillison.net/2026/May/12/mo-bitar/#atom-everything",
+      "first_seen": "2026-05-13"
+    },
+    "30b3124abdc6f60d": {
+      "url": "https://simonwillison.net/2026/May/12/mitchell-hashimoto/#atom-everything",
+      "first_seen": "2026-05-13"
+    },
+    "78f0f1b4376d76a3": {
+      "url": "https://simonwillison.net/2026/May/12/llm/#atom-everything",
+      "first_seen": "2026-05-13"
+    },
+    "6848700764d72d53": {
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.0",
+      "first_seen": "2026-05-13"
+    },
+    "22b818ff7d31067e": {
+      "url": "https://www.404media.co/ice-agents-have-list-of-20-million-people-on-their-iphones-thanks-to-palantir/",
+      "first_seen": "2026-05-13"
+    },
+    "64dd88d6edd72f79": {
+      "url": "https://voker.ai",
+      "first_seen": "2026-05-13"
+    },
+    "ce943383d65893df": {
+      "url": "https://openai.com/academy/how-finance-teams-use-codex",
+      "first_seen": "2026-05-13"
+    },
+    "66312b6309f0b1f1": {
+      "url": "https://openai.com/index/nvidia",
+      "first_seen": "2026-05-13"
+    },
+    "dd83ecd40f2ff407": {
+      "url": "https://openai.com/index/autoscout24",
+      "first_seen": "2026-05-13"
+    },
+    "da679c3f289371c8": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.0",
+      "first_seen": "2026-05-13"
+    },
+    "01297854c612fbd0": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.1.0",
+      "first_seen": "2026-05-13"
+    },
+    "c96a32927326ab22": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.26",
+      "first_seen": "2026-05-13"
+    },
+    "dd26c75766bacf10": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.0",
+      "first_seen": "2026-05-13"
+    },
+    "c3846a3763f6104f": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.0",
+      "first_seen": "2026-05-13"
+    },
+    "f6419cdd9cd428a7": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.1.0",
+      "first_seen": "2026-05-13"
     }
   }
 }
