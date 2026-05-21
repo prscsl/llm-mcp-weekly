@@ -1,7 +1,7 @@
 #!/bin/zsh
 # 매일 자동 실행되는 큐레이션 파이프라인 (launchd가 호출).
 #
-# 흐름: collect → summarize (claude -p) → publish → git push
+# 흐름: collect → summarize (auto: claude-cli → ollama → codex-api) → publish → git push
 #
 # 로그: logs/YYYY-MM-DD.log
 # 종료 코드: 0 성공, 1 실패
@@ -14,6 +14,8 @@ DATE=$(date +%Y-%m-%d)
 LOG_DIR="$PROJECT_DIR/logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/${DATE}.log"
+POST_FILE="$PROJECT_DIR/_posts/${DATE}-llm-mcp-daily.md"
+SUMMARY_BACKEND="${SUMMARY_BACKEND:-ollama}"
 
 # pyenv·nvm 등 사용자 PATH 로드 (launchd는 최소 환경으로 시작).
 # nvm을 맨 앞에 둬야 claude CLI가 시스템 node(구버전)가 아닌 nvm node를 사용함.
@@ -39,8 +41,14 @@ run_step() {
 
 log "=== 큐레이션 시작: $DATE ==="
 
+if [[ "${FORCE_RUN:-0}" != "1" && -f "$POST_FILE" ]]; then
+  log "이미 발행된 포스트가 있어 재실행을 건너뜁니다: $POST_FILE"
+  log "필요 시 FORCE_RUN=1로 수동 재실행하세요."
+  exit 0
+fi
+
 run_step "collect.py" python3 scripts/collect.py --date "$DATE" || exit 1
-run_step "summarize.py (claude-cli)" python3 scripts/summarize.py --date "$DATE" --backend=claude-cli || exit 1
+run_step "summarize.py (${SUMMARY_BACKEND})" python3 scripts/summarize.py --date "$DATE" --backend "$SUMMARY_BACKEND" || exit 1
 run_step "publish.py" python3 scripts/publish.py --date "$DATE" || exit 1
 
 # git push (변경 있을 때만)

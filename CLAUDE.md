@@ -49,17 +49,21 @@ llm-mcp-weekly/
     → collect.py --date YYYY-MM-DD
         sources.yml 기준 RSS/GitHub/HN 수집
         신규 항목만 .raw/YYYY-MM-DD.json 저장
-        data/seen.json 업데이트
+        seen.json은 아직 갱신하지 않음
 
-    → summarize.py --date YYYY-MM-DD --backend=claude-cli
-        기본: claude -p 헤드리스 호출 (Max 플랜 사용량, 비용 0)
-        대안: --backend=api (anthropic SDK, 토큰당 과금)
+    → summarize.py --date YYYY-MM-DD --backend=auto
+        기본: auto = claude-cli 우선, 실패 시 ollama, 마지막 codex-api
+        claude-cli: claude -p 헤드리스 호출
+        ollama: 로컬 Ollama HTTP API + OLLAMA_MODEL
+        codex-api: OpenAI Responses API + OPENAI_API_KEY
         캐시: .cache/summary_{hash}.json (동일 항목 재요약 방지)
         출력: .summarized/YYYY-MM-DD.json
+        run_daily 기본값은 ollama
 
     → publish.py --date YYYY-MM-DD
         카테고리별 그룹화 마크다운 생성
         출력: _posts/YYYY-MM-DD-llm-mcp-daily.md
+        발행 성공 시 data/seen.json 반영
 
     → git commit & push (변경 있을 때만)
         → GitHub Actions: Ruby 3.3 Jekyll 빌드 → GitHub Pages 배포
@@ -82,7 +86,9 @@ launchctl start com.prscsl.llm-mcp-weekly.daily
 # 단계별 직접 실행 (디버그용)
 cd ~/llm-mcp-weekly/scripts
 python3 collect.py --date 2026-04-23
-python3 summarize.py --date 2026-04-23 --backend=claude-cli
+python3 summarize.py --date 2026-04-23 --backend=auto
+python3 summarize.py --date 2026-04-23 --backend=ollama
+python3 summarize.py --date 2026-04-23 --backend=codex-api
 python3 publish.py --date 2026-04-23
 
 # 로그 확인
@@ -113,3 +119,4 @@ cat /tmp/llm-mcp-weekly.stderr.log
 - LaunchAgent는 로그인 세션(Aqua)에서만 동작 — Mac이 정시 이전에 로그인 상태여야 실행됨
 - launchd는 놓친 일정을 소급 실행하지 않음 → 수동: `launchctl start com.prscsl.llm-mcp-weekly.daily`
 - collect.py가 외부 host 무응답에 hang하면 launchd 슬롯을 점유해 다음 트리거가 막힘 — admin에서 process 종료 후 재시도
+- claude CLI가 로그인되지 않았으면 Ollama를 먼저 확인하고, 없으면 `OPENAI_API_KEY`로 `codex-api`를 사용

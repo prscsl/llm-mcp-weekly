@@ -19,6 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SUM_DIR = ROOT / ".summarized"
 POSTS_DIR = ROOT / "_posts"
+SEEN_FILE = ROOT / "data" / "seen.json"
 
 CATEGORY_LABELS = {
     "release": "릴리스 소식",
@@ -29,6 +30,36 @@ CATEGORY_LABELS = {
     "research": "연구 / 논문",
 }
 CATEGORY_ORDER = ["release", "tool", "tutorial", "news", "research", "opinion"]
+
+
+def load_seen() -> dict:
+    if not SEEN_FILE.exists():
+        return {"version": 1, "items": {}}
+    with SEEN_FILE.open() as f:
+        return json.load(f)
+
+
+def save_seen(seen: dict) -> None:
+    with SEEN_FILE.open("w") as f:
+        json.dump(seen, f, indent=2, ensure_ascii=False)
+
+
+def mark_seen(items: list[dict], date: str) -> int:
+    seen = load_seen()
+    updated = 0
+    for item in items:
+        item_hash = item.get("_hash")
+        url = item.get("url")
+        if not item_hash or not url or item_hash in seen["items"]:
+            continue
+        seen["items"][item_hash] = {
+            "url": url,
+            "first_seen": date,
+        }
+        updated += 1
+    if updated:
+        save_seen(seen)
+    return updated
 
 
 def render_item(item: dict) -> str:
@@ -51,9 +82,19 @@ def render_item(item: dict) -> str:
 
 
 def render_post(date: str, items: list[dict]) -> str:
+    deduped_items: list[dict] = []
+    seen_keys: set[str] = set()
+    for item in items:
+        key = item.get("_hash") or item.get("url") or ""
+        if key and key in seen_keys:
+            continue
+        if key:
+            seen_keys.add(key)
+        deduped_items.append(item)
+
     by_cat: dict[str, list[dict]] = {}
     all_tags: set[str] = set()
-    for item in items:
+    for item in deduped_items:
         cat = item["ko"].get("category", "news")
         by_cat.setdefault(cat, []).append(item)
         for t in item["ko"].get("tags", []):
@@ -70,7 +111,7 @@ def render_post(date: str, items: list[dict]) -> str:
         "",
         f"## {date} 한국어 LLM·MCP 큐레이션",
         "",
-        f"오늘 큐레이션된 항목: 총 **{len(items)}건**. ",
+        f"오늘 큐레이션된 항목: 총 **{len(deduped_items)}건**. ",
         "Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.",
         "",
     ]
@@ -109,7 +150,8 @@ def main() -> int:
     POSTS_DIR.mkdir(exist_ok=True)
     out_path = POSTS_DIR / f"{date}-llm-mcp-daily.md"
     out_path.write_text(render_post(date, items), encoding="utf-8")
-    print(f"발행: {out_path} ({len(items)}건)")
+    seen_updates = mark_seen(items, date)
+    print(f"발행: {out_path} ({len(items)}건, seen {seen_updates}건 반영)")
     return 0
 
 

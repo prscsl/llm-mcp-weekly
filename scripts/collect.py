@@ -64,6 +64,12 @@ def http_get_json(url: str) -> Any:
         return json.loads(resp.read().decode("utf-8"))
 
 
+def http_get_bytes(url: str) -> bytes:
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
+        return resp.read()
+
+
 def parse_date(value: Any) -> datetime | None:
     if value is None:
         return None
@@ -81,7 +87,7 @@ def parse_date(value: Any) -> datetime | None:
 def collect_rss(source: dict, cutoff: datetime) -> list[dict]:
     items: list[dict] = []
     try:
-        feed = feedparser.parse(source["url"], agent=USER_AGENT)
+        feed = feedparser.parse(http_get_bytes(source["url"]))
     except Exception as e:
         print(f"  [RSS 실패] {source['name']}: {e}", file=sys.stderr)
         return items
@@ -172,14 +178,16 @@ def collect_hackernews(source: dict, cutoff: datetime) -> list[dict]:
 
 def deduplicate(items: list[dict], seen: dict) -> list[dict]:
     fresh: list[dict] = []
+    hashes_in_run: set[str] = set()
     for item in items:
         if not item.get("url"):
             continue
         h = url_hash(item["url"])
-        if h in seen["items"]:
+        if h in seen["items"] or h in hashes_in_run:
             continue
         item["_hash"] = h
         fresh.append(item)
+        hashes_in_run.add(h)
     return fresh
 
 
@@ -230,10 +238,10 @@ def main() -> int:
         json.dump({"date": str(today.date()), "items": fresh}, f, indent=2, ensure_ascii=False)
     print(f"저장: {out_path}")
 
-    for item in fresh:
-        seen["items"][item["_hash"]] = {"url": item["url"], "first_seen": str(today.date())}
-    save_seen(seen)
-    print(f"seen.json 업데이트: 총 {len(seen['items'])}개 추적 중")
+    print(
+        "seen.json 미갱신: 발행 성공 후 publish.py 단계에서만 반영 "
+        f"(현재 추적 {len(seen['items'])}개)"
+    )
 
     return 0
 

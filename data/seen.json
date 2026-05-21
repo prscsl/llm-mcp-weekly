@@ -1832,6 +1832,494 @@
     "f6419cdd9cd428a7": {
       "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.1.0",
       "first_seen": "2026-05-13"
+    },
+    "b205cd86d4ec238d": {
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "first_seen": "2026-05-01"
+    },
+    "6490b514380a812e": {
+      "url": "https://www.tomshardware.com/tech-industry/cryptocurrency/bitcoin-trader-recovers-usd400-000-using-claude-ai-after-losing-wallet-password-11-years-ago-bot-tried-3-5-trillion-passwords-before-decrypting-an-old-wallet-backup",
+      "first_seen": "2026-05-01"
+    },
+    "b26d06bdd7c196da": {
+      "url": "https://github.com/DrCatHicks/learning-opportunities",
+      "first_seen": "2026-05-01"
+    },
+    "55c13bb333f595ba": {
+      "url": "https://github.com/MinishLab/semble",
+      "first_seen": "2026-05-01"
+    },
+    "f65aa2914ca7250c": {
+      "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+      "first_seen": "2026-05-01"
+    },
+    "31b15211a72c299a": {
+      "url": "https://github.com/anthropics/claude-for-legal",
+      "first_seen": "2026-05-01"
+    },
+    "00acc9c973aaa690": {
+      "url": "https://twitter.com/karpathy/status/2056753169888334312",
+      "first_seen": "2026-05-01"
+    },
+    "7708d4e1b8241c35": {
+      "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "first_seen": "2026-05-01"
+    },
+    "8461ca0e05c88025": {
+      "url": "https://github.com/antoinezambelli/forge",
+      "first_seen": "2026-05-01"
+    },
+    "1c2f4e3b793a65d0": {
+      "url": "https://qwen.ai/blog?id=qwen3.7",
+      "first_seen": "2026-05-01"
+    },
+    "cf4d43e87a3505f7": {
+      "url": "https://crates.io/crates/zerostack/1.0.0",
+      "first_seen": "2026-05-01"
+    },
+    "88b693a15cea273c": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.146",
+      "first_seen": "2026-05-01"
+    },
+    "c8e3c28d8d4297cf": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
+      "first_seen": "2026-05-01"
+    },
+    "06ec3f08ed367c28": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
+      "first_seen": "2026-05-01"
+    },
+    "00e8a2bfe218acf8": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+      "first_seen": "2026-05-01"
+    },
+    "d9add980c8cb93e3": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.142",
+      "first_seen": "2026-05-01"
+    },
+    "c1a0f231f0eebdab": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "first_seen": "2026-05-01"
+    },
+    "dda0d6d4ba781ee6": {
+      "url": "https://github.com/Andyyyy64/whichllm",
+      "first_seen": "2026-05-01"
+    },
+    "ef2cb5ef08e1b540": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.1",
+      "first_seen": "2026-05-01"
+    },
+    "eae5a83a85ad2241": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.0",
+      "first_seen": "2026-05-01"
+    },
+    "2ad67dc66734381d": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.102.0",
+      "first_seen": "2026-05-01"
+    },
+    "d6f6970b30183c40": {
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "first_seen": "2026-05-01"
+    },
+    "cc0ef74260afd798": {
+      "url": "https://superlog.sh/",
+      "first_seen": "2026-05-01"
+    },
+    "2703601b0a860f40": {
+      "url": "https://github.com/InsForge/InsForge",
+      "first_seen": "2026-05-01"
+    },
+    "98f1817d6e46d085": {
+      "url": "https://www.tryardent.com/",
+      "first_seen": "2026-05-01"
+    },
+    "bedb4be20cc8667c": {
+      "url": "https://simonwillison.net/2026/May/20/spacex-s1/#atom-everything",
+      "first_seen": "2026-05-01"
+    },
+    "1a725cefd7d55fbd": {
+      "url": "https://simonwillison.net/2026/May/20/tokens-per-second/#atom-everything",
+      "first_seen": "2026-05-01"
+    },
+    "8f4070de49075516": {
+      "url": "https://simonwillison.net/2026/May/20/google-io/#atom-everything",
+      "first_seen": "2026-05-01"
+    },
+    "710bfc310b2d02b1": {
+      "url": "https://simonwillison.net/2026/May/19/llm-gemini-2/#atom-everything",
+      "first_seen": "2026-05-01"
+    },
+    "7bc402896a2afa7e": {
+      "url": "https://simonwillison.net/2026/May/19/gemini-35-flash/#atom-everything",
+      "first_seen": "2026-05-01"
+    },
+    "f8450bc0d03acbe0": {
+      "url": "https://reubenbrooks.dev/blog/structural-backpressure-beats-smarter-agents/",
+      "first_seen": "2026-05-02"
+    },
+    "313140e5e10e093c": {
+      "url": "https://simonwillison.net/2026/May/19/datasette-llm-accountant/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "95a0d7e89bbfd052": {
+      "url": "https://simonwillison.net/2026/May/19/llm-gemini/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "331d3de834946d05": {
+      "url": "https://simonwillison.net/2026/May/19/datasette-llm/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "5ac9595927fac293": {
+      "url": "https://simonwillison.net/2026/May/19/5-minute-llms/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "a7f49c269fbfd310": {
+      "url": "https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "60bfff81ace8cd26": {
+      "url": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "0174d8e48e63ec90": {
+      "url": "https://simonwillison.net/2026/May/16/openclaw-names/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "9620fb3381eaf8b8": {
+      "url": "https://simonwillison.net/2026/May/16/julia-evans/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "5ae711b26a90b9e8": {
+      "url": "https://simonwillison.net/2026/May/15/inaturalist-clumper/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "c8d9ed79e0b129f7": {
+      "url": "https://simonwillison.net/2026/May/15/sighting-361818285/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "ba0d9b9d357ffe62": {
+      "url": "https://simonwillison.net/2026/May/15/qr-code-generator/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "dab5068a10f001dc": {
+      "url": "https://simonwillison.net/2026/May/15/datasette-llm-limits/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "c533eb9ba1b6d17a": {
+      "url": "https://simonwillison.net/2026/May/14/not-so-locked-in/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "eb690f8a5689ade8": {
+      "url": "https://simonwillison.net/2026/May/14/mitchell-hashimoto/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "439d727a63cd10b1": {
+      "url": "https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "5af7a14f98c12cfb": {
+      "url": "https://simonwillison.net/2026/May/13/welcome-to-the-datasette-blog/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "581522dde77cbd5f": {
+      "url": "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "0b61ddc929ed2668": {
+      "url": "https://simonwillison.net/2026/May/13/csp-allow/#atom-everything",
+      "first_seen": "2026-05-02"
+    },
+    "c9a1656c3e4f92c2": {
+      "url": "https://www.latent.space/p/railway",
+      "first_seen": "2026-05-02"
+    },
+    "0ef2d7b8cade4eda": {
+      "url": "https://www.latent.space/p/ainews-google-io-2026-gemini-35-flash",
+      "first_seen": "2026-05-02"
+    },
+    "fe5fa7114d64e319": {
+      "url": "https://www.latent.space/p/ainews-how-to-land-a-job-at-a-frontier",
+      "first_seen": "2026-05-02"
+    },
+    "632fa85e55b115b0": {
+      "url": "https://www.latent.space/p/the-fourth-law",
+      "first_seen": "2026-05-02"
+    },
+    "e0cc6bc2cfed19e9": {
+      "url": "https://www.latent.space/p/ainews-cerebras-60b-ipo-slowly-then",
+      "first_seen": "2026-05-02"
+    },
+    "3903e746aef05dd5": {
+      "url": "https://www.latent.space/p/ainews-everything-is-conductor",
+      "first_seen": "2026-05-02"
+    },
+    "3bfb00e9b3cb718b": {
+      "url": "https://www.latent.space/p/abridge",
+      "first_seen": "2026-05-02"
+    },
+    "488b6a173fa47404": {
+      "url": "https://www.latent.space/p/ainews-codex-rises-claude-meters",
+      "first_seen": "2026-05-02"
+    },
+    "d5325f09f8d18e45": {
+      "url": "https://www.latent.space/p/ainews-the-end-of-finetuning",
+      "first_seen": "2026-05-02"
+    },
+    "8cf6a6afd21684d9": {
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.34.1",
+      "first_seen": "2026-05-02"
+    },
+    "8ac89ff868810373": {
+      "url": "https://github.com/aaif-goose/goose/releases/tag/v1.34.0",
+      "first_seen": "2026-05-02"
+    },
+    "e8700ba104aeb7fe": {
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.9",
+      "first_seen": "2026-05-03"
+    },
+    "03428f368703d148": {
+      "url": "https://github.com/cline/cline/releases/tag/v3.84.0",
+      "first_seen": "2026-05-03"
+    },
+    "b049c7aefc0b038e": {
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.8",
+      "first_seen": "2026-05-03"
+    },
+    "136207aa3db1de95": {
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.7",
+      "first_seen": "2026-05-03"
+    },
+    "ade127c5fe9df37a": {
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.6",
+      "first_seen": "2026-05-03"
+    },
+    "71affcbb695f12cf": {
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.5",
+      "first_seen": "2026-05-03"
+    },
+    "1525ac215c5c8da4": {
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.4",
+      "first_seen": "2026-05-03"
+    },
+    "ceed5eadfb6cfb3b": {
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.3",
+      "first_seen": "2026-05-03"
+    },
+    "ead347a6d5b4e150": {
+      "url": "https://github.com/cline/cline/releases/tag/v3.83.0",
+      "first_seen": "2026-05-03"
+    },
+    "00e6781cecf49140": {
+      "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.2",
+      "first_seen": "2026-05-03"
+    },
+    "64537fc403887fbc": {
+      "url": "https://xcancel.com/nottombrown/status/2057194829986300375",
+      "first_seen": "2026-05-03"
+    },
+    "b118af9afbefaae7": {
+      "url": "https://www.vincentschmalbach.com/anthropic-ipo-developers-should-be-worried-v2/",
+      "first_seen": "2026-05-03"
+    },
+    "1564e34f28990219": {
+      "url": "https://twitter.com/josevalim/status/2054887621336174799",
+      "first_seen": "2026-05-03"
+    },
+    "de8841ec9f72d8db": {
+      "url": "https://www.flyingpenguin.com/wheres-ed-anthropic-told-court-5-billion-but-public-19-billion/",
+      "first_seen": "2026-05-03"
+    },
+    "582546e49cbb6774": {
+      "url": "https://github.com/torrix-ai/install",
+      "first_seen": "2026-05-03"
+    },
+    "399e0d7c1c0fd006": {
+      "url": "https://github.com/mupt-ai/dari-docs",
+      "first_seen": "2026-05-03"
+    },
+    "ad59a2fba63e96c1": {
+      "url": "https://www.hypercubic.ai/hopper",
+      "first_seen": "2026-05-03"
+    },
+    "3f0d45ef47feb69c": {
+      "url": "https://github.com/ShurikenTrade/shuriken-skills",
+      "first_seen": "2026-05-03"
+    },
+    "42bc1befa11ae41c": {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-powered-ai-coding-agent-deletes-entire-company-database-in-9-seconds-backups-zapped-after-cursor-tool-powered-by-anthropics-claude-goes-rogue",
+      "first_seen": "2026-05-03"
+    },
+    "1b6cbad76857e83c": {
+      "url": "https://haystackeditor.com/",
+      "first_seen": "2026-05-03"
+    },
+    "cb1323ba54f85cd7": {
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+      "first_seen": "2026-05-03"
+    },
+    "ed1c2193d6b80a8c": {
+      "url": "https://huggingface.co/blog/ettin-reranker",
+      "first_seen": "2026-05-03"
+    },
+    "fc4ec187a09216e1": {
+      "url": "https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation",
+      "first_seen": "2026-05-03"
+    },
+    "0e90042cc61fe001": {
+      "url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+      "first_seen": "2026-05-03"
+    },
+    "ed2acf02cfe739f7": {
+      "url": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard",
+      "first_seen": "2026-05-03"
+    },
+    "071ef486161ea852": {
+      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+      "first_seen": "2026-05-03"
+    },
+    "86a2f22779894765": {
+      "url": "https://huggingface.co/blog/continuous_async",
+      "first_seen": "2026-05-03"
+    },
+    "45902f284acb2417": {
+      "url": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures",
+      "first_seen": "2026-05-03"
+    },
+    "cdac0fe55a061e36": {
+      "url": "https://deploy.live/blog/running-local-llms-offline-on-a-ten-hour-flight/",
+      "first_seen": "2026-05-03"
+    },
+    "1c93d6c1c7251e5f": {
+      "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+      "first_seen": "2026-05-03"
+    },
+    "aada05358e561891": {
+      "url": "https://openai.com/index/the-next-phase-of-education-for-countries",
+      "first_seen": "2026-05-05"
+    },
+    "25e141fd02c9e561": {
+      "url": "https://openai.com/index/ramp",
+      "first_seen": "2026-05-05"
+    },
+    "2fd1ae66db94c087": {
+      "url": "https://openai.com/index/introducing-openai-for-singapore",
+      "first_seen": "2026-05-05"
+    },
+    "f80637b404047562": {
+      "url": "https://openai.com/index/advancing-content-provenance",
+      "first_seen": "2026-05-05"
+    },
+    "6f1209c6c0e07aba": {
+      "url": "https://openai.com/index/dell-codex-enterprise-partnership",
+      "first_seen": "2026-05-05"
+    },
+    "20383a0947db90dd": {
+      "url": "https://openai.com/index/malta-chatgpt-plus-partnership",
+      "first_seen": "2026-05-05"
+    },
+    "578b3bdf5cbf1347": {
+      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+      "first_seen": "2026-05-05"
+    },
+    "e46d28eec38083e8": {
+      "url": "https://openai.com/index/databricks",
+      "first_seen": "2026-05-05"
+    },
+    "baeb7ae75753a1c1": {
+      "url": "https://openai.com/index/personal-finance-chatgpt",
+      "first_seen": "2026-05-05"
+    },
+    "0090139282200a1d": {
+      "url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+      "first_seen": "2026-05-05"
+    },
+    "5da970c023508896": {
+      "url": "https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex",
+      "first_seen": "2026-05-05"
+    },
+    "326607290d218cfb": {
+      "url": "https://openai.com/index/sea-david-chen",
+      "first_seen": "2026-05-05"
+    },
+    "18f13afbd6901fb3": {
+      "url": "https://openai.com/index/work-with-codex-from-anywhere",
+      "first_seen": "2026-05-05"
+    },
+    "a1312e54bd28a28c": {
+      "url": "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations",
+      "first_seen": "2026-05-05"
+    },
+    "4a3442a5ca8c1935": {
+      "url": "https://openai.com/index/building-codex-windows-sandbox",
+      "first_seen": "2026-05-05"
+    },
+    "8939013f174d0f1e": {
+      "url": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
+      "first_seen": "2026-05-05"
+    },
+    "a15adbd33f278176": {
+      "url": "https://openai.com/index/our-commitment-to-community-safety",
+      "first_seen": "2026-05-05"
+    },
+    "0ff444850a32f480": {
+      "url": "https://openai.com/index/openai-on-aws",
+      "first_seen": "2026-05-05"
+    },
+    "ce10c3a032577879": {
+      "url": "https://kingy.ai/ai/too-dangerous-to-release-or-just-too-expensive-the-real-reason-anthropic-is-hiding-its-most-powerful-ai/",
+      "first_seen": "2026-05-08"
+    },
+    "d7b3f0853c299d61": {
+      "url": "https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt",
+      "first_seen": "2026-05-08"
+    },
+    "73e96f8aa9eb466b": {
+      "url": "https://x.com/i/trending/2054617957440143639",
+      "first_seen": "2026-05-09"
+    },
+    "95c55fbfc5309801": {
+      "url": "https://twitter.com/i/status/2054610152817619388",
+      "first_seen": "2026-05-10"
+    },
+    "42e21b6bb86eae67": {
+      "url": "https://odyssey.ml/introducing-agora-1",
+      "first_seen": "2026-05-14"
+    },
+    "e353548e21243376": {
+      "url": "https://gizmodo.com/the-worst-leak-that-ive-witnessed-u-s-cybersecurity-agency-leaves-its-digital-keys-out-in-public-on-github-2000760330",
+      "first_seen": "2026-05-14"
+    },
+    "8ccb5ea342eec4cf": {
+      "url": "https://github.com/shenli/distributed-system-testing",
+      "first_seen": "2026-05-14"
+    },
+    "df4dae7031f881d4": {
+      "url": "https://andonlabs.com/blog/andon-fm",
+      "first_seen": "2026-05-15"
+    },
+    "d0e71c78e54cd2d1": {
+      "url": "https://bitplane.net/log/2026/05/rars/",
+      "first_seen": "2026-05-16"
+    },
+    "d93dab3800e11bfd": {
+      "url": "https://github.com/GlycemicGPT/GlycemicGPT",
+      "first_seen": "2026-05-16"
+    },
+    "d3d5154d5b7fac26": {
+      "url": "https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html",
+      "first_seen": "2026-05-18"
+    },
+    "fae3cf9fe0e0c632": {
+      "url": "https://zanestjohn.com/blog/reing-with-claude-code",
+      "first_seen": "2026-05-19"
+    },
+    "13783656b8e12096": {
+      "url": "https://github.com/chiennv2000/orthrus",
+      "first_seen": "2026-05-20"
+    },
+    "c4c6dbc685821649": {
+      "url": "https://status.claude.com/incidents/8z7l5zcy0v3b",
+      "first_seen": "2026-05-20"
     }
   }
 }

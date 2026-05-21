@@ -1,7 +1,7 @@
 # Windows 매일 자동 실행 파이프라인 (Task Scheduler가 호출).
 # run_daily.sh (zsh)의 PowerShell 포트.
 #
-# 흐름: collect → summarize (claude -p) → publish → git push
+# 흐름: collect → summarize (auto: claude-cli → ollama → codex-api) → publish → git push
 # 로그: logs\YYYY-MM-DD.log
 # 종료 코드: 0 성공, 1 실패
 
@@ -13,6 +13,8 @@ $Date = Get-Date -Format "yyyy-MM-dd"
 $LogDir = Join-Path $ProjectDir "logs"
 New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
 $LogFile = Join-Path $LogDir "$Date.log"
+$PostFile = Join-Path $ProjectDir "_posts\$Date-llm-mcp-daily.md"
+$SummaryBackend = if ($env:SUMMARY_BACKEND) { $env:SUMMARY_BACKEND } else { "ollama" }
 
 # 콘솔·파일 출력 UTF-8 강제 (한글 깨짐 방지)
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
@@ -40,8 +42,14 @@ function Invoke-Step {
 
 Write-Log "=== 큐레이션 시작: $Date ==="
 
+if (($env:FORCE_RUN -ne "1") -and (Test-Path -LiteralPath $PostFile)) {
+    Write-Log "이미 발행된 포스트가 있어 재실행을 건너뜁니다: $PostFile"
+    Write-Log "필요 시 FORCE_RUN=1로 수동 재실행하세요."
+    exit 0
+}
+
 if (-not (Invoke-Step "collect.py"             { python scripts\collect.py --date $Date })) { exit 1 }
-if (-not (Invoke-Step "summarize.py (claude-cli)" { python scripts\summarize.py --date $Date --backend=claude-cli })) { exit 1 }
+if (-not (Invoke-Step "summarize.py ($SummaryBackend)" { python scripts\summarize.py --date $Date --backend $SummaryBackend })) { exit 1 }
 if (-not (Invoke-Step "publish.py"             { python scripts\publish.py --date $Date })) { exit 1 }
 
 # 변경 감지 후 git push

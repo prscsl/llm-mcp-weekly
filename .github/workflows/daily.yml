@@ -2,7 +2,7 @@ name: Daily Curation Build
 
 on:
   # 기본은 수동 트리거. 무인 cron이 필요하면 schedule 블록 주석 해제.
-  # (이 경우 ANTHROPIC_API_KEY secret 등록 필수 — Max 플랜은 GitHub Actions에서 사용 불가)
+  # (이 경우 OPENAI_API_KEY secret 등록 필수)
   # schedule:
   #   - cron: "0 21 * * *"   # 한국시간 06:00 = UTC 전날 21:00
   workflow_dispatch:
@@ -53,10 +53,10 @@ jobs:
       - name: Collect items
         run: python3 scripts/collect.py --date ${{ steps.date.outputs.value }}
 
-      - name: Summarize with Claude
+      - name: Summarize with Codex API
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python3 scripts/summarize.py --date ${{ steps.date.outputs.value }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python3 scripts/summarize.py --date ${{ steps.date.outputs.value }} --backend=codex-api
 
       - name: Publish post
         run: python3 scripts/publish.py --date ${{ steps.date.outputs.value }}

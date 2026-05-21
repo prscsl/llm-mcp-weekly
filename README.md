@@ -1,6 +1,6 @@
 # 한국어 LLM·MCP 위클리
 
-Claude·MCP·LLM 생태계 소식을 매일 자동 큐레이션·한국어 요약하는 Jekyll 블로그.
+Claude·Codex·MCP·LLM 생태계 소식을 매일 자동 큐레이션·한국어 요약하는 Jekyll 블로그.
 
 `/Users/prscsl/.claude/plans/logical-snuggling-sutherland.md` 의 **모델 1 (니치 큐레이션 사이트)** 구현체.
 
@@ -10,23 +10,22 @@ Claude·MCP·LLM 생태계 소식을 매일 자동 큐레이션·한국어 요�
 [RSS / GitHub / HN]  →  collect.py  →  .raw/YYYY-MM-DD.json
                                          ↓
                        summarize.py  →  .summarized/YYYY-MM-DD.json
-                       (claude -p, Max 플랜)
+         (auto: claude-cli 우선, 실패 시 ollama, 마지막 codex-api)
                                          ↓
                          publish.py  →  _posts/YYYY-MM-DD-llm-mcp-daily.md
                                          ↓
                               GitHub Pages (Jekyll)  →  공개 사이트
 ```
 
-## 두 가지 운영 모델
+## 세 가지 요약 경로
 
-| 항목 | **Max 플랜 + launchd (권장)** | API + GitHub Actions |
-|------|-----------------------------|---------------------|
-| 비용 | **0원** (Max 플랜에 포함) | ~$1.5/월 (별도 결제) |
-| 백엔드 | `claude -p` 헤드리스 | anthropic SDK |
-| 스케줄 | macOS launchd | GitHub Actions cron |
-| PC 의존 | 켜져 있어야 함 (sleep도 launchd가 깨움) | 없음 |
-| 셋업 난이도 | 쉬움 (plist 1개 로드) | 중간 (secret·permissions 설정) |
-| 적합 케이스 | 개인 PC가 항시 가동 중 | 클라우드 무인 운영 필요 |
+| 항목 | **Claude CLI** | **Ollama** | **Codex API** |
+|------|-----------------|------------|---------------|
+| 인증 | `claude login` | 로컬 daemon + 로컬 모델 | `OPENAI_API_KEY` |
+| 호출 방식 | `claude -p` 헤드리스 | Ollama HTTP API | OpenAI Responses API |
+| 기본 사용 | `--backend=claude-cli` | `--backend=ollama` | `--backend=codex-api` |
+| 자동 fallback | `auto`에서 1순위 | `auto`에서 2순위 | `auto`에서 3순위 |
+| 적합 케이스 | Claude 구독 유지 중 | 비용 0원 자동화 | Claude/Ollama 둘 다 없을 때 |
 
 ## 디렉토리 구조
 
@@ -42,7 +41,7 @@ llm-mcp-weekly/
 │   └── seen.json            ← 중복 방지 해시 (커밋됨)
 ├── scripts/
 │   ├── collect.py           ← 외부 소스 수집
-│   ├── summarize.py         ← Claude API 요약
+│   ├── summarize.py         ← claude-cli / ollama / codex-api 요약
 │   └── publish.py           ← Jekyll 마크다운 생성
 ├── .raw/                    ← 수집 원본 (gitignore)
 ├── .summarized/             ← 요약 결과 (gitignore)
@@ -58,11 +57,16 @@ llm-mcp-weekly/
 cd llm-mcp-weekly
 pip3 install -r requirements.txt
 
-# Max 플랜 사용 시: claude CLI만 있으면 됨 (별도 API 키 불필요)
+# Claude 경로 사용 시
 claude --version
 
-# API 백엔드 사용 시에만:
-# export ANTHROPIC_API_KEY="sk-ant-..."
+# Ollama 경로 사용 시
+# export OLLAMA_HOST="http://127.0.0.1:11434"
+# export OLLAMA_MODEL="qwen3:8b"
+
+# Codex 경로 사용 시
+# export OPENAI_API_KEY="sk-..."
+# export OPENAI_MODEL="gpt-5.2-codex"   # 기본값
 ```
 
 Jekyll 미리보기는 별도로 Ruby 환경 필요 (선택):
@@ -79,11 +83,11 @@ bundle exec jekyll serve  # http://localhost:4000
 # 1. 외부 소스 수집 (오늘 날짜)
 python3 scripts/collect.py
 
-# 2. 한국어 요약 (Max 플랜 사용, 비용 0)
+# 2. 한국어 요약
+python3 scripts/summarize.py                  # auto: claude-cli → ollama → codex-api
 python3 scripts/summarize.py --backend=claude-cli
-
-# 또는 API 사용 (별도 과금)
-# python3 scripts/summarize.py --backend=api
+python3 scripts/summarize.py --backend=ollama
+# python3 scripts/summarize.py --backend=codex-api
 
 # 3. Jekyll 포스트 생성
 python3 scripts/publish.py
@@ -99,7 +103,9 @@ python3 scripts/summarize.py --dry-run
 python3 scripts/publish.py
 ```
 
-## launchd 셋업 (Max 플랜 모드, 권장)
+## launchd 셋업
+
+기본 자동 실행 백엔드는 `ollama` 입니다. 다른 백엔드를 강제로 쓰려면 `SUMMARY_BACKEND` 환경변수를 지정합니다.
 
 ```bash
 # 1. plist 설치
@@ -151,7 +157,7 @@ macOS launchd와 등가인 Windows Task Scheduler 버전이 `scripts/*.ps1`에 �
 
 ### 전제
 - Windows 10/11, 개인 소유, 인터넷 연결
-- Claude Max 플랜 로그인 가능 (브라우저 OAuth)
+- Claude CLI, Ollama, OpenAI API 중 최소 1개 사용 가능
 - **주의**: macOS와 Windows를 동시에 돌리면 git push 충돌 — 반드시 한쪽만 활성화
 
 ### 1단계 — 필수 도구 설치 (새 PowerShell 창)
@@ -164,11 +170,11 @@ winget install Git.Git
 python --version; node --version; git --version
 ```
 
-### 2단계 — Claude Code 설치 + Max 플랜 로그인
+### 2단계 — Claude Code 설치 + Claude 경로 로그인
 
 ```powershell
 npm install -g @anthropic-ai/claude-code
-claude login          # 브라우저 OAuth로 Max 플랜 인증
+claude login          # 브라우저 OAuth 인증
 claude --version
 ```
 
@@ -217,8 +223,9 @@ powershell -ExecutionPolicy Bypass -File scripts\uninstall_task.ps1
 
 | 모드 | 월 비용 | 비고 |
 |------|---------|-----|
-| **Max 플랜 + launchd** | **0원** | Max 플랜 사용량 풀 차감 |
-| API + GitHub Actions | ~$1.5 | Haiku 4.5, 하루 30건 기준 |
+| **Claude CLI + launchd** | Claude 구독 기준 | `claude login` 필요 |
+| **Ollama + launchd** | 0원 | 로컬 모델/메모리 사용 |
+| **Codex API** | OpenAI 사용량 기준 | 모델·호출량에 따라 변동 |
 | GitHub Pages | 0원 | 무료 호스팅 |
 | 도메인 (선택) | 연 $10~15 | gh-pages 서브도메인 사용 시 0원 |
 
@@ -228,11 +235,11 @@ powershell -ExecutionPolicy Bypass -File scripts\uninstall_task.ps1
 2. 저장소 Settings → Pages → Source: `Deploy from a branch`, Branch: `main` / `(root)`
 3. 약 1~2분 후 `https://<username>.github.io/<repo>/`에서 사이트 확인
 
-## (선택) GitHub Actions 셋업 — API 백엔드용
+## (선택) GitHub Actions 셋업 — Codex API 백엔드용
 
-Max 플랜 launchd 대신 GitHub Actions로 무인 운영하려면:
+Claude CLI 대신 GitHub Actions로 무인 운영하려면:
 
-1. Settings → Secrets → Actions → 신규 시크릿: `ANTHROPIC_API_KEY` = `sk-ant-...`
+1. Settings → Secrets → Actions → 신규 시크릿: `OPENAI_API_KEY` = `sk-...`
 2. Settings → Actions → General → Workflow permissions: `Read and write permissions` 체크
 3. `.github/workflows/daily.yml`은 이미 포함됨 — Actions 탭에서 수동 트리거로 첫 실행 검증
 
