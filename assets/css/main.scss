@@ -133,6 +133,99 @@ h1, h2, h3, h4, h5, h6,
 .cat-research  { --cat-color: #6b2acb; }  /* 연구 — 퍼플 */
 .cat-opinion   { --cat-color: #b6123a; }  /* 의견 — 레드 */
 
+/* ---------- 포스트 왼쪽 항목 네비게이션 ---------- */
+.page__content .post-outline {
+  float: left;
+  width: 17rem;
+  margin: 0 2rem 1.5rem -20rem;
+}
+
+.page__content .post-outline__inner {
+  position: sticky;
+  top: 5.5rem;
+  padding: 1rem 1rem 1rem 1.1rem;
+  border: 1px solid #d9dde7;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f9fbff 0%, #f3f6fb 100%);
+  box-shadow: 0 10px 30px rgba(34, 47, 62, 0.08);
+}
+
+.page__content .post-outline__eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #667085;
+}
+
+.page__content .post-outline__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.page__content .post-outline__list li {
+  margin: 0;
+}
+
+.page__content .post-outline__list a {
+  display: grid;
+  grid-template-columns: 2.3rem 1fr;
+  gap: 0.65rem;
+  align-items: start;
+  padding: 0.55rem 0.65rem;
+  border-radius: 12px;
+  color: #1f2533;
+  text-decoration: none;
+  line-height: 1.4;
+  transition: background 0.16s ease, transform 0.16s ease;
+
+  &:hover {
+    background: rgba(108, 122, 224, 0.10);
+    transform: translateX(2px);
+  }
+}
+
+.page__content .post-outline__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 1.8rem;
+  border-radius: 999px;
+  background: #e9eeff;
+  color: #4350b9;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+/* ---------- 포스트 카드 구분 ---------- */
+.page__content .brief-card {
+  margin: 0 0 1.4rem;
+  padding: 1.2rem 1.25rem 1.1rem;
+  border: 1px solid #d9dde7;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+  box-shadow: 0 14px 34px rgba(25, 36, 52, 0.06);
+}
+
+.page__content .brief-card__title {
+  margin-top: 0;
+  margin-bottom: 0.95rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid #e8ecf3;
+  scroll-margin-top: 6rem;
+}
+
+.page__content .brief-card p:last-child,
+.page__content .brief-card blockquote:last-child {
+  margin-bottom: 0;
+}
+
 /* ---------- 다크모드 토큰 + 오버라이드 ---------- */
 html[data-theme="dark"] {
   --bg: #1a1d24;
@@ -265,6 +358,34 @@ html[data-theme="dark"] {
     }
   }
 
+  .page__content .post-outline__inner,
+  .page__content .brief-card {
+    background: linear-gradient(180deg, #232834 0%, #1f2430 100%);
+    border-color: #313846;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  }
+
+  .page__content .post-outline__eyebrow {
+    color: #97a1b4;
+  }
+
+  .page__content .post-outline__list a {
+    color: #eef1f7;
+
+    &:hover {
+      background: rgba(138, 164, 255, 0.14);
+    }
+  }
+
+  .page__content .post-outline__num {
+    background: rgba(138, 164, 255, 0.18);
+    color: #b8c7ff;
+  }
+
+  .page__content .brief-card__title {
+    border-bottom-color: #303645;
+  }
+
   /* 페이지네이션 */
   .pagination--pager,
   .pagination li a {
@@ -281,6 +402,18 @@ html[data-theme="dark"] {
   }
   .page__footer a {
     color: var(--link);
+  }
+}
+
+@media (max-width: 1279px) {
+  .page__content .post-outline {
+    float: none;
+    width: auto;
+    margin: 0 0 1.25rem;
+  }
+
+  .page__content .post-outline__inner {
+    position: static;
   }
 }
 

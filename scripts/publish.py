@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -35,6 +36,11 @@ CATEGORY_ORDER = ["release", "tool", "tutorial", "news", "research", "opinion"]
 def yaml_quote(value: str) -> str:
     escaped = value.replace("\\", "\\\\").replace('"', '\\"')
     return f'"{escaped}"'
+
+
+def anchor_slug(value: str, fallback: str) -> str:
+    slug = re.sub(r"[^a-z0-9가-힣]+", "-", value.lower()).strip("-")
+    return slug[:64] or fallback
 
 
 def load_seen() -> dict:
@@ -67,15 +73,17 @@ def mark_seen(items: list[dict], date: str) -> int:
     return updated
 
 
-def render_item(item: dict) -> str:
+def render_item(item: dict, index: int) -> str:
     ko = item["ko"]
     one_line = ko.get("one_line_summary", ko.get("ko_summary", ""))
     what_happened = ko.get("what_happened", ko.get("ko_summary", ""))
     why_it_matters = ko.get("why_it_matters", "")
     practical_takeaway = ko.get("practical_takeaway", "")
     who_should_read = ko.get("who_should_read", "")
+    item_id = anchor_slug(ko["ko_title"], f"item-{index}")
     lines = [
-        f"#### {ko['ko_title']}",
+        '<section class="brief-card" markdown="1">',
+        f'<h4 id="{item_id}" class="brief-card__title">{ko["ko_title"]}</h4>',
         "",
         f"**한 줄 요약**  \n{one_line}",
         "",
@@ -96,6 +104,8 @@ def render_item(item: dict) -> str:
         )
         lines.append("")
     lines.append(f"[원문 보기 →]({item['url']}) ({item['source']})")
+    lines.append("")
+    lines.append("</section>")
     lines.append("")
     return "\n".join(lines)
 
@@ -118,6 +128,25 @@ def render_post(date: str, items: list[dict]) -> str:
         by_cat.setdefault(cat, []).append(item)
         for t in item["ko"].get("tags", []):
             all_tags.add(t.lower().strip())
+
+    nav_lines = [
+        '<aside class="post-outline" markdown="0">',
+        '<div class="post-outline__inner">',
+        '<p class="post-outline__eyebrow">이 글의 항목</p>',
+        '<ul class="post-outline__list">',
+    ]
+    for index, item in enumerate(deduped_items, 1):
+        title = item["ko"]["ko_title"]
+        item_id = anchor_slug(title, f"item-{index}")
+        nav_lines.append(
+            f'<li><a href="#{item_id}"><span class="post-outline__num">{index:02d}</span>{title}</a></li>'
+        )
+    nav_lines.extend([
+        "</ul>",
+        "</div>",
+        "</aside>",
+        "",
+    ])
 
     tag_lines = [f"  - {yaml_quote(tag)}" for tag in sorted(all_tags)] or ['  - "llm"']
     front = [
@@ -148,8 +177,10 @@ def render_post(date: str, items: list[dict]) -> str:
             one_line = item["ko"].get("one_line_summary", item["ko"].get("ko_summary", ""))
             front.append(f"- **{item['ko']['ko_title']}** — {one_line}")
         front.append("")
+    front.extend(nav_lines)
 
     body: list[str] = []
+    item_index = 1
     for cat in CATEGORY_ORDER:
         if cat not in by_cat:
             continue
@@ -157,7 +188,8 @@ def render_post(date: str, items: list[dict]) -> str:
         body.append("{: .cat-section .cat-" + cat + "}")
         body.append("")
         for item in by_cat[cat]:
-            body.append(render_item(item))
+            body.append(render_item(item, item_index))
+            item_index += 1
 
     return "\n".join(front + body)
 

@@ -70,10 +70,35 @@ Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요�
 - **claude-code v2.1.147 업데이트: 워크플로우 도구 추가** — claude-code v2.1.147 업데이트로 워크플로우 도구 추가 및 기능 개선
 - **mcp 서버 기반 제2차 세계대전 잠수함 전략 시뮬레이터 출시** — mcp 서버 기반 전략 게임 'Silent Shark'가 공개 베타로 출시되었습니다.
 
+<aside class="post-outline" markdown="0">
+<div class="post-outline__inner">
+<p class="post-outline__eyebrow">이 글의 항목</p>
+<ul class="post-outline__list">
+<li><a href="#anthropic-colossus2-확장-및-gb200-확대-발표"><span class="post-outline__num">01</span>Anthropic, Colossus2 확장 및 GB200 확대 발표</a></li>
+<li><a href="#claude-code-v2-1-147-업데이트-워크플로우-도구-추가"><span class="post-outline__num">02</span>claude-code v2.1.147 업데이트: 워크플로우 도구 추가</a></li>
+<li><a href="#mcp-서버-기반-제2차-세계대전-잠수함-전략-시뮬레이터-출시"><span class="post-outline__num">03</span>mcp 서버 기반 제2차 세계대전 잠수함 전략 시뮬레이터 출시</a></li>
+<li><a href="#anthropic-sdk-python-v0-104-0-릴리스"><span class="post-outline__num">04</span>anthropic-sdk-python v0.104.0 릴리스</a></li>
+<li><a href="#runtime-팀-전체-코드-에이전트-실행-환경-제공"><span class="post-outline__num">05</span>Runtime, 팀 전체 코드 에이전트 실행 환경 제공</a></li>
+<li><a href="#datasette-agent-데이터-분석용-ai-어시스턴트-출시"><span class="post-outline__num">06</span>Datasette Agent, 데이터 분석용 AI 어시스턴트 출시</a></li>
+<li><a href="#datasette-agent-sprites-0-1a0-출시"><span class="post-outline__num">07</span>datasette-agent-sprites 0.1a0 출시</a></li>
+<li><a href="#datasette-agent-charts-0-1a2-출시-차트-아래-s"><span class="post-outline__num">08</span>datasette-agent-charts 0.1a2 출시: 차트 아래 S</a></li>
+<li><a href="#datasette-agent-0-1a3-업데이트-sql-결과-처리-개선"><span class="post-outline__num">09</span>datasette-agent 0.1a3 업데이트: SQL 결과 처리 개선</a></li>
+<li><a href="#datasette-agent-charts-0-1a1-업데이트-차트-개선"><span class="post-outline__num">10</span>datasette-agent-charts 0.1a1 업데이트: 차트 개선</a></li>
+<li><a href="#datasette-agent-0-1a2-업데이트-권한-기반-도구-제어"><span class="post-outline__num">11</span>datasette-agent 0.1a2 업데이트: 권한 기반 도구 제어</a></li>
+<li><a href="#latent-space-업데이트"><span class="post-outline__num">12</span>Latent Space 업데이트</a></li>
+<li><a href="#gpt-next-80년-전-수학-문제-해결해-openai-발표"><span class="post-outline__num">13</span>GPT-next, 80년 전 수학 문제 해결해 OpenAI 발표</a></li>
+<li><a href="#local-llm-업데이트"><span class="post-outline__num">14</span>local llm 업데이트</a></li>
+<li><a href="#오픈ai-애드벤트헬스와-whole-person-care-혁신"><span class="post-outline__num">15</span>오픈AI, 애드벤트헬스와 whole-person care 혁신</a></li>
+<li><a href="#langgraph-1-2-1-업데이트-스트리밍-변환기-기능-추가"><span class="post-outline__num">16</span>langgraph 1.2.1 업데이트: 스트리밍 변환기 기능 추가</a></li>
+</ul>
+</div>
+</aside>
+
 ### 릴리스 소식 (10)
 {: .cat-section .cat-release}
 
-#### claude-code v2.1.147 업데이트: 워크플로우 도구 추가
+<section class="brief-card" markdown="1">
+<h4 id="claude-code-v2-1-147-업데이트-워크플로우-도구-추가" class="brief-card__title">claude-code v2.1.147 업데이트: 워크플로우 도구 추가</h4>
 
 **한 줄 요약**  
 claude-code v2.1.147 업데이트로 워크플로우 도구 추가 및 기능 개선
@@ -92,7 +117,10 @@ claude-code를 사용하는 개발자 및 워크플로우 자동화에 관심 �
 
 [원문 보기 →](https://github.com/anthropics/claude-code/releases/tag/v2.1.147) (GitHub: anthropics/claude-code)
 
-#### mcp 서버 기반 제2차 세계대전 잠수함 전략 시뮬레이터 출시
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="mcp-서버-기반-제2차-세계대전-잠수함-전략-시뮬레이터-출시" class="brief-card__title">mcp 서버 기반 제2차 세계대전 잠수함 전략 시뮬레이터 출시</h4>
 
 **한 줄 요약**  
 mcp 서버 기반 전략 게임 'Silent Shark'가 공개 베타로 출시되었습니다.
@@ -113,7 +141,10 @@ Sil,ent Shark는 mcp 서버 기반으로 제2차 세계대전 잠수함 전략 �
 
 [원문 보기 →](https://silentshark.app/alpha/) (HN (mcp server))
 
-#### anthropic-sdk-python v0.104.0 릴리스
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="anthropic-sdk-python-v0-104-0-릴리스" class="brief-card__title">anthropic-sdk-python v0.104.0 릴리스</h4>
 
 **한 줄 요약**  
 anthropic-sdk-python v0.104.0이 thinking-token-count 베타 기능을 추가해 스트리밍 시 토큰 수 추정 기능을 제공합니다.
@@ -132,7 +163,10 @@ SDK 사용자 및 애플리케이션 개발자
 
 [원문 보기 →](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.0) (GitHub: anthropics/anthropic-sdk-python)
 
-#### Datasette Agent, 데이터 분석용 AI 어시스턴트 출시
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="datasette-agent-데이터-분석용-ai-어시스턴트-출시" class="brief-card__title">Datasette Agent, 데이터 분석용 AI 어시스턴트 출시</h4>
 
 **한 줄 요약**  
 Datasette Agent가 데이터 분석에 AI 기반 인터페이스 제공
@@ -151,7 +185,10 @@ Simon Willison이 Datasette Agent를 발표하며, 이는 Datasette에 AI 기반
 
 [원문 보기 →](https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything) (Simon Willison)
 
-#### datasette-agent-sprites 0.1a0 출시
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="datasette-agent-sprites-0-1a0-출시" class="brief-card__title">datasette-agent-sprites 0.1a0 출시</h4>
 
 **한 줄 요약**  
 datasette-agent-sprites 0.1a0이 Fly Sprites 샌드박스에서 명령 실행 기능 제공
@@ -170,7 +207,10 @@ Datasette 플러그인 개발자 및 샌드박스 환경 사용자
 
 [원문 보기 →](https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything) (Simon Willison)
 
-#### datasette-agent-charts 0.1a2 출시: 차트 아래 S
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="datasette-agent-charts-0-1a2-출시-차트-아래-s" class="brief-card__title">datasette-agent-charts 0.1a2 출시: 차트 아래 S</h4>
 
 **한 줄 요약**  
 datasette-agent-charts 0.1a2이 출시되어 차트 아래 SQL 쿼리 보기 기능이 추가되었습니다.
@@ -189,7 +229,10 @@ datasette-agent-charts 0.1a2 버전이 출시되었습니다. 이 업데이트�
 
 [원문 보기 →](https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything) (Simon Willison)
 
-#### datasette-agent 0.1a3 업데이트: SQL 결과 처리 개선
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="datasette-agent-0-1a3-업데이트-sql-결과-처리-개선" class="brief-card__title">datasette-agent 0.1a3 업데이트: SQL 결과 처리 개선</h4>
 
 **한 줄 요약**  
 datasette-agent 0.1a3이 SQL 결과 처리 방식을 업데이트해 사용자 경험을 개선했습니다.
@@ -208,7 +251,10 @@ Datasette를 사용하는 개발자 및 데이터 분석 담당자
 
 [원문 보기 →](https://simonwillison.net/2026/May/21/datasette-agent-2/#atom-everything) (Simon Willison)
 
-#### datasette-agent-charts 0.1a1 업데이트: 차트 개선
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="datasette-agent-charts-0-1a1-업데이트-차트-개선" class="brief-card__title">datasette-agent-charts 0.1a1 업데이트: 차트 개선</h4>
 
 **한 줄 요약**  
 datasette-agent-charts 0.1a1이 출시되어 차트 시각화 기능이 강화되었습니다.
@@ -227,7 +273,10 @@ datasette-agent 사용자 및 데이터 시각화 개발자
 
 [원문 보기 →](https://simonwillison.net/2026/May/20/datasette-agent-charts/#atom-everything) (Simon Willison)
 
-#### datasette-agent 0.1a2 업데이트: 권한 기반 도구 제어
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="datasette-agent-0-1a2-업데이트-권한-기반-도구-제어" class="brief-card__title">datasette-agent 0.1a2 업데이트: 권한 기반 도구 제어</h4>
 
 **한 줄 요약**  
 datasette-agent 0.1a2 업데이트로 배경 작업 도구에 권한 체계 도입
@@ -246,7 +295,10 @@ datasette-agent 0.1a2 버전이 출시되면서 배경 작업 도구에 대한 �
 
 [원문 보기 →](https://simonwillison.net/2026/May/15/datasette-agent/#atom-everything) (Simon Willison)
 
-#### langgraph 1.2.1 업데이트: 스트리밍 변환기 기능 추가
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="langgraph-1-2-1-업데이트-스트리밍-변환기-기능-추가" class="brief-card__title">langgraph 1.2.1 업데이트: 스트리밍 변환기 기능 추가</h4>
 
 **한 줄 요약**  
 langgraph 1.2.1이 스트리밍 변환기 기능 추가로 업데이트됨
@@ -265,10 +317,13 @@ langgraph를 사용하는 개발자 및 관련 프레임워크 개발자
 
 [원문 보기 →](https://github.com/langchain-ai/langgraph/releases/tag/1.2.1) (GitHub: langchain-ai/langgraph)
 
+</section>
+
 ### 도구 / 라이브러리 (1)
 {: .cat-section .cat-tool}
 
-#### Runtime, 팀 전체 코드 에이전트 실행 환경 제공
+<section class="brief-card" markdown="1">
+<h4 id="runtime-팀-전체-코드-에이전트-실행-환경-제공" class="brief-card__title">Runtime, 팀 전체 코드 에이전트 실행 환경 제공</h4>
 
 **한 줄 요약**  
 Runtime은 팀 전체 코드 에이전트를 실행하는 통합 플랫폼입니다.
@@ -289,10 +344,13 @@ Runtime은 팀의 코드 에이전트를 실행하는 통합 플랫폼을 출시
 
 [원문 보기 →](https://www.runtm.com/) (HN (claude))
 
+</section>
+
 ### 업계 뉴스 (4)
 {: .cat-section .cat-news}
 
-#### Anthropic, Colossus2 확장 및 GB200 확대 발표
+<section class="brief-card" markdown="1">
+<h4 id="anthropic-colossus2-확장-및-gb200-확대-발표" class="brief-card__title">Anthropic, Colossus2 확장 및 GB200 확대 발표</h4>
 
 **한 줄 요약**  
 Anthropic, SpaceX와의 협업 확대 및 Colossus2의 GB200 용량 확대 발표
@@ -313,7 +371,10 @@ AI 모델 개발자 및 클라우드 서비스 관련 개발자
 
 [원문 보기 →](https://twitter.com/nottombrown/status/2057194829986300375) (HN (anthropic))
 
-#### Latent Space 업데이트
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="latent-space-업데이트" class="brief-card__title">Latent Space 업데이트</h4>
 
 **한 줄 요약**  
 데이타나가 AI 에이전트 클라우드를 출시하며 74% 월간 성장 기록
@@ -332,7 +393,10 @@ AI 에이전트 개발에 관심 있는 개발자 및 기업 개발팀
 
 [원문 보기 →](https://www.latent.space/p/daytona) (Latent Space)
 
-#### local llm 업데이트
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="local-llm-업데이트" class="brief-card__title">local llm 업데이트</h4>
 
 **한 줄 요약**  
 340개 이상 지역 언론사가 인터넷 아카이브의 자동 수집 기능 접근을 제한
@@ -353,7 +417,10 @@ AI 에이전트 개발에 관심 있는 개발자 및 기업 개발팀
 
 [원문 보기 →](https://www.niemanlab.org/2026/05/more-than-340-local-news-outlets-are-limiting-the-internet-archives-access-to-their-journalism/) (HN (local llm))
 
-#### 오픈AI, 애드벤트헬스와 whole-person care 혁신
+</section>
+
+<section class="brief-card" markdown="1">
+<h4 id="오픈ai-애드벤트헬스와-whole-person-care-혁신" class="brief-card__title">오픈AI, 애드벤트헬스와 whole-person care 혁신</h4>
 
 **한 줄 요약**  
 오픈AI가 애드벤트헬스와 whole-person care 혁신을 위한 협력 발표
@@ -372,10 +439,13 @@ AI 에이전트 개발에 관심 있는 개발자 및 기업 개발팀
 
 [원문 보기 →](https://openai.com/index/adventhealth) (OpenAI Blog)
 
+</section>
+
 ### 연구 / 논문 (1)
 {: .cat-section .cat-research}
 
-#### GPT-next, 80년 전 수학 문제 해결해 OpenAI 발표
+<section class="brief-card" markdown="1">
+<h4 id="gpt-next-80년-전-수학-문제-해결해-openai-발표" class="brief-card__title">GPT-next, 80년 전 수학 문제 해결해 OpenAI 발표</h4>
 
 **한 줄 요약**  
 OpenAI, GPT-next로 80년 전 수학 문제 해결 발표
@@ -393,3 +463,5 @@ AI 모델을 활용해 수학 문제를 해결하는 방식은 다른 분야에�
 수학 연구자, AI 개발자, 데이터 과학자
 
 [원문 보기 →](https://www.latent.space/p/ainews-openai-gpt-next-disproves) (Latent Space)
+
+</section>
