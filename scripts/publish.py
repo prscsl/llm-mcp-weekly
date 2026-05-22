@@ -32,6 +32,11 @@ CATEGORY_LABELS = {
 CATEGORY_ORDER = ["release", "tool", "tutorial", "news", "research", "opinion"]
 
 
+def yaml_quote(value: str) -> str:
+    escaped = value.replace("\\", "\\\\").replace('"', '\\"')
+    return f'"{escaped}"'
+
+
 def load_seen() -> dict:
     if not SEEN_FILE.exists():
         return {"version": 1, "items": {}}
@@ -114,13 +119,16 @@ def render_post(date: str, items: list[dict]) -> str:
         for t in item["ko"].get("tags", []):
             all_tags.add(t.lower().strip())
 
+    tag_lines = [f"  - {yaml_quote(tag)}" for tag in sorted(all_tags)] or ['  - "llm"']
     front = [
         "---",
         "layout: post",
         f'title: "{date} LLM·MCP 위클리"',
         f"date: {date} 09:00:00 +0900",
-        "categories: [weekly]",
-        f"tags: [{', '.join(sorted(all_tags))}]",
+        "categories:",
+        '  - "weekly"',
+        "tags:",
+        *tag_lines,
         "---",
         "",
         f"## {date} 한국어 LLM·MCP 큐레이션",
