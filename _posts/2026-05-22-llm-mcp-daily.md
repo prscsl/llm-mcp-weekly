@@ -73,23 +73,33 @@ Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요�
 <aside class="post-outline" markdown="0">
 <div class="post-outline__inner">
 <p class="post-outline__eyebrow">이 글의 항목</p>
+<p class="post-outline__group">릴리스 소식</p>
 <ul class="post-outline__list">
-<li><a href="#anthropic-colossus2-확장-및-gb200-확대-발표"><span class="post-outline__num">01</span>Anthropic, Colossus2 확장 및 GB200 확대 발표</a></li>
-<li><a href="#claude-code-v2-1-147-업데이트-워크플로우-도구-추가"><span class="post-outline__num">02</span>claude-code v2.1.147 업데이트: 워크플로우 도구 추가</a></li>
-<li><a href="#mcp-서버-기반-제2차-세계대전-잠수함-전략-시뮬레이터-출시"><span class="post-outline__num">03</span>mcp 서버 기반 제2차 세계대전 잠수함 전략 시뮬레이터 출시</a></li>
-<li><a href="#anthropic-sdk-python-v0-104-0-릴리스"><span class="post-outline__num">04</span>anthropic-sdk-python v0.104.0 릴리스</a></li>
-<li><a href="#runtime-팀-전체-코드-에이전트-실행-환경-제공"><span class="post-outline__num">05</span>Runtime, 팀 전체 코드 에이전트 실행 환경 제공</a></li>
-<li><a href="#datasette-agent-데이터-분석용-ai-어시스턴트-출시"><span class="post-outline__num">06</span>Datasette Agent, 데이터 분석용 AI 어시스턴트 출시</a></li>
-<li><a href="#datasette-agent-sprites-0-1a0-출시"><span class="post-outline__num">07</span>datasette-agent-sprites 0.1a0 출시</a></li>
-<li><a href="#datasette-agent-charts-0-1a2-출시-차트-아래-s"><span class="post-outline__num">08</span>datasette-agent-charts 0.1a2 출시: 차트 아래 S</a></li>
-<li><a href="#datasette-agent-0-1a3-업데이트-sql-결과-처리-개선"><span class="post-outline__num">09</span>datasette-agent 0.1a3 업데이트: SQL 결과 처리 개선</a></li>
-<li><a href="#datasette-agent-charts-0-1a1-업데이트-차트-개선"><span class="post-outline__num">10</span>datasette-agent-charts 0.1a1 업데이트: 차트 개선</a></li>
-<li><a href="#datasette-agent-0-1a2-업데이트-권한-기반-도구-제어"><span class="post-outline__num">11</span>datasette-agent 0.1a2 업데이트: 권한 기반 도구 제어</a></li>
-<li><a href="#latent-space-업데이트"><span class="post-outline__num">12</span>Latent Space 업데이트</a></li>
-<li><a href="#gpt-next-80년-전-수학-문제-해결해-openai-발표"><span class="post-outline__num">13</span>GPT-next, 80년 전 수학 문제 해결해 OpenAI 발표</a></li>
+<li><a href="#claude-code-v2-1-147-업데이트-워크플로우-도구-추가"><span class="post-outline__num">01</span>claude-code v2.1.147 업데이트: 워크플로우 도구 추가</a></li>
+<li><a href="#mcp-서버-기반-제2차-세계대전-잠수함-전략-시뮬레이터-출시"><span class="post-outline__num">02</span>mcp 서버 기반 제2차 세계대전 잠수함 전략 시뮬레이터 출시</a></li>
+<li><a href="#anthropic-sdk-python-v0-104-0-릴리스"><span class="post-outline__num">03</span>anthropic-sdk-python v0.104.0 릴리스</a></li>
+<li><a href="#datasette-agent-데이터-분석용-ai-어시스턴트-출시"><span class="post-outline__num">04</span>Datasette Agent, 데이터 분석용 AI 어시스턴트 출시</a></li>
+<li><a href="#datasette-agent-sprites-0-1a0-출시"><span class="post-outline__num">05</span>datasette-agent-sprites 0.1a0 출시</a></li>
+<li><a href="#datasette-agent-charts-0-1a2-출시-차트-아래-s"><span class="post-outline__num">06</span>datasette-agent-charts 0.1a2 출시: 차트 아래 S</a></li>
+<li><a href="#datasette-agent-0-1a3-업데이트-sql-결과-처리-개선"><span class="post-outline__num">07</span>datasette-agent 0.1a3 업데이트: SQL 결과 처리 개선</a></li>
+<li><a href="#datasette-agent-charts-0-1a1-업데이트-차트-개선"><span class="post-outline__num">08</span>datasette-agent-charts 0.1a1 업데이트: 차트 개선</a></li>
+<li><a href="#datasette-agent-0-1a2-업데이트-권한-기반-도구-제어"><span class="post-outline__num">09</span>datasette-agent 0.1a2 업데이트: 권한 기반 도구 제어</a></li>
+<li><a href="#langgraph-1-2-1-업데이트-스트리밍-변환기-기능-추가"><span class="post-outline__num">10</span>langgraph 1.2.1 업데이트: 스트리밍 변환기 기능 추가</a></li>
+</ul>
+<p class="post-outline__group">도구 / 라이브러리</p>
+<ul class="post-outline__list">
+<li><a href="#runtime-팀-전체-코드-에이전트-실행-환경-제공"><span class="post-outline__num">11</span>Runtime, 팀 전체 코드 에이전트 실행 환경 제공</a></li>
+</ul>
+<p class="post-outline__group">업계 뉴스</p>
+<ul class="post-outline__list">
+<li><a href="#anthropic-colossus2-확장-및-gb200-확대-발표"><span class="post-outline__num">12</span>Anthropic, Colossus2 확장 및 GB200 확대 발표</a></li>
+<li><a href="#latent-space-업데이트"><span class="post-outline__num">13</span>Latent Space 업데이트</a></li>
 <li><a href="#local-llm-업데이트"><span class="post-outline__num">14</span>local llm 업데이트</a></li>
 <li><a href="#오픈ai-애드벤트헬스와-whole-person-care-혁신"><span class="post-outline__num">15</span>오픈AI, 애드벤트헬스와 whole-person care 혁신</a></li>
-<li><a href="#langgraph-1-2-1-업데이트-스트리밍-변환기-기능-추가"><span class="post-outline__num">16</span>langgraph 1.2.1 업데이트: 스트리밍 변환기 기능 추가</a></li>
+</ul>
+<p class="post-outline__group">연구 / 논문</p>
+<ul class="post-outline__list">
+<li><a href="#gpt-next-80년-전-수학-문제-해결해-openai-발표"><span class="post-outline__num">16</span>GPT-next, 80년 전 수학 문제 해결해 OpenAI 발표</a></li>
 </ul>
 </div>
 </aside>

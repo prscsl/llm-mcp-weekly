@@ -133,16 +133,24 @@ def render_post(date: str, items: list[dict]) -> str:
         '<aside class="post-outline" markdown="0">',
         '<div class="post-outline__inner">',
         '<p class="post-outline__eyebrow">이 글의 항목</p>',
-        '<ul class="post-outline__list">',
     ]
-    for index, item in enumerate(deduped_items, 1):
-        title = item["ko"]["ko_title"]
-        item_id = anchor_slug(title, f"item-{index}")
+    nav_index = 1
+    for cat in CATEGORY_ORDER:
+        if cat not in by_cat:
+            continue
         nav_lines.append(
-            f'<li><a href="#{item_id}"><span class="post-outline__num">{index:02d}</span>{title}</a></li>'
+            f'<p class="post-outline__group">{CATEGORY_LABELS[cat]}</p>'
         )
+        nav_lines.append('<ul class="post-outline__list">')
+        for item in by_cat[cat]:
+            title = item["ko"]["ko_title"]
+            item_id = anchor_slug(title, f"item-{nav_index}")
+            nav_lines.append(
+                f'<li><a href="#{item_id}"><span class="post-outline__num">{nav_index:02d}</span>{title}</a></li>'
+            )
+            nav_index += 1
+        nav_lines.append("</ul>")
     nav_lines.extend([
-        "</ul>",
         "</div>",
         "</aside>",
         "",

@@ -158,6 +158,18 @@ h1, h2, h3, h4, h5, h6,
   color: #8b94a7;
 }
 
+.page__content .post-outline__group {
+  margin: 0.95rem 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #6e7787;
+}
+
+.page__content .post-outline__group:first-of-type {
+  margin-top: 0;
+}
+
 .page__content .post-outline__list {
   list-style: none;
   margin: 0;
@@ -369,6 +381,10 @@ html[data-theme="dark"] {
 
   .page__content .post-outline__eyebrow {
     color: #97a1b4;
+  }
+
+  .page__content .post-outline__group {
+    color: #96a0b3;
   }
 
   .page__content .post-outline__list a {
