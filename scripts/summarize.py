@@ -55,7 +55,12 @@ SUMMARY_SCHEMA = {
     "type": "object",
     "properties": {
         "ko_title": {"type": "string"},
+        "one_line_summary": {"type": "string"},
         "ko_summary": {"type": "string"},
+        "what_happened": {"type": "string"},
+        "why_it_matters": {"type": "string"},
+        "practical_takeaway": {"type": "string"},
+        "who_should_read": {"type": "string"},
         "tags": {
             "type": "array",
             "items": {"type": "string"},
@@ -65,7 +70,17 @@ SUMMARY_SCHEMA = {
             "enum": ["release", "tutorial", "news", "opinion", "tool", "research"],
         },
     },
-    "required": ["ko_title", "ko_summary", "tags", "category"],
+    "required": [
+        "ko_title",
+        "one_line_summary",
+        "ko_summary",
+        "what_happened",
+        "why_it_matters",
+        "practical_takeaway",
+        "who_should_read",
+        "tags",
+        "category",
+    ],
     "additionalProperties": False,
 }
 GENERIC_TITLE_PATTERNS = [
@@ -91,6 +106,8 @@ PROMPT_TEMPLATE = """다음은 LLM/MCP 관련 영문 콘텐츠입니다. 한국 
 - 과장·낚시 제목 금지 — 정확한 정보 전달
 - 추측 금지 — 원문에 없는 사실 추가하지 말 것
 - URL에 직접 접속하거나 추가 도구를 사용하지 말 것
+- 모호한 표현 금지: 'AI 기반', '새로운 기술', '혁신 촉진', '기회 제공' 같은 빈 문구를 피할 것
+- 제품명, 조직명, 프로젝트명, 기능명 같은 고유명사를 최소 1개 이상 포함할 것
 
 **원문 정보**:
 - 출처: {source}
@@ -101,8 +118,13 @@ PROMPT_TEMPLATE = """다음은 LLM/MCP 관련 영문 콘텐츠입니다. 한국 
 **출력 형식 (JSON only, 다른 텍스트·코드펜스 금지)**:
 {{
   "ko_title": "한국어 제목 (40자 이내, SEO 키워드 포함)",
-  "ko_summary": "2~3문장 요약 + 한국 개발자 관점 의미 1문장 (총 200~300자)",
-  "tags": ["태그1", "태그2", "태그3"],
+  "one_line_summary": "핵심을 한 줄로 요약 (45~80자)",
+  "ko_summary": "3~4문장 요약문 (총 260~420자)",
+  "what_happened": "무슨 발표/변경/출시였는지 2~3문장",
+  "why_it_matters": "왜 중요한지 2문장",
+  "practical_takeaway": "한국 개발자가 실무에서 참고할 포인트 2~3문장",
+  "who_should_read": "누가 특히 봐야 하는지 짧은 문구",
+  "tags": ["태그1", "태그2", "태그3", "태그4"],
   "category": "release|tutorial|news|opinion|tool|research"
 }}
 """
@@ -132,7 +154,12 @@ def cache_path(item_hash: str) -> Path:
 def stub_summary(item: dict) -> dict:
     return {
         "ko_title": f"[STUB] {item['title'][:40]}",
+        "one_line_summary": "[DRY-RUN] 실제 한 줄 요약은 백엔드 호출 시 생성됩니다.",
         "ko_summary": f"[DRY-RUN] {item['source']}에서 가져온 항목입니다. 실제 요약은 백엔드 호출 시 생성됩니다.",
+        "what_happened": "[DRY-RUN] 원문 변경 사항 정리는 실제 호출 시 생성됩니다.",
+        "why_it_matters": "[DRY-RUN] 중요도 설명은 실제 호출 시 생성됩니다.",
+        "practical_takeaway": "[DRY-RUN] 실무 포인트는 실제 호출 시 생성됩니다.",
+        "who_should_read": "LLM·MCP 실무자",
         "tags": item.get("tags", ["stub"]),
         "category": "news",
     }
@@ -157,6 +184,60 @@ def build_prompt(item: dict) -> str:
         url=item["url"],
         summary_raw=item.get("summary_raw", "")[:1500],
     )
+
+
+def synthesize_legacy_summary(output: dict[str, Any]) -> str:
+    parts = [
+        str(output.get("what_happened", "")).strip(),
+        str(output.get("why_it_matters", "")).strip(),
+        str(output.get("practical_takeaway", "")).strip(),
+    ]
+    return " ".join(part for part in parts if part).strip()
+
+
+def normalize_summary_output(item: dict, output: dict[str, Any]) -> dict[str, Any]:
+    normalized = dict(output)
+    normalized["ko_title"] = str(normalized.get("ko_title", "")).strip()[:40]
+    normalized["one_line_summary"] = str(normalized.get("one_line_summary", "")).strip()
+    normalized["what_happened"] = str(normalized.get("what_happened", "")).strip()
+    normalized["why_it_matters"] = str(normalized.get("why_it_matters", "")).strip()
+    normalized["practical_takeaway"] = str(normalized.get("practical_takeaway", "")).strip()
+    normalized["who_should_read"] = str(normalized.get("who_should_read", "")).strip()
+
+    if not normalized["ko_title"]:
+        normalized["ko_title"] = build_fallback_title(item)
+    if not normalized["one_line_summary"]:
+        normalized["one_line_summary"] = normalized["ko_title"]
+    if not normalized["what_happened"]:
+        normalized["what_happened"] = str(normalized.get("ko_summary", "")).strip()
+    if not normalized["why_it_matters"]:
+        normalized["why_it_matters"] = "한국 개발자 입장에서 참고할 변화가 있는 항목입니다."
+    if not normalized["practical_takeaway"]:
+        normalized["practical_takeaway"] = "도입 여부와 적용 범위를 원문 기준으로 직접 확인하는 것이 좋습니다."
+    if not normalized["who_should_read"]:
+        normalized["who_should_read"] = "LLM·MCP 실무자"
+
+    legacy = str(normalized.get("ko_summary", "")).strip()
+    if len(legacy) < 120:
+        normalized["ko_summary"] = synthesize_legacy_summary(normalized)
+    else:
+        normalized["ko_summary"] = legacy
+
+    tags = normalized.get("tags")
+    if not isinstance(tags, list):
+        tags = []
+    cleaned_tags: list[str] = []
+    for tag in tags:
+        text = str(tag).strip()
+        if text and text not in cleaned_tags:
+            cleaned_tags.append(text[:24])
+    if not cleaned_tags:
+        cleaned_tags = item.get("tags", []) or ["llm"]
+    normalized["tags"] = cleaned_tags[:4]
+
+    if normalized.get("category") not in {"release", "tutorial", "news", "opinion", "tool", "research"}:
+        normalized["category"] = "news"
+    return normalized
 
 
 def extract_anchor_terms(item: dict) -> list[str]:
@@ -186,8 +267,13 @@ def extract_anchor_terms(item: dict) -> list[str]:
 def ollama_output_needs_repair(item: dict, output: dict[str, Any]) -> bool:
     title = str(output.get("ko_title", "")).strip()
     summary = str(output.get("ko_summary", "")).strip()
+    what_happened = str(output.get("what_happened", "")).strip()
+    why_it_matters = str(output.get("why_it_matters", "")).strip()
+    practical_takeaway = str(output.get("practical_takeaway", "")).strip()
     lowered_title = title.lower()
-    if not title or not summary:
+    if not title or not summary or not what_happened or not why_it_matters or not practical_takeaway:
+        return True
+    if len(summary) < 120 or len(what_happened) < 40 or len(why_it_matters) < 35 or len(practical_takeaway) < 35:
         return True
     if any(pattern in title for pattern in GENERIC_TITLE_PATTERNS):
         return True
@@ -267,7 +353,7 @@ def summarize_with_codex(client: Any, item: dict) -> dict:
     output_text = getattr(response, "output_text", "") or ""
     if not output_text.strip():
         raise RuntimeError("OpenAI Responses API가 빈 응답을 반환했습니다.")
-    return json.loads(output_text)
+    return normalize_summary_output(item, json.loads(output_text))
 
 
 def ollama_post(path: str, payload: dict[str, Any]) -> dict[str, Any]:
@@ -312,10 +398,10 @@ def summarize_with_ollama(item: dict) -> dict:
         if repaired_text:
             repaired_output = extract_json(repaired_text)
             if not ollama_output_needs_repair(item, repaired_output):
-                return repaired_output
+                return normalize_summary_output(item, repaired_output)
     if ollama_output_needs_repair(item, output):
         output["ko_title"] = build_fallback_title(item)
-    return output
+    return normalize_summary_output(item, output)
 
 
 def summarize_with_claude(item: dict) -> dict:
@@ -334,7 +420,7 @@ def summarize_with_claude(item: dict) -> dict:
         if "Not logged in" in detail or "/login" in detail:
             raise ClaudeCliFatalError("claude CLI가 로그인되지 않았습니다. `claude login` 후 다시 실행하세요.")
         raise RuntimeError(f"claude CLI 실패: {detail or '원인 불명'}")
-    return extract_json(result.stdout)
+    return normalize_summary_output(item, extract_json(result.stdout))
 
 
 def get_backend_order(name: str) -> list[str]:

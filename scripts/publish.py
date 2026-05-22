@@ -64,12 +64,26 @@ def mark_seen(items: list[dict], date: str) -> int:
 
 def render_item(item: dict) -> str:
     ko = item["ko"]
+    one_line = ko.get("one_line_summary", ko.get("ko_summary", ""))
+    what_happened = ko.get("what_happened", ko.get("ko_summary", ""))
+    why_it_matters = ko.get("why_it_matters", "")
+    practical_takeaway = ko.get("practical_takeaway", "")
+    who_should_read = ko.get("who_should_read", "")
     lines = [
         f"#### {ko['ko_title']}",
         "",
-        ko["ko_summary"],
+        f"**한 줄 요약**  \n{one_line}",
+        "",
+        f"**무슨 내용인가**  \n{what_happened}",
+        "",
+        f"**왜 중요한가**  \n{why_it_matters}",
+        "",
+        f"**실무 포인트**  \n{practical_takeaway}",
         "",
     ]
+    if who_should_read:
+        lines.append(f"**추천 독자**  \n{who_should_read}")
+        lines.append("")
     if item.get("type") == "hackernews" and item.get("hn_points"):
         lines.append(
             f"> HN {item['hn_points']}점 · "
@@ -115,6 +129,17 @@ def render_post(date: str, items: list[dict]) -> str:
         "Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요약했습니다.",
         "",
     ]
+
+    top_items = deduped_items[:3]
+    if top_items:
+        front.extend([
+            "### 오늘의 포인트",
+            "",
+        ])
+        for item in top_items:
+            one_line = item["ko"].get("one_line_summary", item["ko"].get("ko_summary", ""))
+            front.append(f"- **{item['ko']['ko_title']}** — {one_line}")
+        front.append("")
 
     body: list[str] = []
     for cat in CATEGORY_ORDER:

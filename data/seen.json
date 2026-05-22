@@ -2320,6 +2320,70 @@
     "c4c6dbc685821649": {
       "url": "https://status.claude.com/incidents/8z7l5zcy0v3b",
       "first_seen": "2026-05-20"
+    },
+    "44cfbbe77b5b7f6f": {
+      "url": "https://twitter.com/nottombrown/status/2057194829986300375",
+      "first_seen": "2026-05-22"
+    },
+    "04a01fee484d75a2": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+      "first_seen": "2026-05-22"
+    },
+    "8f15f8c35cd6f954": {
+      "url": "https://silentshark.app/alpha/",
+      "first_seen": "2026-05-22"
+    },
+    "a4d1d2a2b13871dc": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.0",
+      "first_seen": "2026-05-22"
+    },
+    "de2dc94754e15807": {
+      "url": "https://www.runtm.com/",
+      "first_seen": "2026-05-22"
+    },
+    "21dfab60592f4a2c": {
+      "url": "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything",
+      "first_seen": "2026-05-22"
+    },
+    "7ea449e12be43061": {
+      "url": "https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything",
+      "first_seen": "2026-05-22"
+    },
+    "16158c51b03e5272": {
+      "url": "https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything",
+      "first_seen": "2026-05-22"
+    },
+    "efb2ba214b08463e": {
+      "url": "https://simonwillison.net/2026/May/21/datasette-agent-2/#atom-everything",
+      "first_seen": "2026-05-22"
+    },
+    "78abd86218cdfe9c": {
+      "url": "https://simonwillison.net/2026/May/20/datasette-agent-charts/#atom-everything",
+      "first_seen": "2026-05-22"
+    },
+    "3d9ccbb7a159109b": {
+      "url": "https://simonwillison.net/2026/May/15/datasette-agent/#atom-everything",
+      "first_seen": "2026-05-22"
+    },
+    "6a681e45018e3040": {
+      "url": "https://www.latent.space/p/daytona",
+      "first_seen": "2026-05-22"
+    },
+    "2cdd56959723ff79": {
+      "url": "https://www.latent.space/p/ainews-openai-gpt-next-disproves",
+      "first_seen": "2026-05-22"
+    },
+    "efb62eb85d99d0a0": {
+      "url": "https://www.niemanlab.org/2026/05/more-than-340-local-news-outlets-are-limiting-the-internet-archives-access-to-their-journalism/",
+      "first_seen": "2026-05-22"
+    },
+    "57b488d288c29800": {
+      "url": "https://openai.com/index/adventhealth",
+      "first_seen": "2026-05-22"
+    },
+    "a7546093fe519f82": {
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.1",
+      "first_seen": "2026-05-22"
     }
   }
 }

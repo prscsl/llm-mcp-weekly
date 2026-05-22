@@ -21,6 +21,7 @@ import time
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone, timedelta
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
@@ -35,6 +36,39 @@ SEEN_FILE = DATA_DIR / "seen.json"
 
 USER_AGENT = "llm-mcp-weekly-bot/1.0 (+https://github.com/prscsl/llm-mcp-weekly)"
 HTTP_TIMEOUT = 15
+
+
+class MetaPreviewParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.in_title = False
+        self.title_parts: list[str] = []
+        self.meta: dict[str, str] = {}
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attrs_dict = {k.lower(): (v or "") for k, v in attrs}
+        if tag.lower() == "title":
+            self.in_title = True
+            return
+        if tag.lower() != "meta":
+            return
+        name = attrs_dict.get("name", "").lower()
+        prop = attrs_dict.get("property", "").lower()
+        content = attrs_dict.get("content", "").strip()
+        if not content:
+            return
+        if name in {"description", "twitter:title", "twitter:description"}:
+            self.meta[name] = content
+        if prop in {"og:title", "og:description", "og:site_name"}:
+            self.meta[prop] = content
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() == "title":
+            self.in_title = False
+
+    def handle_data(self, data: str) -> None:
+        if self.in_title and data.strip():
+            self.title_parts.append(data.strip())
 
 
 def load_sources() -> dict[str, Any]:
@@ -68,6 +102,42 @@ def http_get_bytes(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
         return resp.read()
+
+
+def fetch_web_preview(url: str) -> dict[str, str]:
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
+            content_type = (resp.headers.get("Content-Type") or "").lower()
+            if "text/html" not in content_type:
+                return {}
+            raw = resp.read(32768)
+    except Exception:
+        return {}
+
+    parser = MetaPreviewParser()
+    try:
+        parser.feed(raw.decode("utf-8", "ignore"))
+    except Exception:
+        return {}
+
+    title = (
+        parser.meta.get("og:title")
+        or parser.meta.get("twitter:title")
+        or " ".join(parser.title_parts).strip()
+    )
+    description = (
+        parser.meta.get("og:description")
+        or parser.meta.get("twitter:description")
+        or parser.meta.get("description")
+        or ""
+    )
+    site_name = parser.meta.get("og:site_name", "")
+    return {
+        "page_title": title[:300],
+        "page_description": description[:1000],
+        "page_site_name": site_name[:120],
+    }
 
 
 def parse_date(value: Any) -> datetime | None:
@@ -161,17 +231,28 @@ def collect_hackernews(source: dict, cutoff: datetime) -> list[dict]:
     for hit in data.get("hits", []):
         if not hit.get("url"):
             continue
+        preview = fetch_web_preview(hit.get("url"))
+        preview_lines = [
+            f"HN points: {hit.get('points')}, comments: {hit.get('num_comments')}",
+        ]
+        if preview.get("page_title"):
+            preview_lines.append(f"Page title: {preview['page_title']}")
+        if preview.get("page_description"):
+            preview_lines.append(f"Page description: {preview['page_description']}")
+        if preview.get("page_site_name"):
+            preview_lines.append(f"Site name: {preview['page_site_name']}")
         items.append({
             "type": "hackernews",
             "source": f"HN ({keyword})",
             "title": hit.get("title", "").strip(),
             "url": hit.get("url"),
-            "summary_raw": f"HN points: {hit.get('points')}, comments: {hit.get('num_comments')}",
+            "summary_raw": "\n".join(preview_lines)[:2000],
             "published": datetime.fromtimestamp(hit.get("created_at_i", 0), timezone.utc).isoformat(),
             "weight": source.get("weight", 5) + min(hit.get("points", 0) // 50, 5),
             "tags": ["hackernews"],
             "hn_points": hit.get("points"),
             "hn_url": f"https://news.ycombinator.com/item?id={hit.get('objectID')}",
+            **preview,
         })
     return items
 
