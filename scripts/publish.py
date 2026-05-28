@@ -130,9 +130,9 @@ def render_post(date: str, items: list[dict]) -> str:
             all_tags.add(t.lower().strip())
 
     nav_lines = [
-        '<aside class="post-outline" markdown="0">',
+        '<aside class="post-outline" markdown="0" aria-label="포스트 목차">',
         '<div class="post-outline__inner">',
-        '<p class="post-outline__eyebrow">이 글의 항목</p>',
+        '<p class="post-outline__eyebrow">목차</p>',
     ]
     nav_index = 1
     for cat in CATEGORY_ORDER:
@@ -185,9 +185,7 @@ def render_post(date: str, items: list[dict]) -> str:
             one_line = item["ko"].get("one_line_summary", item["ko"].get("ko_summary", ""))
             front.append(f"- **{item['ko']['ko_title']}** — {one_line}")
         front.append("")
-    front.extend(nav_lines)
-
-    body: list[str] = []
+    body: list[str] = ['<div class="curation-shell">', '<div class="curation-shell__main" markdown="1">', ""]
     item_index = 1
     for cat in CATEGORY_ORDER:
         if cat not in by_cat:
@@ -198,6 +196,13 @@ def render_post(date: str, items: list[dict]) -> str:
         for item in by_cat[cat]:
             body.append(render_item(item, item_index))
             item_index += 1
+
+    body.extend([
+        "</div>",
+        "",
+        *nav_lines,
+        "</div>",
+    ])
 
     return "\n".join(front + body)
 

@@ -119,59 +119,8 @@ Anthropic, MCP 생태계, HuggingFace, HackerNews 등에서 자동 수집·요�
 - **claude Code 업데이트** — 클라우드 코드 사용법을 실무에 적용하는 방법을 소개합니다
 - **claude-is-not-your-architect, 아키텍트 역할은 아** — AI 도구가 실무에서 오해를 일으키는 사례 분석
 
-<aside class="post-outline" markdown="0">
-<div class="post-outline__inner">
-<p class="post-outline__eyebrow">이 글의 항목</p>
-<p class="post-outline__group">릴리스 소식</p>
-<ul class="post-outline__list">
-<li><a href="#datasette-1-0a30-업데이트-jump-to-메뉴-기능-추"><span class="post-outline__num">01</span>Datasette 1.0a30 업데이트: 'Jump to' 메뉴 기능 추</a></li>
-<li><a href="#datasette-agent-0-1a4-출시-챗봇-기능-통합"><span class="post-outline__num">02</span>datasette-agent 0.1a4 출시: 챗봇 기능 통합</a></li>
-<li><a href="#datasette-fixtures-0-1a0-출시-테스트-데이터-생성"><span class="post-outline__num">03</span>datasette-fixtures 0.1a0 출시, 테스트 데이터 생성 </a></li>
-</ul>
-<p class="post-outline__group">도구 / 라이브러리</p>
-<ul class="post-outline__list">
-<li><a href="#deepseek-reasonix-캐시-최적화-ai-코딩-에이전트-출시"><span class="post-outline__num">04</span>DeepSeek Reasonix, 캐시 최적화 AI 코딩 에이전트 출시</a></li>
-<li><a href="#agentic-open-업데이트"><span class="post-outline__num">05</span>agentic Open 업데이트</a></li>
-<li><a href="#ai-에이전트용-코드-편집기-superset-출시"><span class="post-outline__num">06</span>AI 에이전트용 코드 편집기 'Superset' 출시</a></li>
-<li><a href="#usborne-mad-house-게임-재현-프로젝트-발표"><span class="post-outline__num">07</span>Usborne 'Mad House' 게임 재현 프로젝트 발표</a></li>
-</ul>
-<p class="post-outline__group">튜토리얼 / 가이드</p>
-<ul class="post-outline__list">
-<li><a href="#claude-code-업데이트"><span class="post-outline__num">08</span>claude Code 업데이트</a></li>
-<li><a href="#simon-willison-업데이트"><span class="post-outline__num">09</span>Simon Willison 업데이트</a></li>
-</ul>
-<p class="post-outline__group">업계 뉴스</p>
-<ul class="post-outline__list">
-<li><a href="#claude-microsoft-업데이트"><span class="post-outline__num">10</span>claude Microsoft 업데이트</a></li>
-<li><a href="#anthropic-openai의-수익성-확보-전망"><span class="post-outline__num">11</span>Anthropic, OpenAI의 수익성 확보 전망</a></li>
-<li><a href="#anthropic-glasswing-프로젝트-초기-업데이트-발표"><span class="post-outline__num">12</span>Anthropic, Glasswing 프로젝트 초기 업데이트 발표</a></li>
-<li><a href="#디프시크-v4-pro-가격-할인-정책-영구화"><span class="post-outline__num">13</span>디프시크 V4 Pro 가격 할인 정책 영구화</a></li>
-<li><a href="#macos-26-5-커널-취약점-클라우드가-발견"><span class="post-outline__num">14</span>macOS 26.5 커널 취약점, 클라우드가 발견</a></li>
-<li><a href="#agentic-microsoft-업데이트"><span class="post-outline__num">15</span>agentic Microsoft 업데이트</a></li>
-<li><a href="#minicor-대규모-윈도우-자동화-솔루션-출시"><span class="post-outline__num">16</span>Minicor, 대규모 윈도우 자동화 솔루션 출시</a></li>
-<li><a href="#sqlite-ai-에이전트-코드-수용-거부"><span class="post-outline__num">17</span>SQLite, AI 에이전트 코드 수용 거부</a></li>
-<li><a href="#anthropic-openai-llm-수익화-성공"><span class="post-outline__num">18</span>Anthropic, OpenAI, LLM 수익화 성공</a></li>
-<li><a href="#simon-willison-업데이트"><span class="post-outline__num">19</span>Simon Willison 업데이트</a></li>
-<li><a href="#simon-willison-업데이트"><span class="post-outline__num">20</span>Simon Willison 업데이트</a></li>
-<li><a href="#simon-willison-업데이트"><span class="post-outline__num">21</span>Simon Willison 업데이트</a></li>
-<li><a href="#simon-willison-업데이트"><span class="post-outline__num">22</span>Simon Willison 업데이트</a></li>
-<li><a href="#simon-willison-업데이트"><span class="post-outline__num">23</span>Simon Willison 업데이트</a></li>
-<li><a href="#ftc-콜스-미디어-그룹-등에-100만-달러-지급-명령"><span class="post-outline__num">24</span>FTC, 콜스 미디어 그룹 등에 100만 달러 지급 명령</a></li>
-</ul>
-<p class="post-outline__group">연구 / 논문</p>
-<ul class="post-outline__list">
-<li><a href="#llm-에이전트-백엔드-코드-생성-시-구조적-제약-약화-현상"><span class="post-outline__num">25</span>LLM 에이전트, 백엔드 코드 생성 시 구조적 제약 약화 현상</a></li>
-</ul>
-<p class="post-outline__group">의견 / 분석</p>
-<ul class="post-outline__list">
-<li><a href="#claude-is-not-your-architect-아키텍트-역할은-아"><span class="post-outline__num">26</span>claude-is-not-your-architect, 아키텍트 역할은 아</a></li>
-<li><a href="#simonwillison-net에서-kyle-ferrana의-보호-전략과"><span class="post-outline__num">27</span>simonwillison.net에서 Kyle Ferrana의 보호 전략과</a></li>
-<li><a href="#simon-willison-업데이트"><span class="post-outline__num">28</span>Simon Willison 업데이트</a></li>
-<li><a href="#simon-willison-업데이트"><span class="post-outline__num">29</span>Simon Willison 업데이트</a></li>
-<li><a href="#armin-ronacher-github-이슈-작성법-개선-필요-pi"><span class="post-outline__num">30</span>Armin Ronacher, GitHub 이슈 작성법 개선 필요, Pi </a></li>
-</ul>
-</div>
-</aside>
+<div class="curation-shell">
+<div class="curation-shell__main" markdown="1">
 
 ### 릴리스 소식 (3)
 {: .cat-section .cat-release}
@@ -876,3 +825,61 @@ GitHub 이슈 작성에 어려움을 겪는 개발자, 오픈소스 프로젝트
 [원문 보기 →](https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything) (Simon Willison)
 
 </section>
+
+</div>
+
+<aside class="post-outline" markdown="0" aria-label="포스트 목차">
+<div class="post-outline__inner">
+<p class="post-outline__eyebrow">목차</p>
+<p class="post-outline__group">릴리스 소식</p>
+<ul class="post-outline__list">
+<li><a href="#datasette-1-0a30-업데이트-jump-to-메뉴-기능-추"><span class="post-outline__num">01</span>Datasette 1.0a30 업데이트: 'Jump to' 메뉴 기능 추</a></li>
+<li><a href="#datasette-agent-0-1a4-출시-챗봇-기능-통합"><span class="post-outline__num">02</span>datasette-agent 0.1a4 출시: 챗봇 기능 통합</a></li>
+<li><a href="#datasette-fixtures-0-1a0-출시-테스트-데이터-생성"><span class="post-outline__num">03</span>datasette-fixtures 0.1a0 출시, 테스트 데이터 생성 </a></li>
+</ul>
+<p class="post-outline__group">도구 / 라이브러리</p>
+<ul class="post-outline__list">
+<li><a href="#deepseek-reasonix-캐시-최적화-ai-코딩-에이전트-출시"><span class="post-outline__num">04</span>DeepSeek Reasonix, 캐시 최적화 AI 코딩 에이전트 출시</a></li>
+<li><a href="#agentic-open-업데이트"><span class="post-outline__num">05</span>agentic Open 업데이트</a></li>
+<li><a href="#ai-에이전트용-코드-편집기-superset-출시"><span class="post-outline__num">06</span>AI 에이전트용 코드 편집기 'Superset' 출시</a></li>
+<li><a href="#usborne-mad-house-게임-재현-프로젝트-발표"><span class="post-outline__num">07</span>Usborne 'Mad House' 게임 재현 프로젝트 발표</a></li>
+</ul>
+<p class="post-outline__group">튜토리얼 / 가이드</p>
+<ul class="post-outline__list">
+<li><a href="#claude-code-업데이트"><span class="post-outline__num">08</span>claude Code 업데이트</a></li>
+<li><a href="#simon-willison-업데이트"><span class="post-outline__num">09</span>Simon Willison 업데이트</a></li>
+</ul>
+<p class="post-outline__group">업계 뉴스</p>
+<ul class="post-outline__list">
+<li><a href="#claude-microsoft-업데이트"><span class="post-outline__num">10</span>claude Microsoft 업데이트</a></li>
+<li><a href="#anthropic-openai의-수익성-확보-전망"><span class="post-outline__num">11</span>Anthropic, OpenAI의 수익성 확보 전망</a></li>
+<li><a href="#anthropic-glasswing-프로젝트-초기-업데이트-발표"><span class="post-outline__num">12</span>Anthropic, Glasswing 프로젝트 초기 업데이트 발표</a></li>
+<li><a href="#디프시크-v4-pro-가격-할인-정책-영구화"><span class="post-outline__num">13</span>디프시크 V4 Pro 가격 할인 정책 영구화</a></li>
+<li><a href="#macos-26-5-커널-취약점-클라우드가-발견"><span class="post-outline__num">14</span>macOS 26.5 커널 취약점, 클라우드가 발견</a></li>
+<li><a href="#agentic-microsoft-업데이트"><span class="post-outline__num">15</span>agentic Microsoft 업데이트</a></li>
+<li><a href="#minicor-대규모-윈도우-자동화-솔루션-출시"><span class="post-outline__num">16</span>Minicor, 대규모 윈도우 자동화 솔루션 출시</a></li>
+<li><a href="#sqlite-ai-에이전트-코드-수용-거부"><span class="post-outline__num">17</span>SQLite, AI 에이전트 코드 수용 거부</a></li>
+<li><a href="#anthropic-openai-llm-수익화-성공"><span class="post-outline__num">18</span>Anthropic, OpenAI, LLM 수익화 성공</a></li>
+<li><a href="#simon-willison-업데이트"><span class="post-outline__num">19</span>Simon Willison 업데이트</a></li>
+<li><a href="#simon-willison-업데이트"><span class="post-outline__num">20</span>Simon Willison 업데이트</a></li>
+<li><a href="#simon-willison-업데이트"><span class="post-outline__num">21</span>Simon Willison 업데이트</a></li>
+<li><a href="#simon-willison-업데이트"><span class="post-outline__num">22</span>Simon Willison 업데이트</a></li>
+<li><a href="#simon-willison-업데이트"><span class="post-outline__num">23</span>Simon Willison 업데이트</a></li>
+<li><a href="#ftc-콜스-미디어-그룹-등에-100만-달러-지급-명령"><span class="post-outline__num">24</span>FTC, 콜스 미디어 그룹 등에 100만 달러 지급 명령</a></li>
+</ul>
+<p class="post-outline__group">연구 / 논문</p>
+<ul class="post-outline__list">
+<li><a href="#llm-에이전트-백엔드-코드-생성-시-구조적-제약-약화-현상"><span class="post-outline__num">25</span>LLM 에이전트, 백엔드 코드 생성 시 구조적 제약 약화 현상</a></li>
+</ul>
+<p class="post-outline__group">의견 / 분석</p>
+<ul class="post-outline__list">
+<li><a href="#claude-is-not-your-architect-아키텍트-역할은-아"><span class="post-outline__num">26</span>claude-is-not-your-architect, 아키텍트 역할은 아</a></li>
+<li><a href="#simonwillison-net에서-kyle-ferrana의-보호-전략과"><span class="post-outline__num">27</span>simonwillison.net에서 Kyle Ferrana의 보호 전략과</a></li>
+<li><a href="#simon-willison-업데이트"><span class="post-outline__num">28</span>Simon Willison 업데이트</a></li>
+<li><a href="#simon-willison-업데이트"><span class="post-outline__num">29</span>Simon Willison 업데이트</a></li>
+<li><a href="#armin-ronacher-github-이슈-작성법-개선-필요-pi"><span class="post-outline__num">30</span>Armin Ronacher, GitHub 이슈 작성법 개선 필요, Pi </a></li>
+</ul>
+</div>
+</aside>
+
+</div>
