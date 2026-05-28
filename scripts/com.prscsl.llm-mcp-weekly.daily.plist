@@ -50,7 +50,7 @@
   <string>/tmp/llm-mcp-weekly.stderr.log</string>
 
   <key>RunAtLoad</key>
-  <false/>
+  <true/>
 
   <key>WorkingDirectory</key>
   <string>/Users/prscsl/llm-mcp-weekly</string>
