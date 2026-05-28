@@ -2384,6 +2384,146 @@
     "a7546093fe519f82": {
       "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.1",
       "first_seen": "2026-05-22"
+    },
+    "94e2733bab9bdea3": {
+      "url": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
+      "first_seen": "2026-05-23"
+    },
+    "575468068ee664ef": {
+      "url": "https://arps18.github.io/posts/claude-code-mastery/",
+      "first_seen": "2026-05-23"
+    },
+    "ac6d93473959db2b": {
+      "url": "https://www.hollandtech.net/claude-is-not-your-architect/",
+      "first_seen": "2026-05-23"
+    },
+    "4310297ee86bdaa0": {
+      "url": "https://simonwillison.net/2026/May/27/product-market-fit/",
+      "first_seen": "2026-05-23"
+    },
+    "9d44573c198f670a": {
+      "url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "first_seen": "2026-05-23"
+    },
+    "24f32fffefc36930": {
+      "url": "https://esengine.github.io/DeepSeek-Reasonix/",
+      "first_seen": "2026-05-23"
+    },
+    "7c96a714efa04e64": {
+      "url": "https://arxiv.org/abs/2605.06445",
+      "first_seen": "2026-05-23"
+    },
+    "d47b4c04d2cefb27": {
+      "url": "https://www.kanbots.dev/",
+      "first_seen": "2026-05-23"
+    },
+    "8eb12065b9344787": {
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "first_seen": "2026-05-23"
+    },
+    "468d46f343a8e252": {
+      "url": "https://support.apple.com/en-us/127115",
+      "first_seen": "2026-05-23"
+    },
+    "5f520d04150ac50b": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "first_seen": "2026-05-23"
+    },
+    "20a83537d55b42fc": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.150",
+      "first_seen": "2026-05-23"
+    },
+    "be9e6be550f95dad": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.149",
+      "first_seen": "2026-05-23"
+    },
+    "1fe523ab3af90b0c": {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.148",
+      "first_seen": "2026-05-23"
+    },
+    "476695a4bb39f625": {
+      "url": "https://github.com/superset-sh/superset",
+      "first_seen": "2026-05-23"
+    },
+    "df844401e50ad93c": {
+      "url": "https://www.minicor.com/",
+      "first_seen": "2026-05-23"
+    },
+    "5d63642243be6385": {
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.1",
+      "first_seen": "2026-05-23"
+    },
+    "79b4bf4594434f95": {
+      "url": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "9531c79f6646d4b5": {
+      "url": "https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "5afefdf1a1abc15f": {
+      "url": "https://simonwillison.net/2026/May/27/kyle-ferrana/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "8a2ba4262bfa93bd": {
+      "url": "https://simonwillison.net/2026/May/26/the-pressure/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "6f30ae0a090a1f8b": {
+      "url": "https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "5fc9d250771182fc": {
+      "url": "https://simonwillison.net/2026/May/26/paul-graham/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "f92fb59837af5df8": {
+      "url": "https://simonwillison.net/2026/May/26/corey-quinn/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "a3fe36ddf9534d35": {
+      "url": "https://simonwillison.net/2026/May/25/encyclical-on-ai/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "1f5fe697ff2f609e": {
+      "url": "https://simonwillison.net/2026/May/25/sighting-365297287/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "271dece48922e1c8": {
+      "url": "https://simonwillison.net/2026/May/24/datasette/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "e7c40babf6b02277": {
+      "url": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "ef0577a45e3a34b4": {
+      "url": "https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "bab7b4bab5ccc8e9": {
+      "url": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything",
+      "first_seen": "2026-05-23"
+    },
+    "35039390e1591140": {
+      "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+      "first_seen": "2026-05-24"
+    },
+    "c7f9d6517ccf91d2": {
+      "url": "https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything",
+      "first_seen": "2026-05-26"
+    },
+    "4b4b1295d2449a27": {
+      "url": "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything",
+      "first_seen": "2026-05-26"
+    },
+    "cc0169e12c236bc5": {
+      "url": "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything",
+      "first_seen": "2026-05-26"
+    },
+    "e3deeb668db40492": {
+      "url": "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything",
+      "first_seen": "2026-05-26"
     }
   }
 }
